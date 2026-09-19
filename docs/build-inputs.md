@@ -78,3 +78,11 @@ This is how `baseline/last-known-good.iso` currently holds candidate 5
 (`system-rescue-0.1.0-candidate5-restore-label-fix.iso`, sha256
 `42a666f5…`), built the same way — from candidate 4 as `--base-iso`, since
 the pristine baseline archive was already missing when that change was made.
+
+## Test harness inputs
+
+`tests/run_vm.py` and `tests/two_vm_recovery.py` need
+`baseline/usb-files/sysresccd/boot/x86_64/vmlinuz` and `sysresccd.img`. They are
+not tracked. Regenerate them with `packaging/extract_boot_runtime.sh`, which
+extracts them from `baseline/last-known-good.iso` (or an ISO you name) and never
+overwrites existing files. See [recovery testing](recovery-testing.md).

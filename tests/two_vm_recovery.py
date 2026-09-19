@@ -9,13 +9,25 @@ import json
 import re
 import selectors
 import shutil
+import sys
 import subprocess
 import time
 import tempfile
 
 ROOT = Path(__file__).resolve().parents[1]
-ISO = ROOT / 'dist/system-rescue-0.1.0-candidate2.iso'
-EXPECTED = 'ac9a63432b290eee910f3160bd17f7e185d19694820b7a2c62586b4a20b77cff'
+
+
+def resolve_iso():
+    # Any candidate ISO with a "<iso>.sha256" sidecar; default is the current
+    # last-known-good build. The original candidate-2 ISO no longer exists.
+    iso = Path(sys.argv[1]).resolve() if len(sys.argv) > 1 else ROOT / 'baseline/last-known-good.iso'
+    sidecar = iso.with_name(iso.name + '.sha256')
+    if not iso.is_file() or not sidecar.is_file():
+        raise SystemExit(f'Need an ISO and its checksum file: {iso} / {sidecar}')
+    return iso, sidecar.read_text().split()[0]
+
+
+ISO, EXPECTED = resolve_iso()
 
 
 def vm(work, stage, disk, firmware=False):
@@ -107,14 +119,14 @@ def vm(work, stage, disk, firmware=False):
 
 def main():
     if hashlib.file_digest(ISO.open('rb'), 'sha256').hexdigest() != EXPECTED:
-        raise RuntimeError('Candidate ISO checksum mismatch')
+        raise RuntimeError(f'Candidate ISO checksum mismatch: {ISO}')
     work = Path(tempfile.mkdtemp(prefix='two-vm-', dir=ROOT / 'packaging/build'))
     (work / 'share').mkdir()
     shutil.copyfile(ROOT / 'tests/two_vm_guest.sh', work / 'share/two_vm_guest.sh')
     for name, gib in [('source', 12), ('target', 12), ('vault', 24)]:
         with (work / f'{name}.raw').open('xb') as stream: stream.truncate(gib << 30)
     print(f'Evidence: {work}', flush=True)
-    results = {'iso_sha256': EXPECTED, 'source_origin': 'Disk installation from preserved SystemRescue Linux root filesystem', 'stages': []}
+    results = {'iso': ISO.name, 'iso_sha256': EXPECTED, 'source_origin': 'Disk installation from preserved SystemRescue Linux root filesystem', 'stages': []}
     for stage, name, firmware in [('setup', 'source', False), ('source-boot', 'source', True),
                                   ('capture', 'source', False), ('restore', 'target', False),
                                   ('recovery-boot', 'target', True)]:

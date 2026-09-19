@@ -1,4 +1,4 @@
-# Candidate 2 hardware recovery rehearsal
+# Hardware recovery rehearsal (template)
 
 Status: preparation only. No hardware restore or restored-system boot has been
 performed *to this document's protocol*. Complete this record during the
@@ -12,7 +12,10 @@ a logged in-place round trip on an ext4 Linux Mint NVMe (2026-09-19). The
 2026-09-14 test is treated there as functionally satisfying item 2/3 below, but
 none of the three recorded this document's identity/authorization fields, the
 spare-disk run saved no manifest/log, and the two in-place runs used the same
-disk as source and target, so nothing here is marked as passed.
+disk as source and target, so nothing here is marked as passed. On 2026-09-19
+the in-place round trips were accepted as sufficient in place of a full run of
+this protocol; it stays here as a template for any future isolated-spare
+rehearsal.
 
 ## Media and authorization record
 
@@ -44,15 +47,16 @@ swapon --show
 
 ## Rehearsal sequence
 
-1. Check the candidate ISO against its recorded SHA-256:
-   `ac9a63432b290eee910f3160bd17f7e185d19694820b7a2c62586b4a20b77cff`.
-   Use candidate 2 for the rehearsal and record the boot-media preparation and
-   verification separately. Do not overwrite the original USB.
+1. Check the candidate ISO against its recorded SHA-256 (candidate 5:
+   `42a666f55cc7075456e5366373283a14e7dba8592dee6c2ad13270a08cb3d5eb`; the
+   candidate-2 checksum `ac9a6343…` in older records is historical, and that ISO
+   no longer exists). Record the boot-media preparation and verification
+   separately. Do not overwrite the original USB.
 2. Before shutting down the installed system, select representative files and
    record their hashes in separate evidence storage. Record the expected root,
    EFI, Btrfs subvolume and swap layout. Identify any dependencies on other
    disks so the boot test can demonstrate the intended recovery scope.
-3. Boot candidate 2 in UEFI mode. Confirm the desktop, application launcher,
+3. Boot the candidate in UEFI mode. Confirm the desktop, application launcher,
    keyboard, display and required storage devices work. Save the fresh media
    inventory and compare it to the authorized identities above.
 4. Keep all source filesystems unmounted and source swap inactive. Mount only

@@ -1,0 +1,4172 @@
+=== setup — complete serial log, terminal escapes removed ===
+:: running early hook [udev]
+Starting systemd-udevd version 261.2-1-arch
+
+:: running early hook [archiso_pxe_nbd]
+:: running hook [udev]
+:: Triggering uevents...
+:: running hook [memdisk]
+:: running hook [findroot]
+:: running hook [archiso]
+:: running hook [archiso_loop_mnt]
+:: running hook [archiso_pxe_common]
+:: running hook [archiso_pxe_nbd]
+:: running hook [archiso_pxe_http]
+:: running hook [archiso_pxe_nfs]
+:: running hook [encrypt]
+:: Mounting '/dev/disk/by-label/RESCUE1302' to '/run/archiso/bootmnt'
+:: Device '/dev/disk/by-label/RESCUE1302' mounted successfully.
+:: Creating config dir ...
+:: Execute the configuration processing script ...
+:: Define early boot options based on the configuration ...
+Entry '.global.copytoram' disabled in config: value='false'
+Entry '.global.checksum' disabled in config: value='false'
+Entry '.global.loadsrm' enabled in config: value='true'
+:: Mounting /run/archiso/cowspace (tmpfs) filesystem, size=25%...
+:: Mounting '/dev/loop0' to '/run/archiso/sfs/airootfs'
+:: Device '/dev/loop0' mounted successfully.
+:: Mounting '/dev/loop1' to '/run/archiso/sfs/srm1'
+:: Device '/dev/loop1' mounted successfully.
+:: Mounting '/dev/loop2' to '/run/archiso/sfs/srm2'
+:: Device '/dev/loop2' mounted successfully.
+:: running late hook [archiso_pxe_common]
+:: running cleanup hook [udev]
++q6E616D6578104
+Welcome to SystemRescue 13.02!
+
+
+3008;start=9d5858745083469885112ca5ca49485e;user=root;hostname=sysrescue;machineid=11111111111141118111111111111111;bootid=53d274d83cff40a4aba04409c0950761;pid=1;pidfdid=2;comm=systemd;type=boot[  OK  ] Created slice Slice /system/dirmngr.
+
+[  OK  ] Created slice Slice /system/getty.
+
+[  OK  ] Created slice Slice /system/gpg-agent.
+
+[  OK  ] Created slice Slice /system/gpg-agent-browser.
+
+[  OK  ] Created slice Slice /system/gpg-agent-extra.
+
+[  OK  ] Created slice Slice /system/gpg-agent-ssh.
+
+[  OK  ] Created slice Slice /system/keyboxd.
+
+[  OK  ] Created slice Slice /system/modprobe.
+
+[  OK  ] Created slice Slice /system/serial-getty.
+
+[  OK  ] Created slice User and Session Slice.
+
+[  OK  ] Started Dispatch Password Requests to Console Directory Watch.
+
+[  OK  ] Started Forward Password Requests to Wall Directory Watch.
+
+[  OK  ] Set up automount Arbitrary Executa…ormats File System Automount Point.
+
+         Expecting device /dev/ttyS0...
+
+[  OK  ] Reached target Image Downloads.
+
+[  OK  ] Reached target Local Integrity Protected Volumes.
+
+[  OK  ] Reached target Path Units.
+
+[  OK  ] Reached target Remote File Systems.
+
+[  OK  ] Reached target Slice Units.
+
+[  OK  ] Reached target Swaps.
+
+[  OK  ] Reached target Local Verity Protected Volumes.
+
+[  OK  ] Listening on Device-mapper event daemon FIFOs.
+
+[  OK  ] Listening on LVM2 poll daemon socket.
+
+[  OK  ] Listening on Query the User Interactively for a Password.
+
+[  OK  ] Listening on Process Core Dump Socket.
+
+[  OK  ] Listening on Credential Encryption/Decryption.
+
+[  OK  ] Listening on Factory Reset Management.
+
+[  OK  ] Listening on Hostname Service Socket.
+
+[  OK  ] Listening on Journal Socket (/dev/log).
+
+[  OK  ] Listening on Journal Sockets.
+
+[  OK  ] Listening on Console Output Muting Service Socket.
+
+[  OK  ] Listening on Disk Repartitioning Service Socket.
+
+[  OK  ] Listening on Simple Block Device Backed Storage Provider.
+
+[  OK  ] Listening on Simple File System Backed Storage Provider.
+
+[  OK  ] Listening on udev Control Socket.
+
+[  OK  ] Listening on udev Kernel Socket.
+
+[  OK  ] Listening on udev Varlink Socket.
+
+[  OK  ] Listening on User Database Manager Socket.
+
+         Mounting Huge Pages File System...
+
+         Mounting POSIX Message Queue File System...
+
+         Mounting Kernel Debug File System...
+
+         Mounting Kernel Trace File System...
+
+         Mounting Temporary Directory /tmp...
+
+         Starting Create List of Static Device Nodes...
+
+         Starting Monitoring of LVM2 mirror…ing dmeventd or progress polling...
+
+         Mounting Kernel Configuration File System...
+
+         Mounting FUSE Control File System...
+
+         Starting Journal Service...
+
+         Starting Load Kernel Modules...
+
+         Starting Remount Root and Kernel File Systems...
+
+[  OK  ] Reached target Local Encrypted Volumes.
+
+         Starting Load udev Rules from Credentials...
+
+         Starting Coldplug All udev Devices...
+
+[  OK  ] Finished Create List of Static Device Nodes.
+
+[  OK  ] Mounted Huge Pages File System.
+
+[  OK  ] Mounted POSIX Message Queue File System.
+
+[  OK  ] Mounted Kernel Debug File System.
+
+[  OK  ] Mounted Kernel Trace File System.
+
+[  OK  ] Mounted Temporary Directory /tmp.
+
+[  OK  ] Mounted Kernel Configuration File System.
+
+[  OK  ] Mounted FUSE Control File System.
+
+[  OK  ] Finished Remount Root and Kernel File Systems.
+
+[  OK  ] Finished Load udev Rules from Credentials.
+
+         Starting Load/Save OS Random Seed...
+
+         Starting Create Static Device Nodes in /dev gracefully...
+
+[  OK  ] Started Journal Service.
+
+         Starting Flush Journal to Persistent Storage...
+
+[  OK  ] Finished Load/Save OS Random Seed.
+
+[  OK  ] Finished Flush Journal to Persistent Storage.
+
+[  OK  ] Finished Monitoring of LVM2 mirror…using dmeventd or progress polling.
+
+         Starting User Database Manager...
+
+[  OK  ] Finished Coldplug All udev Devices.
+
+         Mounting Arbitrary Executable File Formats File System...
+
+[  OK  ] Mounted Arbitrary Executable File Formats File System.
+
+[  OK  ] Started User Database Manager.
+
+[  OK  ] Finished Create Static Device Nodes in /dev gracefully.
+
+         Starting Create System Users...
+
+[  OK  ] Finished Create System Users.
+
+         Starting Journal Log Access Socket...
+
+         Starting Create Static Device Nodes in /dev...
+
+[  OK  ] Listening on Journal Log Access Socket.
+
+[  OK  ] Finished Create Static Device Nodes in /dev.
+
+[  OK  ] Reached target Preparation for Local File Systems.
+
+         Starting Rule-based Manager for Device Events and Files...
+
+[  OK  ] Started Rule-based Manager for Device Events and Files.
+
+[  OK  ] Listening on Disk Image Download Service Socket.
+
+         Mounting Bind mount /var/lib/pacma…g between snapshot/rolling repos...
+
+[  OK  ] Mounted Bind mount /var/lib/pacman…ing between snapshot/rolling repos.
+
+[  OK  ] Reached target Local File Systems.
+
+[  OK  ] Listening on Boot Loader Control Service Socket.
+
+[  OK  ] Listening on System Extension Image Management.
+
+         Starting Create System Files and Directories...
+
+         Starting Load JSON user/group Records from Credentials...
+
+[  OK  ] Found device /dev/ttyS0.
+
+[  OK  ] Finished Load JSON user/group Records from Credentials.
+
+[   23.407204] NVRM: No NVIDIA GPU found.
+[  OK  ] Finished Load Kernel Modules.
+
+         Starting Apply Kernel Variables...
+
+[  OK  ] Finished Apply Kernel Variables.
+
+[  OK  ] Finished Create System Files and Directories.
+
+         Starting Rebuild Journal Catalog...
+
+         Starting Record System Boot/Shutdown in UTMP...
+
+[  OK  ] Finished Record System Boot/Shutdown in UTMP.
+
+[  OK  ] Finished Rebuild Journal Catalog.
+
+         Starting Update is Completed...
+
+[  OK  ] Finished Update is Completed.
+
+[  OK  ] Reached target System Initialization.
+
+[  OK  ] Started Update the plocate database daily.
+
+[  OK  ] Started Daily Cleanup of Temporary Directories.
+
+[  OK  ] Reached target Timer Units.
+
+[  OK  ] Listening on D-Bus System Message Bus Socket.
+
+[  OK  ] Listening on GnuPG network certifi…ent daemon for /etc/pacman.d/gnupg.
+
+[  OK  ] Listening on GnuPG cryptographic a… browsers) for /etc/pacman.d/gnupg.
+
+[  OK  ] Listening on GnuPG cryptographic a…estricted) for /etc/pacman.d/gnupg.
+
+[  OK  ] Listening on GnuPG cryptographic a…emulation) for /etc/pacman.d/gnupg.
+
+[  OK  ] Listening on GnuPG cryptographic a…rase cache for /etc/pacman.d/gnupg.
+
+[  OK  ] Listening on GnuPG public key mana…nt service for /etc/pacman.d/gnupg.
+
+[  OK  ] Listening on Authorization Manager Agent Helper.
+
+[  OK  ] Listening on OpenSSH Server Socket…temd-ssh-generator, AF_UNIX Local).
+
+[  OK  ] Listening on User Login Management Varlink Socket.
+
+[  OK  ] Listening on Virtual Machine and C…tainer Registration Service Socket.
+
+[  OK  ] Reached target Socket Units.
+
+         Starting D-Bus System Message Bus...
+
+         Starting Virtual Console Setup...
+
+[  OK  ] Stopped Virtual Console Setup.
+
+         Starting Virtual Console Setup...
+
+[  OK  ] Started D-Bus System Message Bus.
+
+[  OK  ] Reached target Basic System.
+
+         Starting SSH Key Generation...
+
+         Starting SystemRescue Initialization, before networking...
+
+         Starting User Login Management...
+
+[  OK  ] Started User Login Management.
+
+[  OK  ] Finished Virtual Console Setup.
+
+[  OK  ] Finished SSH Key Generation.
+
+[   27.452423] sysrescue-initialize-prenet[493]: ====> Script /etc/systemd/scripts/sysrescue-initialize-prenet starting ...
+[   27.453806] sysrescue-initialize-prenet[493]: ====> Read the effective configuration file ...
+[   27.454498] sysrescue-initialize-prenet[493]: ====> Showing the effective global configuration (except clear passwords) ...
+[   27.454849] sysrescue-initialize-prenet[493]: config['global']['nofirewall']=False
+[   27.455122] sysrescue-initialize-prenet[493]: ====> Applying pre-network configuration ...
+[   27.455371] sysrescue-initialize-prenet[493]: ====> Script /etc/systemd/scripts/sysrescue-initialize-prenet completed with 0 errors ...
+[  OK  ] Finished SystemRescue Initialization, before networking.
+
+         Starting IPv4 Packet Filtering Framework...
+
+         Starting SystemRescue Initialization, parallel to networking...
+
+[   27.802119] sysrescue-initialize-whilenet[507]: ====> Script /etc/systemd/scripts/sysrescue-initialize-whilenet starting ...
+[   27.802802] sysrescue-initialize-whilenet[507]: ====> Read the effective configuration file ...
+[   27.803198] sysrescue-initialize-whilenet[507]: ====> Showing the effective global configuration (except clear passwords) ...
+[   27.803701] sysrescue-initialize-whilenet[507]: config['global']['setkmap']=
+[   27.803973] sysrescue-initialize-whilenet[507]: config['global']['rootshell']=
+[   27.804355] sysrescue-initialize-whilenet[507]: config['global']['noautologin']=False
+[   27.804617] sysrescue-initialize-whilenet[507]: config['global']['dostartx']=True
+[   27.804850] sysrescue-initialize-whilenet[507]: config['global']['dovnc']=False
+[   27.805124] sysrescue-initialize-whilenet[507]: config['global']['late_load_srm']=
+[   27.805477] sysrescue-initialize-whilenet[507]: config['sysconfig']['timezone']=
+[   27.805737] sysrescue-initialize-whilenet[507]: ====> Applying configuration ...
+[   27.828616] sysrescue-initialize-whilenet[507]: ====> Configuring bash_history ...
+[   27.829289] sysrescue-initialize-whilenet[507]: ====> Configuring autoterminal ...
+[   27.861239] sysrescue-initialize-whilenet[507]: setting terminal 'tty2' to '/usr/local/system_rescue/bin/system-rescue.sh'
+[  OK  ] Finished IPv4 Packet Filtering Framework.
+
+         Starting IPv6 Packet Filtering Framework...
+
+[   28.867185] sysrescue-initialize-whilenet[507]: ====> Script /etc/systemd/scripts/sysrescue-initialize-whilenet completed with 0 errors ...
+[  OK  ] Finished SystemRescue Initialization, parallel to networking.
+
+[  OK  ] Finished IPv6 Packet Filtering Framework.
+
+[  OK  ] Reached target Preparation for Network.
+
+         Starting Network Manager...
+
+         Starting Hostname Service...
+
+[  OK  ] Started Hostname Service.
+
+[  OK  ] Listening on Load/Save RF Kill Switch Status /dev/rfkill Watch.
+
+         Starting Network Manager Script Dispatcher Service...
+
+[  OK  ] Started Network Manager.
+
+[  OK  ] Reached target Network.
+
+         Starting Network Manager Wait Online...
+
+         Starting OpenSSH Daemon...
+
+         Starting Permit User Sessions...
+
+[  OK  ] Started Network Manager Script Dispatcher Service.
+
+[  OK  ] Finished Permit User Sessions.
+
+[  OK  ] Finished Network Manager Wait Online.
+
+[  OK  ] Reached target Network is Online.
+
+         Starting SystemRescue Autorun...
+
+[  OK  ] Started OpenSSH Daemon.
+
+[  OK  ] Reached target SSH Access Available.
+
+
+############################# Initializing autorun #############################
+Showing the effective autorun configuration ...
+config['ar_disable']=False
+config['ar_attempts']=1
+config['ar_source']=
+config['ar_ignorefail']=False
+config['ar_nodel']=False
+config['ar_nowait']=True
+ar_suffixes=['', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F']
+exec=[]
+Cannot find a valid ar_source, searching scripts in the default directories
+No autorun scripts found, nothing to do.
+[  OK  ] Finished SystemRescue Autorun.
+
+[  OK  ] Reached target Preparation for Logins.
+
+[  OK  ] Started SystemRescue autoterminal tty2.
+
+[  OK  ] Started Getty on tty1.
+
+[  OK  ] Started Serial Getty on ttyS0.
+
+[  OK  ] Reached target Login Prompts.
+
+[  OK  ] Reached target Multi-User System.
+
+10478104783008;start=f721c4564ee74cf9809f7285ddcf1032;user=root;hostname=sysrescue;machineid=11111111111141118111111111111111;bootid=53d274d83cff40a4aba04409c0950761;pid=583;pidfdid=584;comm=(agetty);servicename=serial-getty@ttyS0.service;invocationid=03789d79da0044eb8d0ec0a696a79b17;type=service+q6E616D65
+
+ ========= SystemRescue 13.02 (x86_64) ======== ttyS0/6 =========
+                    https://www.system-rescue.org/
+
+* Console environment :
+   Run setkmap to choose the keyboard layout (also accessible with the arrow up key)
+   Run manual to read the documentation of SystemRescue
+
+* Graphical environment :
+   Type startx to run the graphical environment
+   X.Org comes with the XFCE environment and several graphical tools:
+   - Partition manager: .. gparted
+   - Web browser: ........ firefox
+   - Text editor: ........ featherpad
+
+sysrescue login: root (automatic login)
+
+
+root
+3008;start=6ebd67d1347d4be8b72a60f3b952dd85;user=root;hostname=sysrescue;machineid=11111111111141118111111111111111;bootid=53d274d83cff40a4aba04409c0950761;pid=583;pidfdid=584;comm=login;targetuser=root;sessionid=3;type=session3008;start=60a1de83-b4e6-4960-969d-296610d057fe;machineid=11111111111141118111111111111111;user=root;hostname=sysrescue;bootid=53d274d8-3cff-40a4-aba0-4409c0950761;pid=00000000000000000617;type=shell;cwd=/root[root@sysrescue ~]# mkdir -p /mnt/project; mount -t 9p -o trans=virtio,ro project /mnt/project && bash /mnt/project/two_vm_guest.sh setup; result=$?; printf '\nSR_RUN_EXIT=%s\n' "$result"
+
+3008;start=5d5db020-bd97-4ab8-a9a9-d092ac3171cd;machineid=11111111111141118111111111111111;user=root;hostname=sysrescue;bootid=53d274d8-3cff-40a4-aba0-4409c0950761;pid=00000000000000000617;type=command;cwd=/rootCreating new GPT entries in memory.
+The operation has completed successfully.
+mkfs.fat 4.2 (2021-01-31)
+btrfs-progs v6.17.1
+See https://btrfs.readthedocs.io for more information.
+
+Performing full device TRIM /dev/vda2 (11.50GiB) ...
+Label:              (null)
+UUID:               82a91164-2a56-4764-997f-2d836ac4b67a
+Node size:          16384
+Sector size:        4096	(CPU page size: 4096)
+Filesystem size:    11.50GiB
+Block group profiles:
+  Data:             single            8.00MiB
+  Metadata:         DUP             256.00MiB
+  System:           DUP               8.00MiB
+SSD detected:       no
+Zoned device:       no
+Features:           extref, skinny-metadata, no-holes, free-space-tree
+Checksum:           crc32c
+Number of devices:  1
+Devices:
+   ID        SIZE  PATH     
+    1    11.50GiB  /dev/vda2
+
+Create subvolume '/mnt/top/@'
+Create subvolume '/mnt/top/@home'
+Parallel unsquashfs: Using 4 processors
+81793 inodes (74843 blocks) to write
+
+
+[-                                                         ]   1555/156636   0%
+[-                                                         ]   2504/156636   1%
+[|                                                         ]   2708/156636   1%
+[=/                                                        ]   2996/156636   1%
+[=-                                                        ]   3294/156636   2%
+[=\                                                        ]   3547/156636   2%
+[=|                                                        ]   3623/156636   2%
+[=/                                                        ]   3673/156636   2%
+[=-                                                        ]   3719/156636   2%
+[=\                                                        ]   3763/156636   2%
+[=|                                                        ]   3804/156636   2%
+[=/                                                        ]   3848/156636   2%
+[=-                                                        ]   3906/156636   2%
+[=\                                                        ]   3967/156636   2%
+[=|                                                        ]   4136/156636   2%
+[=/                                                        ]   4419/156636   2%
+[=-                                                        ]   4590/156636   2%
+[=-                                                        ]   4821/156636   3%
+[=\                                                        ]   4926/156636   3%
+[=|                                                        ]   5280/156636   3%
+[==-                                                       ]   5558/156636   3%
+[==\                                                       ]   5895/156636   3%
+[==|                                                       ]   6042/156636   3%
+[==/                                                       ]   6204/156636   3%
+[==-                                                       ]   6511/156636   4%
+[==-                                                       ]   6617/156636   4%
+[==|                                                       ]   6936/156636   4%
+[==/                                                       ]   7325/156636   4%
+[==-                                                       ]   7938/156636   5%
+[===\                                                      ]   8246/156636   5%
+[===|                                                      ]   8330/156636   5%
+[===/                                                      ]   8405/156636   5%
+[===-                                                      ]   8475/156636   5%
+[===\                                                      ]   8523/156636   5%
+[===|                                                      ]   8639/156636   5%
+[===/                                                      ]   8904/156636   5%
+[===-                                                      ]   9195/156636   5%
+[===\                                                      ]   9319/156636   5%
+[===|                                                      ]   9588/156636   6%
+[===/                                                      ]   9752/156636   6%
+[===-                                                      ]  10019/156636   6%
+[===\                                                      ]  10162/156636   6%
+[===|                                                      ]  10415/156636   6%
+[===/                                                      ]  10972/156636   7%
+[====-                                                     ]  12012/156636   7%
+[====\                                                     ]  12343/156636   7%
+[====|                                                     ]  13617/156636   8%
+[=====/                                                    ]  14420/156636   9%
+[=====-                                                    ]  14886/156636   9%
+[======\                                                   ]  17309/156636  11%
+[======|                                                   ]  18699/156636  11%
+[======|                                                   ]  18849/156636  12%
+[=======-                                                  ]  20174/156636  12%
+[=======\                                                  ]  20527/156636  13%
+[=======|                                                  ]  20820/156636  13%
+[=======/                                                  ]  21424/156636  13%
+[=======-                                                  ]  21944/156636  14%
+[========\                                                 ]  22252/156636  14%
+[========|                                                 ]  22539/156636  14%
+[========/                                                 ]  23519/156636  15%
+[========\                                                 ]  24676/156636  15%
+[=========|                                                ]  25098/156636  16%
+[=========/                                                ]  25511/156636  16%
+[=========-                                                ]  26499/156636  16%
+[==========\                                               ]  27698/156636  17%
+[==========|                                               ]  28187/156636  17%
+[==========/                                               ]  28713/156636  18%
+[==========-                                               ]  29142/156636  18%
+[==========\                                               ]  29428/156636  18%
+[==========|                                               ]  29536/156636  18%
+[==========/                                               ]  29697/156636  18%
+[==========-                                               ]  29786/156636  19%
+[===========\                                              ]  30326/156636  19%
+[===========|                                              ]  30568/156636  19%
+[===========/                                              ]  30662/156636  19%
+[===========-                                              ]  30876/156636  19%
+[===========\                                              ]  31019/156636  19%
+[===========|                                              ]  31115/156636  19%
+[===========/                                              ]  31320/156636  19%
+[===========-                                              ]  31516/156636  20%
+[===========\                                              ]  31623/156636  20%
+[===========|                                              ]  31674/156636  20%
+[===========/                                              ]  31829/156636  20%
+[===========-                                              ]  32068/156636  20%
+[===========\                                              ]  32449/156636  20%
+[===========|                                              ]  32548/156636  20%
+[===========/                                              ]  32659/156636  20%
+[============-                                             ]  33459/156636  21%
+[============\                                             ]  33972/156636  21%
+[============|                                             ]  35182/156636  22%
+[=============/                                            ]  36113/156636  23%
+[=============-                                            ]  36217/156636  23%
+[=============\                                            ]  37239/156636  23%
+[=============|                                            ]  38001/156636  24%
+[==============/                                           ]  38862/156636  24%
+[==============-                                           ]  39323/156636  25%
+[==============\                                           ]  39870/156636  25%
+[==============|                                           ]  40523/156636  25%
+[===============/                                          ]  41735/156636  26%
+[===============-                                          ]  42385/156636  27%
+[===============\                                          ]  43260/156636  27%
+[===============|                                          ]  43687/156636  27%
+[================/                                         ]  44594/156636  28%
+[================-                                         ]  45427/156636  29%
+[================\                                         ]  46259/156636  29%
+[=================|                                        ]  46798/156636  29%
+[=================/                                        ]  49221/156636  31%
+[==================-                                       ]  51077/156636  32%
+[===================\                                      ]  52978/156636  33%
+[====================|                                     ]  55821/156636  35%
+[=====================/                                    ]  58474/156636  37%
+[======================-                                   ]  62615/156636  39%
+[=======================\                                  ]  65056/156636  41%
+[========================|                                 ]  66295/156636  42%
+[========================/                                 ]  68406/156636  43%
+[=========================-                                ]  70783/156636  45%
+[==========================\                               ]  74153/156636  47%
+[===========================|                              ]  76257/156636  48%
+[===========================/                              ]  76654/156636  48%
+[============================-                             ]  78380/156636  50%
+[============================\                             ]  79323/156636  50%
+[=============================|                            ]  82315/156636  52%
+[================================/                         ]  88131/156636  56%
+[=================================-                        ]  92946/156636  59%
+[==================================\                       ]  95936/156636  61%
+[====================================|                     ]  99183/156636  63%
+[=====================================/                    ] 103220/156636  65%
+[======================================-                   ] 106829/156636  68%
+[========================================\                 ] 110568/156636  70%
+[=========================================|                ] 115134/156636  73%
+[===========================================/              ] 119956/156636  76%
+[=============================================-            ] 124345/156636  79%
+[=============================================\            ] 126247/156636  80%
+[==============================================|           ] 128586/156636  82%
+[===============================================/          ] 131778/156636  84%
+[=================================================-        ] 136358/156636  87%
+[===================================================\      ] 141258/156636  90%
+[====================================================|     ] 143924/156636  91%
+[=====================================================/    ] 148081/156636  94%
+[=======================================================-  ] 152181/156636  97%
+[========================================================\ ] 154434/156636  98%
+[=========================================================|] 156636/156636 100%
+
+created 71744 files
+created 8801 directories
+created 8125 symlinks
+created 0 devices
+created 0 fifos
+created 4 sockets
+created 1920 hardlinks
+==> Starting build: '6.18.41-1-lts'
+  -> Running build hook: [base]
+  -> Running build hook: [systemd]
+  -> Running build hook: [modconf]
+  -> Running build hook: [block]
+==> WARNING: Possibly missing firmware for module: 'aic94xx'
+==> WARNING: Possibly missing firmware for module: 'wd719x'
+==> WARNING: Possibly missing firmware for module: 'xhci_pci_renesas'
+  -> Running build hook: [filesystems]
+==> Generating module dependencies
+==> Creating zstd-compressed initcpio image: '/boot/initramfs-linux.img'
+  -> Early uncompressed CPIO image generation successful
+==> Initcpio image generation successful
+Create readonly snapshot of '/mnt/top/@' in '/mnt/top/snapshot'
+
+SR_STAGE_OK=setup
+
+SR_RUN_EXIT=0
+sync; systemctl poweroff
+3008;end=5d5db020-bd97-4ab8-a9a9-d092ac3171cd;exit=success3008;start=60a1de83-b4e6-4960-969d-296610d057fe;machineid=11111111111141118111111111111111;user=root;hostname=sysrescue;bootid=53d274d8-3cff-40a4-aba0-4409c0950761;pid=00000000000000000617;type=shell;cwd=/root[root@sysrescue ~]# sync; systemctl poweroff
+
+3008;start=d346666f-8c0d-412f-9d44-d844973eff2c;machineid=11111111111141118111111111111111;user=root;hostname=sysrescue;bootid=53d274d8-3cff-40a4-aba0-4409c0950761;pid=00000000000000000617;type=command;cwd=/root3008;end=d346666f-8c0d-412f-9d44-d844973eff2c;exit=success3008;start=60a1de83-b4e6-4960-969d-296610d057fe;machineid=11111111111141118111111111111111;user=root;hostname=sysrescue;bootid=53d274d8-3cff-40a4-aba0-4409c0950761;pid=00000000000000000617;type=shell;cwd=/root[root@sysrescue ~]#          Stopping Session 1 of User root...
+
+         Stopping Session 2 of User root...
+
+         Stopping Session 3 of User root...
+
+[  OK  ] Removed slice Slice /system/modprobe.
+
+
+
+
+[  OK  ] Stopped target Multi-User System.
+
+[  OK  ] Stopped target Login Prompts.
+
+[  OK  ] Stopped target SSH Access Available.
+
+[  OK  ] Stopped target Timer Units.
+
+3008;end=6ebd67d1347d4be8b72a60f3b952dd85[  OK  ] Stopped Update the plocate database daily.
+
+[  OK  ] Stopped Daily Cleanup of Temporary Directories.
+
+[  OK  ] Closed LVM2 poll daemon socket.
+
+[  OK  ] Closed Load/Save RF Kill Switch Status /dev/rfkill Watch.
+
+         Stopping SystemRescue autoterminal tty2...
+
+         Stopping Getty on tty1...
+
+         Starting Generate shutdown-ramfs...
+
+         Stopping Authorization Manager...
+
+         Stopping Serial Getty on ttyS0...
+
+         Stopping OpenSSH Daemon...
+
+         Stopping Load/Save OS Random Seed...
+
+[  OK  ] Stopped Load udev Rules from Credentials.
+
+         Stopping Daemon for power management...
+
+[  OK  ] Stopped SystemRescue autoterminal tty2.
+
+[  OK  ] Stopped Session 1 of User root.
+
+[  OK  ] Stopped OpenSSH Daemon.
+
+vmmouse: unknown command 5586000000f5
+[  OK  ] Stopped Daemon for power management.
+
+[  OK  ] Stopped Authorization Manager.
+
+[  OK  ] Stopped Getty on tty1.
+
+[  OK  ] Stopped Serial Getty on ttyS0.
+
+104783008;end=f721c4564ee74cf9809f7[  OK  ] Stopped Load/Save OS Random Seed.
+
+[  OK  ] Stopped Session 3 of User root.
+
+[  OK  ] Removed slice Slice /system/getty.
+
+[  OK  ] Removed slice Slice /system/serial-getty.
+
+[  OK  ] Stopped target Preparation for Logins.
+
+[  OK  ] Stopped SystemRescue Autorun.
+
+[  OK  ] Stopped target Network is Online.
+
+[  OK  ] Stopped Network Manager Wait Online.
+
+[  OK  ] Stopped SystemRescue Initialization, parallel to networking.
+
+         Stopping Permit User Sessions...
+
+[  OK  ] Stopped Permit User Sessions.
+
+[  OK  ] Stopped target Network.
+
+[  OK  ] Stopped target Remote File Systems.
+
+         Stopping Network Manager...
+
+[  OK  ] Stopped Load JSON user/group Records from Credentials.
+
+[  OK  ] Stopped Network Manager.
+
+[  OK  ] Stopped target Preparation for Network.
+
+         Stopping IPv6 Packet Filtering Framework...
+
+[  OK  ] Stopped Session 2 of User root.
+
+         Stopping User Manager for UID 0...
+
+[  OK  ] Stopped User Manager for UID 0.
+
+[  OK  ] Stopped IPv6 Packet Filtering Framework.
+
+         Stopping IPv4 Packet Filtering Framework...
+
+         Stopping User Runtime Directory /run/user/0...
+
+[  OK  ] Unmounted /run/user/0.
+
+[  OK  ] Stopped User Runtime Directory /run/user/0.
+
+[  OK  ] Removed slice User Slice of UID 0.
+
+         Stopping User Login Management...
+
+[  OK  ] Stopped IPv4 Packet Filtering Framework.
+
+[  OK  ] Stopped SystemRescue Initialization, before networking.
+
+[  OK  ] Stopped User Login Management.
+
+[  OK  ] Stopped target Basic System.
+
+[  OK  ] Stopped target Path Units.
+
+[  OK  ] Stopped target Slice Units.
+
+[  OK  ] Removed slice User and Session Slice.
+
+[  OK  ] Stopped target Socket Units.
+
+[  OK  ] Closed GnuPG network certificate m…ent daemon for /etc/pacman.d/gnupg.
+
+[  OK  ] Removed slice Slice /system/dirmngr.
+
+[  OK  ] Closed GnuPG cryptographic agent a… browsers) for /etc/pacman.d/gnupg.
+
+[  OK  ] Removed slice Slice /system/gpg-agent-browser.
+
+[  OK  ] Closed GnuPG cryptographic agent a…estricted) for /etc/pacman.d/gnupg.
+
+[  OK  ] Removed slice Slice /system/gpg-agent-extra.
+
+[  OK  ] Closed GnuPG cryptographic agent (…emulation) for /etc/pacman.d/gnupg.
+
+[  OK  ] Removed slice Slice /system/gpg-agent-ssh.
+
+[  OK  ] Closed GnuPG cryptographic agent a…rase cache for /etc/pacman.d/gnupg.
+
+[  OK  ] Removed slice Slice /system/gpg-agent.
+
+[  OK  ] Closed GnuPG public key management service for /etc/pacman.d/gnupg.
+
+[  OK  ] Removed slice Slice /system/keyboxd.
+
+[  OK  ] Closed Authorization Manager Agent Helper.
+
+[  OK  ] Closed OpenSSH Server Socket (systemd-ssh-generator, AF_UNIX Local).
+
+[  OK  ] Closed Hostname Service Socket.
+
+[  OK  ] Closed Disk Image Download Service Socket.
+
+[  OK  ] Closed User Login Management Varlink Socket.
+
+[  OK  ] Closed Virtual Machine and Container Registration Service Socket.
+
+[  OK  ] Closed Console Output Muting Service Socket.
+
+[  OK  ] Closed Disk Repartitioning Service Socket.
+
+         Stopping D-Bus System Message Bus...
+
+[  OK  ] Stopped D-Bus System Message Bus.
+
+[  OK  ] Closed D-Bus System Message Bus Socket.
+
+[  OK  ] Stopped target System Initialization.
+
+[  OK  ] Unset automount Arbitrary Executab…ormats File System Automount Point.
+
+[  OK  ] Stopped target Local Encrypted Volumes.
+
+[  OK  ] Stopped Dispatch Password Requests to Console Directory Watch.
+
+[  OK  ] Stopped Forward Password Requests to Wall Directory Watch.
+
+[  OK  ] Stopped target Image Downloads.
+
+[  OK  ] Stopped target Local Integrity Protected Volumes.
+
+[  OK  ] Stopped target Local Verity Protected Volumes.
+
+[  OK  ] Stopped Apply Kernel Variables.
+
+[  OK  ] Closed Process Core Dump Socket.
+
+[  OK  ] Stopped Load Kernel Modules.
+
+[  OK  ] Stopped Update is Completed.
+
+[  OK  ] Stopped Rebuild Journal Catalog.
+
+         Stopping Record System Boot/Shutdown in UTMP...
+
+[  OK  ] Stopped Record System Boot/Shutdown in UTMP.
+
+[  OK  ] Stopped Create System Files and Directories.
+
+[  OK  ] Stopped target Local File Systems.
+
+         Unmounting /mnt/project...
+
+         Unmounting /run/archiso/bootmnt...
+
+         Unmounting /run/archiso/cowspace...
+
+         Unmounting /run/archiso/sfs/airootfs...
+
+         Unmounting /run/archiso/sfs/srm1...
+
+         Unmounting /run/archiso/sfs/srm2...
+
+         Unmounting Temporary Directory /tmp...
+
+         Unmounting Bind mount /var/lib/pac…g between snapshot/rolling repos...
+
+[FAILED] Failed unmounting /run/archiso/bootmnt.
+
+[  OK  ] Unmounted /run/archiso/cowspace.
+
+[  OK  ] Unmounted /run/archiso/sfs/srm1.
+
+[  OK  ] Finished Generate shutdown-ramfs.
+
+[  OK  ] Unmounted /run/archiso/sfs/airootfs.
+
+[  OK  ] Unmounted Bind mount /var/lib/pacm…ing between snapshot/rolling repos.
+
+[  OK  ] Unmounted /run/archiso/sfs/srm2.
+
+[  OK  ] Unmounted Temporary Directory /tmp.
+
+[  OK  ] Stopped target Swaps.
+
+[  OK  ] Unmounted /mnt/project.
+
+[  OK  ] Stopped target Preparation for Local File Systems.
+
+[  OK  ] Reached target Unmount All Filesystems.
+
+         Stopping Monitoring of LVM2 mirror…ing dmeventd or progress polling...
+
+[  OK  ] Stopped Create Static Device Nodes in /dev.
+
+[  OK  ] Stopped Create System Users.
+
+[  OK  ] Stopped Remount Root and Kernel File Systems.
+
+[  OK  ] Stopped Create Static Device Nodes in /dev gracefully.
+
+[  OK  ] Stopped Monitoring of LVM2 mirrors…using dmeventd or progress polling.
+
+[  OK  ] Reached target System Shutdown.
+
+[  OK  ] Reached target Late Shutdown Services.
+
+[  OK  ] Finished System Power Off.
+
+[  OK  ] Reached target System Power Off.
+
+3008;end=9d5858745083469885112ca5ca49485e78104[  119.230143] reboot: Power down
+
+=== source-boot — complete serial log, terminal escapes removed ===
+BdsDxe: loading Boot0002 "UEFI Misc Device" from PciRoot(0x0)/Pci(0x2,0x0)
+BdsDxe: starting Boot0002 "UEFI Misc Device" from PciRoot(0x0)/Pci(0x2,0x0)
++q6E616D6578104Booting initrd of SystemRescue 13.02.
+
+3008;start=4fc179b92b404a27a7ac6a9332313fdd;user=root;hostname=archlinux;machineid=11111111111141118111111111111111;bootid=839c7c577efc4b1992ac45e527cf9465;pid=1;pidfdid=2;comm=systemd;type=boot         Expecting device /dev/disk/by-uuid…1164-2a56-4764-997f-2d836ac4b67a...
+
+[  OK  ] Reached target Path Units.
+
+[  OK  ] Reached target Slice Units.
+
+[  OK  ] Reached target Swaps.
+
+[  OK  ] Reached target Timer Units.
+
+[  OK  ] Listening on Journal Socket (/dev/log).
+
+[  OK  ] Listening on Journal Sockets.
+
+[  OK  ] Listening on udev Control Socket.
+
+[  OK  ] Listening on udev Kernel Socket.
+
+[  OK  ] Reached target Socket Units.
+
+         Starting Create List of Static Device Nodes...
+
+         Starting Journal Service...
+
+         Starting Load Kernel Modules...
+
+         Starting Create Static Device Nodes in /dev...
+
+         Starting Coldplug All udev Devices...
+
+[  OK  ] Finished Create List of Static Device Nodes.
+
+[  OK  ] Finished Load Kernel Modules.
+
+[  OK  ] Finished Create Static Device Nodes in /dev.
+
+[  OK  ] Reached target Preparation for Local File Systems.
+
+[  OK  ] Reached target Local File Systems.
+
+         Starting Rule-based Manager for Device Events and Files...
+
+[  OK  ] Started Journal Service.
+
+         Starting Create System Files and Directories...
+
+[  OK  ] Started Rule-based Manager for Device Events and Files.
+
+[  OK  ] Finished Create System Files and Directories.
+
+[  OK  ] Finished Coldplug All udev Devices.
+
+[  OK  ] Reached target System Initialization.
+
+[  OK  ] Reached target Basic System.
+
+[  OK  ] Found device /dev/disk/by-uuid/82a91164-2a56-4764-997f-2d836ac4b67a.
+
+[  OK  ] Reached target Initrd Root Device.
+
+         Mounting /sysroot...
+
+[  OK  ] Mounted /sysroot.
+
+[  OK  ] Reached target Initrd Root File System.
+
+         Starting Mountpoints Configured in the Real Root...
+
+[  OK  ] Finished Mountpoints Configured in the Real Root.
+
+[  OK  ] Reached target Initrd File Systems.
+
+[  OK  ] Reached target Initrd Default Target.
+
+         Starting Cleaning Up and Shutting Down Daemons...
+
+[  OK  ] Stopped target Initrd Default Target.
+
+[  OK  ] Stopped target Basic System.
+
+[  OK  ] Stopped target Initrd Root Device.
+
+[  OK  ] Stopped target Path Units.
+
+[  OK  ] Stopped target Slice Units.
+
+[  OK  ] Stopped target Socket Units.
+
+[  OK  ] Stopped target System Initialization.
+
+[  OK  ] Stopped target Swaps.
+
+[  OK  ] Stopped target Timer Units.
+
+[  OK  ] Stopped Create List of Static Device Nodes.
+
+[  OK  ] Stopped Load Kernel Modules.
+
+[  OK  ] Stopped Create System Files and Directories.
+
+[  OK  ] Stopped target Local File Systems.
+
+[  OK  ] Stopped target Preparation for Local File Systems.
+
+[  OK  ] Stopped Coldplug All udev Devices.
+
+         Stopping Rule-based Manager for Device Events and Files...
+
+[  OK  ] Finished Cleaning Up and Shutting Down Daemons.
+
+[  OK  ] Stopped Rule-based Manager for Device Events and Files.
+
+[  OK  ] Closed udev Control Socket.
+
+         Starting Cleanup udev Database...
+
+[  OK  ] Stopped Create Static Device Nodes in /dev.
+
+[  OK  ] Finished Cleanup udev Database.
+
+[  OK  ] Reached target Switch Root.
+
+         Starting Switch Root...
+
++q6E616D6578104
+Welcome to SystemRescue 13.02!
+
+
+3008;start=adb57e48de464fc3b408e33744e9c1be;user=root;hostname=sr-rehearsal;machineid=11111111111141118111111111111111;bootid=839c7c577efc4b1992ac45e527cf9465;pid=1;pidfdid=2;comm=systemd;type=boot[  OK  ] Stopped Switch Root.
+
+[  OK  ] Created slice Slice /system/dirmngr.
+
+[  OK  ] Created slice Slice /system/getty.
+
+[  OK  ] Created slice Slice /system/gpg-agent.
+
+[  OK  ] Created slice Slice /system/gpg-agent-browser.
+
+[  OK  ] Created slice Slice /system/gpg-agent-extra.
+
+[  OK  ] Created slice Slice /system/gpg-agent-ssh.
+
+[  OK  ] Created slice Slice /system/keyboxd.
+
+[  OK  ] Created slice Slice /system/modprobe.
+
+[  OK  ] Created slice Slice /system/serial-getty.
+
+[  OK  ] Created slice Slice /system/systemd-fsck.
+
+[  OK  ] Created slice User and Session Slice.
+
+[  OK  ] Started Dispatch Password Requests to Console Directory Watch.
+
+[  OK  ] Started Forward Password Requests to Wall Directory Watch.
+
+[  OK  ] Set up automount Arbitrary Executa…ormats File System Automount Point.
+
+         Expecting device /dev/disk/by-uuid…1164-2a56-4764-997f-2d836ac4b67a...
+
+         Expecting device /dev/disk/by-uuid/BB2F-2962...
+
+         Expecting device /dev/ttyS0...
+
+[  OK  ] Reached target Image Downloads.
+
+[  OK  ] Stopped target Switch Root.
+
+[  OK  ] Stopped target Initrd File Systems.
+
+[  OK  ] Stopped target Initrd Root File System.
+
+[  OK  ] Reached target Local Integrity Protected Volumes.
+
+[  OK  ] Reached target Path Units.
+
+[  OK  ] Reached target Remote File Systems.
+
+[  OK  ] Reached target Slice Units.
+
+[  OK  ] Reached target Swaps.
+
+[  OK  ] Reached target Local Verity Protected Volumes.
+
+[  OK  ] Listening on Device-mapper event daemon FIFOs.
+
+[  OK  ] Listening on LVM2 poll daemon socket.
+
+[  OK  ] Listening on Query the User Interactively for a Password.
+
+[  OK  ] Listening on Process Core Dump Socket.
+
+[  OK  ] Listening on Credential Encryption/Decryption.
+
+[  OK  ] Listening on Factory Reset Management.
+
+[  OK  ] Listening on Hostname Service Socket.
+
+[  OK  ] Listening on Console Output Muting Service Socket.
+
+[  OK  ] Listening on Disk Repartitioning Service Socket.
+
+[  OK  ] Listening on Simple Block Device Backed Storage Provider.
+
+[  OK  ] Listening on Simple File System Backed Storage Provider.
+
+[  OK  ] Listening on udev Control Socket.
+
+[  OK  ] Listening on udev Varlink Socket.
+
+[  OK  ] Listening on User Database Manager Socket.
+
+         Mounting Huge Pages File System...
+
+         Mounting POSIX Message Queue File System...
+
+         Mounting Kernel Debug File System...
+
+         Mounting Kernel Trace File System...
+
+         Mounting Temporary Directory /tmp...
+
+         Starting Create List of Static Device Nodes...
+
+         Starting Monitoring of LVM2 mirror…ing dmeventd or progress polling...
+
+         Mounting Kernel Configuration File System...
+
+         Mounting FUSE Control File System...
+
+         Starting Journal Service...
+
+         Starting Load Kernel Modules...
+
+         Starting Remount Root and Kernel File Systems...
+
+[  OK  ] Reached target Local Encrypted Volumes.
+
+         Starting Load udev Rules from Credentials...
+
+         Starting Coldplug All udev Devices...
+
+[  OK  ] Mounted Huge Pages File System.
+
+[  OK  ] Mounted POSIX Message Queue File System.
+
+[  OK  ] Mounted Kernel Debug File System.
+
+[  OK  ] Mounted Kernel Trace File System.
+
+[  OK  ] Mounted Temporary Directory /tmp.
+
+[  OK  ] Finished Create List of Static Device Nodes.
+
+[  OK  ] Mounted Kernel Configuration File System.
+
+[  OK  ] Mounted FUSE Control File System.
+
+[  OK  ] Finished Load Kernel Modules.
+
+         Starting Apply Kernel Variables...
+
+         Starting Create Static Device Nodes in /dev gracefully...
+
+[  OK  ] Finished Load udev Rules from Credentials.
+
+[  OK  ] Started Journal Service.
+
+         Starting User Database Manager...
+
+[  OK  ] Finished Apply Kernel Variables.
+
+[  OK  ] Finished Remount Root and Kernel File Systems.
+
+         Starting Flush Journal to Persistent Storage...
+
+         Starting Load/Save OS Random Seed...
+
+[  OK  ] Finished Flush Journal to Persistent Storage.
+
+[  OK  ] Finished Coldplug All udev Devices.
+
+[  OK  ] Finished Load/Save OS Random Seed.
+
+         Mounting Arbitrary Executable File Formats File System...
+
+[  OK  ] Finished Monitoring of LVM2 mirror…using dmeventd or progress polling.
+
+[  OK  ] Mounted Arbitrary Executable File Formats File System.
+
+[  OK  ] Started User Database Manager.
+
+[  OK  ] Finished Create Static Device Nodes in /dev gracefully.
+
+         Starting Create System Users...
+
+[  OK  ] Finished Create System Users.
+
+         Starting Journal Log Access Socket...
+
+         Starting Create Static Device Nodes in /dev...
+
+[  OK  ] Listening on Journal Log Access Socket.
+
+[  OK  ] Finished Create Static Device Nodes in /dev.
+
+[  OK  ] Reached target Preparation for Local File Systems.
+
+         Starting Rule-based Manager for Device Events and Files...
+
+[  OK  ] Started Rule-based Manager for Device Events and Files.
+
+[  OK  ] Listening on Disk Image Download Service Socket.
+
+[  OK  ] Found device /dev/disk/by-uuid/82a91164-2a56-4764-997f-2d836ac4b67a.
+
+         Mounting /home...
+
+         Starting File System Check on /dev/disk/by-uuid/BB2F-2962...
+
+[  OK  ] Mounted /home.
+
+[  OK  ] Finished File System Check on /dev/disk/by-uuid/BB2F-2962.
+
+         Mounting /boot...
+
+[  OK  ] Mounted /boot.
+
+[  OK  ] Reached target Local File Systems.
+
+[  OK  ] Listening on Boot Loader Control Service Socket.
+
+[  OK  ] Listening on System Extension Image Management.
+
+         Starting Update Boot Loader Random Seed...
+
+         Starting Create System Files and Directories...
+
+         Starting Load JSON user/group Records from Credentials...
+
+[  OK  ] Finished Load JSON user/group Records from Credentials.
+
+[  OK  ] Finished Update Boot Loader Random Seed.
+
+[  OK  ] Finished Create System Files and Directories.
+
+         Starting Rebuild Journal Catalog...
+
+         Starting Record System Boot/Shutdown in UTMP...
+
+         Starting Virtual Console Setup...
+
+[  OK  ] Finished Record System Boot/Shutdown in UTMP.
+
+[  OK  ] Finished Rebuild Journal Catalog.
+
+         Starting Update is Completed...
+
+[  OK  ] Finished Update is Completed.
+
+[  OK  ] Finished Virtual Console Setup.
+
+[  OK  ] Reached target System Initialization.
+
+[  OK  ] Started Update the plocate database daily.
+
+[  OK  ] Started Daily Cleanup of Temporary Directories.
+
+[  OK  ] Reached target Timer Units.
+
+[  OK  ] Listening on D-Bus System Message Bus Socket.
+
+[  OK  ] Listening on GnuPG network certifi…ent daemon for /etc/pacman.d/gnupg.
+
+[  OK  ] Listening on GnuPG cryptographic a… browsers) for /etc/pacman.d/gnupg.
+
+[  OK  ] Listening on GnuPG cryptographic a…estricted) for /etc/pacman.d/gnupg.
+
+[  OK  ] Listening on GnuPG cryptographic a…emulation) for /etc/pacman.d/gnupg.
+
+[  OK  ] Listening on GnuPG cryptographic a…rase cache for /etc/pacman.d/gnupg.
+
+[  OK  ] Listening on GnuPG public key mana…nt service for /etc/pacman.d/gnupg.
+
+[  OK  ] Listening on Authorization Manager Agent Helper.
+
+[  OK  ] Listening on OpenSSH Server Socket…temd-ssh-generator, AF_UNIX Local).
+
+[  OK  ] Listening on User Login Management Varlink Socket.
+
+[  OK  ] Listening on Virtual Machine and C…tainer Registration Service Socket.
+
+[  OK  ] Reached target Socket Units.
+
+         Starting D-Bus System Message Bus...
+
+[  OK  ] Started D-Bus System Message Bus.
+
+[  OK  ] Reached target Basic System.
+
+         Starting IPv4 Packet Filtering Framework...
+
+         Starting Verify installed recovery fixture...
+
+         Starting SSH Key Generation...
+
+         Starting User Login Management...
+
+[   12.090831] rehearsal-check[358]: etc/rehearsal/config: OK
+[   12.184409] rehearsal-check[358]: home/rehearsal/data.bin: OK
+[  OK  ] Started User Login Management.
+
+[   12.199187] rehearsal-check[358]: boot/EFI/BOOT/BOOTX64.EFI: OK
+[   12.353556] rehearsal-check[358]: boot/vmlinuz-linux: OK
+[  OK  ] Finished IPv4 Packet Filtering Framework.
+
+         Starting IPv6 Packet Filtering Framework...
+
+[  OK  ] Finished IPv6 Packet Filtering Framework.
+
+[  OK  ] Reached target Preparation for Network.
+
+         Starting Network Manager...
+
+[   12.765431] rehearsal-check[358]: boot/initramfs-linux.img: OK
+[   12.797556] rehearsal-check[378]: TARGET SOURCE        FSTYPE OPTIONS
+[   12.798278] rehearsal-check[378]: /      /dev/vda2[/@] btrfs  rw,relatime,discard=async,space_cache=v2,subvolid=256,subvol=/@
+[   12.804929] rehearsal-check[379]: TARGET SOURCE            FSTYPE OPTIONS
+[   12.805471] rehearsal-check[379]: /home  /dev/vda2[/@home] btrfs  rw,relatime,discard=async,space_cache=v2,subvolid=257,subvol=/@home
+         Starting Hostname Service...
+
+[   12.814035] rehearsal-check[380]: TARGET SOURCE    FSTYPE OPTIONS
+[   12.814549] rehearsal-check[380]: /boot  /dev/vda1 vfat   rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro
+[   12.835357] rehearsal-check[382]: NAME   SERIAL               FSTYPE UUID                                 MOUNTPOINTS
+[   12.836033] rehearsal-check[382]: sr0    QM00005
+[   12.836358] rehearsal-check[382]: vda    SR_REHEARSAL_SOURCE-
+[   12.836899] rehearsal-check[382]: ├─vda1                      vfat   BB2F-2962                            /boot
+[   12.837241] rehearsal-check[382]: └─vda2                      btrfs  82a91164-2a56-4764-997f-2d836ac4b67a /home
+[   12.837497] rehearsal-check[382]:                                                                         /
+[   12.838632] rehearsal-check[339]: SR_INSTALLED_BOOT_OK
+[  OK  ] Finished Verify installed recovery fixture.
+
+[  OK  ] Started Hostname Service.
+
+[  OK  ] Listening on Load/Save RF Kill Switch Status /dev/rfkill Watch.
+
+[  OK  ] Finished SSH Key Generation.
+
+         Starting Network Manager Script Dispatcher Service...
+
+[  OK  ] Started Network Manager.
+
+[  OK  ] Reached target Network.
+
+         Starting OpenSSH Daemon...
+
+         Starting Permit User Sessions...
+
+[  OK  ] Finished Permit User Sessions.
+
+[  OK  ] Started Network Manager Script Dispatcher Service.
+
+[  OK  ] Started Getty on tty1.
+
+[  OK  ] Started Serial Getty on ttyS0.
+
+[  OK  ] Reached target Login Prompts.
+
+[  OK  ] Started OpenSSH Daemon.
+
+[  OK  ] Reached target Multi-User System.
+
+[  OK  ] Reached target SSH Access Available.
+
+10478104783008;start=356f95906fb14c5d8116a7bc87124bf9;user=root;hostname=sr-rehearsal;machineid=11111111111141118111111111111111;bootid=839c7c577efc4b1992ac45e527cf9465;pid=395;pidfdid=396;comm=(agetty);servicename=serial-getty@ttyS0.service;invocationid=dce594abf5194ede822adec11931c5cb;type=service+q6E616D65
+
+ ========= SystemRescue 13.02 (x86_64) ======== ttyS0/6 =========
+                    https://www.system-rescue.org/
+
+* Console environment :
+   Run setkmap to choose the keyboard layout (also accessible with the arrow up key)
+   Run manual to read the documentation of SystemRescue
+
+* Graphical environment :
+   Type startx to run the graphical environment
+   X.Org comes with the XFCE environment and several graphical tools:
+   - Partition manager: .. gparted
+   - Web browser: ........ firefox
+   - Text editor: ........ featherpad
+
+sr-rehearsal login: root (automatic login)
+
+
+3008;start=942aace92a4848d683833d4cbddd79d5;user=root;hostname=sr-rehearsal;machineid=11111111111141118111111111111111;bootid=839c7c577efc4b1992ac45e527cf9465;pid=395;pidfdid=396;comm=login;targetuser=root;sessionid=3;type=session3008;start=9a2c2fd1-eb48-40cd-867e-443e5497c7cc;machineid=11111111111141118111111111111111;user=root;hostname=sr-rehearsal;bootid=839c7c57-7efc-4b19-92ac-45e527cf9465;pid=00000000000000000419;type=shell;cwd=/root[root@sr-rehearsal ~]# systemctl status rehearsal-check.service --no-pager; lsblk -o NAME,TYPE,SERIAL,FSTYPE,MOUNTPOINTS; findmnt /; findmnt /home; bash -x /usr/local/bin/rehearsal-check; result=$?; printf '\nSR_BOOT_CHECK_EXIT=%s\n' "$result"
+
+3008;start=8b072c72-9c8e-45db-a147-8e8eaaaa9e99;machineid=11111111111141118111111111111111;user=root;hostname=sr-rehearsal;bootid=839c7c57-7efc-4b19-92ac-45e527cf9465;pid=00000000000000000419;type=command;cwd=/root○ rehearsal-check.service - Verify installed recovery fixture
+     Loaded: loaded (8;;file://sr-rehearsal/etc/systemd/system/rehearsal-check.service/etc/systemd/system/rehearsal-check.service8;;; enabled; preset: disabled)
+     Active: inactive (dead) since Sat 2026-09-19 21:18:10 UTC; 2s ago
+ Invocation: d3e2a464e5fb40ce9a91a7460f4d48e9
+    Process: 339 ExecStart=/usr/local/bin/rehearsal-check (code=exited, status=0/SUCCESS)
+   Main PID: 339 (code=exited, status=0/SUCCESS)
+   Mem peak: 76.3M
+        CPU: 833ms
+
+Sep 19 21:18:10 sr-rehearsal rehearsal-check[382]: NAME   SERIAL            …NTS
+Sep 19 21:18:10 sr-rehearsal rehearsal-check[382]: sr0    QM00005
+Sep 19 21:18:10 sr-rehearsal rehearsal-check[382]: vda    SR_REHEARSAL_SOURCE-
+Sep 19 21:18:10 sr-rehearsal rehearsal-check[382]: ├─vda1                   …oot
+Sep 19 21:18:10 sr-rehearsal rehearsal-check[382]: └─vda2                   …ome
+Sep 19 21:18:10 sr-rehearsal rehearsal-check[382]:                          …  /
+Sep 19 21:18:10 sr-rehearsal rehearsal-check[339]: SR_INSTALLED_BOOT_OK
+Sep 19 21:18:10 sr-rehearsal systemd[1]: rehearsal-check.service: Deactivat…lly.
+Sep 19 21:18:10 sr-rehearsal systemd[1]: Finished Verify installed recovery…ure.
+Sep 19 21:18:10 sr-rehearsal systemd[1]: rehearsal-check.service: Consumed …eak.
+Hint: Some lines were ellipsized, use -l to show in full.
+NAME   TYPE SERIAL               FSTYPE MOUNTPOINTS
+sr0    rom  QM00005                     
+vda    disk SR_REHEARSAL_SOURCE-        
+├─vda1 part                      vfat   /boot
+└─vda2 part                      btrfs  /home
+                                        /
+TARGET SOURCE      FSTYPE OPTIONS
+/      /dev/vda2[/@]
+                   btrfs  rw,relatime,discard=async,space_cache=v2,subvolid=256,
+TARGET SOURCE        FSTYPE OPTIONS
+/home  /dev/vda2[/@home]
+                     btrfs  rw,relatime,discard=async,space_cache=v2,subvolid=25
++ set -euo pipefail
++ [[ -d /sys/firmware/efi ]]
+++ findmnt -n -o FSTYPE /
++ [[ btrfs == btrfs ]]
+++ findmnt -n -o FSROOT /
++ [[ /@ == /@ ]]
+++ findmnt -n -o FSROOT /home
++ [[ /@home == /@home ]]
+++ lsblk -dn -o TYPE /dev/vda
++ [[ disk == disk ]]
+++ lsblk -dn -o NAME,TYPE
+++ awk '$2 == "disk" {print $1}'
++ [[ vda == vda ]]
++ cd /
++ sha256sum -c /etc/rehearsal.sha256
+etc/rehearsal/config: OK
+home/rehearsal/data.bin: OK
+boot/EFI/BOOT/BOOTX64.EFI: OK
+boot/vmlinuz-linux: OK
+boot/initramfs-linux.img: OK
+++ stat -c %i /home/rehearsal/data.bin
+++ stat -c %i /home/rehearsal/hardlink.bin
++ [[ 258 == 258 ]]
+++ readlink /home/rehearsal/symlink.bin
++ [[ data.bin == data.bin ]]
++ findmnt /
+TARGET SOURCE      FSTYPE OPTIONS
+/      /dev/vda2[/@]
+                   btrfs  rw,relatime,discard=async,space_cache=v2,subvolid=256,
++ findmnt /home
+TARGET SOURCE        FSTYPE OPTIONS
+/home  /dev/vda2[/@home]
+                     btrfs  rw,relatime,discard=async,space_cache=v2,subvolid=25
++ findmnt /boot
+TARGET SOURCE FSTYPE OPTIONS
+/boot  /dev/vda1
+              vfat   rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=as
++ lsblk -o NAME,SERIAL,FSTYPE,UUID,MOUNTPOINTS
+NAME   SERIAL            FSTYPE UUID                                 MOUNTPOINTS
+sr0    QM00005                                                       
+vda    SR_REHEARSAL_SOUR                                             
+├─vda1                   vfat   BB2F-2962                            /boot
+└─vda2                   btrfs  82a91164-2a56-4764-997f-2d836ac4b67a /home
+                                                                     /
++ printf '\nSR_INSTALLED_BOOT_OK\n'
+
+SR_INSTALLED_BOOT_OK
+root
+sync; systemctl poweroff
+
+SR_BOOT_CHECK_EXIT=0
+3008;end=8b072c72-9c8e-45db-a147-8e8eaaaa9e99;exit=success3008;start=9a2c2fd1-eb48-40cd-867e-443e5497c7cc;machineid=11111111111141118111111111111111;user=root;hostname=sr-rehearsal;bootid=839c7c57-7efc-4b19-92ac-45e527cf9465;pid=00000000000000000419;type=shell;cwd=/root[root@sr-rehearsal ~]# root
+
+3008;start=c8426939-8398-41f4-b576-426cae381359;machineid=11111111111141118111111111111111;user=root;hostname=sr-rehearsal;bootid=839c7c57-7efc-4b19-92ac-45e527cf9465;pid=00000000000000000419;type=command;cwd=/root-bash: root: command not found
+3008;end=c8426939-8398-41f4-b576-426cae381359;exit=failure;status=1273008;start=9a2c2fd1-eb48-40cd-867e-443e5497c7cc;machineid=11111111111141118111111111111111;user=root;hostname=sr-rehearsal;bootid=839c7c57-7efc-4b19-92ac-45e527cf9465;pid=00000000000000000419;type=shell;cwd=/root[root@sr-rehearsal ~]# sync; systemctl poweroff
+
+3008;start=5aceb09d-df74-4407-8f6a-4897ca1b269f;machineid=11111111111141118111111111111111;user=root;hostname=sr-rehearsal;bootid=839c7c57-7efc-4b19-92ac-45e527cf9465;pid=00000000000000000419;type=command;cwd=/root3008;end=5aceb09d-df74-4407-8f6a-4897ca1b269f;exit=success3008;start=9a2c2fd1-eb48-40cd-867e-443e5497c7cc;machineid=11111111111141118111111111111111;user=root;hostname=sr-rehearsal;bootid=839c7c57-7efc-4b19-92ac-45e527cf9465;pid=00000000000000000419;type=shell;cwd=/root[root@sr-rehearsal ~]#          Stopping Session 1 of User root...
+
+
+
+
+         Stopping Session 3 of User root...
+
+[  OK  ] Removed slice Slice /system/modprobe.
+
+3008;end=942aace92a4848d683833d4cbddd79d5[  OK  ] Stopped target Multi-User System.
+
+[  OK  ] Stopped target Login Prompts.
+
+[  OK  ] Stopped target SSH Access Available.
+
+[  OK  ] Stopped target Timer Units.
+
+[  OK  ] Stopped Update the plocate database daily.
+
+[  OK  ] Stopped Daily Cleanup of Temporary Directories.
+
+[  OK  ] Closed LVM2 poll daemon socket.
+
+[  OK  ] Closed Load/Save RF Kill Switch Status /dev/rfkill Watch.
+
+         Stopping Network Manager Script Dispatcher Service...
+
+         Stopping Getty on tty1...
+
+         Starting Generate shutdown-ramfs...
+
+         Stopping Serial Getty on ttyS0...
+
+         Stopping OpenSSH Daemon...
+
+         Stopping Hostname Service...
+
+[  OK  ] Stopped Load udev Rules from Credentials.
+
+[  OK  ] Stopped Hostname Service.
+
+[  OK  ] Stopped Network Manager Script Dispatcher Service.
+
+[  OK  ] Stopped OpenSSH Daemon.
+
+[  OK  ] Stopped Getty on tty1.
+
+[  OK  ] Stopped Session 1 of User root.
+
+[  OK  ] Removed slice Slice /system/getty.
+
+[  OK  ] Stopped Serial Getty on ttyS0.
+
+104783008;end=356f95906fb14c5d8116a7bc87124bf9[  OK  ] Stopped Session 3 of User root.
+
+[  OK  ] Removed slice Slice /system/serial-getty.
+
+         Stopping Permit User Sessions...
+
+         Stopping User Manager for UID 0...
+
+[  OK  ] Stopped Permit User Sessions.
+
+[  OK  ] Stopped target Network.
+
+[  OK  ] Stopped target Remote File Systems.
+
+         Stopping Network Manager...
+
+[  OK  ] Stopped Load JSON user/group Records from Credentials.
+
+[  OK  ] Stopped User Manager for UID 0.
+
+[  OK  ] Stopped Network Manager.
+
+[  OK  ] Stopped target Preparation for Network.
+
+         Stopping IPv6 Packet Filtering Framework...
+
+         Stopping User Runtime Directory /run/user/0...
+
+[  OK  ] Finished Generate shutdown-ramfs.
+
+[  OK  ] Unmounted /run/user/0.
+
+[  OK  ] Stopped User Runtime Directory /run/user/0.
+
+[  OK  ] Removed slice User Slice of UID 0.
+
+         Stopping User Login Management...
+
+[  OK  ] Stopped IPv6 Packet Filtering Framework.
+
+         Stopping IPv4 Packet Filtering Framework...
+
+[  OK  ] Stopped User Login Management.
+
+[  OK  ] Stopped IPv4 Packet Filtering Framework.
+
+[  OK  ] Stopped target Basic System.
+
+[  OK  ] Stopped target Path Units.
+
+[  OK  ] Stopped target Slice Units.
+
+[  OK  ] Removed slice User and Session Slice.
+
+[  OK  ] Stopped target Socket Units.
+
+[  OK  ] Closed GnuPG network certificate m…ent daemon for /etc/pacman.d/gnupg.
+
+[  OK  ] Removed slice Slice /system/dirmngr.
+
+[  OK  ] Closed GnuPG cryptographic agent a… browsers) for /etc/pacman.d/gnupg.
+
+[  OK  ] Removed slice Slice /system/gpg-agent-browser.
+
+[  OK  ] Closed GnuPG cryptographic agent a…estricted) for /etc/pacman.d/gnupg.
+
+[  OK  ] Removed slice Slice /system/gpg-agent-extra.
+
+[  OK  ] Closed GnuPG cryptographic agent (…emulation) for /etc/pacman.d/gnupg.
+
+[  OK  ] Removed slice Slice /system/gpg-agent-ssh.
+
+[  OK  ] Closed GnuPG cryptographic agent a…rase cache for /etc/pacman.d/gnupg.
+
+[  OK  ] Removed slice Slice /system/gpg-agent.
+
+[  OK  ] Closed GnuPG public key management service for /etc/pacman.d/gnupg.
+
+[  OK  ] Removed slice Slice /system/keyboxd.
+
+[  OK  ] Closed Authorization Manager Agent Helper.
+
+[  OK  ] Closed OpenSSH Server Socket (systemd-ssh-generator, AF_UNIX Local).
+
+[  OK  ] Closed Hostname Service Socket.
+
+[  OK  ] Closed Disk Image Download Service Socket.
+
+[  OK  ] Closed User Login Management Varlink Socket.
+
+[  OK  ] Closed Virtual Machine and Container Registration Service Socket.
+
+[  OK  ] Closed Console Output Muting Service Socket.
+
+[  OK  ] Closed Disk Repartitioning Service Socket.
+
+         Stopping D-Bus System Message Bus...
+
+[  OK  ] Stopped D-Bus System Message Bus.
+
+[  OK  ] Closed D-Bus System Message Bus Socket.
+
+[  OK  ] Stopped target System Initialization.
+
+[  OK  ] Unset automount Arbitrary Executab…ormats File System Automount Point.
+
+[  OK  ] Stopped target Local Encrypted Volumes.
+
+[  OK  ] Stopped Dispatch Password Requests to Console Directory Watch.
+
+[  OK  ] Stopped Forward Password Requests to Wall Directory Watch.
+
+[  OK  ] Stopped target Image Downloads.
+
+[  OK  ] Stopped target Local Integrity Protected Volumes.
+
+[  OK  ] Stopped target Local Verity Protected Volumes.
+
+[  OK  ] Stopped Update Boot Loader Random Seed.
+
+         Stopping Load/Save OS Random Seed...
+
+[  OK  ] Stopped Apply Kernel Variables.
+
+[  OK  ] Closed Process Core Dump Socket.
+
+[  OK  ] Stopped Load Kernel Modules.
+
+[  OK  ] Stopped Update is Completed.
+
+[  OK  ] Stopped Rebuild Journal Catalog.
+
+         Stopping Record System Boot/Shutdown in UTMP...
+
+[  OK  ] Stopped Record System Boot/Shutdown in UTMP.
+
+[  OK  ] Stopped Create System Files and Directories.
+
+[  OK  ] Stopped target Local File Systems.
+
+         Unmounting /boot...
+
+         Unmounting /home...
+
+         Unmounting Temporary Directory /tmp...
+
+[  OK  ] Stopped Load/Save OS Random Seed.
+
+[  OK  ] Unmounted /home.
+
+[  OK  ] Unmounted /boot.
+
+[  OK  ] Unmounted Temporary Directory /tmp.
+
+[  OK  ] Stopped target Swaps.
+
+[  OK  ] Reached target Unmount All Filesystems.
+
+[  OK  ] Stopped File System Check on /dev/disk/by-uuid/BB2F-2962.
+
+[  OK  ] Removed slice Slice /system/systemd-fsck.
+
+[  OK  ] Stopped target Preparation for Local File Systems.
+
+         Stopping Monitoring of LVM2 mirror…ing dmeventd or progress polling...
+
+[  OK  ] Stopped Create Static Device Nodes in /dev.
+
+[  OK  ] Stopped Create System Users.
+
+[  OK  ] Stopped Remount Root and Kernel File Systems.
+
+[  OK  ] Stopped Create Static Device Nodes in /dev gracefully.
+
+[  OK  ] Stopped Monitoring of LVM2 mirrors…using dmeventd or progress polling.
+
+[  OK  ] Reached target System Shutdown.
+
+[  OK  ] Reached target Late Shutdown Services.
+
+[  OK  ] Finished System Power Off.
+
+[  OK  ] Reached target System Power Off.
+
+3008;end=adb57e48de464fc3b408e33744e9c1be78104[   18.644549] reboot: Power down
+
+=== capture — complete serial log, terminal escapes removed ===
+:: running early hook [udev]
+Starting systemd-udevd version 261.2-1-arch
+
+:: running early hook [archiso_pxe_nbd]
+:: running hook [udev]
+:: Triggering uevents...
+:: running hook [memdisk]
+:: running hook [findroot]
+:: running hook [archiso]
+:: running hook [archiso_loop_mnt]
+:: running hook [archiso_pxe_common]
+:: running hook [archiso_pxe_nbd]
+:: running hook [archiso_pxe_http]
+:: running hook [archiso_pxe_nfs]
+:: running hook [encrypt]
+:: Mounting '/dev/disk/by-label/RESCUE1302' to '/run/archiso/bootmnt'
+:: Device '/dev/disk/by-label/RESCUE1302' mounted successfully.
+:: Creating config dir ...
+:: Execute the configuration processing script ...
+:: Define early boot options based on the configuration ...
+Entry '.global.copytoram' disabled in config: value='false'
+Entry '.global.checksum' disabled in config: value='false'
+Entry '.global.loadsrm' enabled in config: value='true'
+:: Mounting /run/archiso/cowspace (tmpfs) filesystem, size=25%...
+:: Mounting '/dev/loop0' to '/run/archiso/sfs/airootfs'
+:: Device '/dev/loop0' mounted successfully.
+:: Mounting '/dev/loop1' to '/run/archiso/sfs/srm1'
+:: Device '/dev/loop1' mounted successfully.
+:: Mounting '/dev/loop2' to '/run/archiso/sfs/srm2'
+:: Device '/dev/loop2' mounted successfully.
+:: running late hook [archiso_pxe_common]
+:: running cleanup hook [udev]
++q6E616D6578104
+Welcome to SystemRescue 13.02!
+
+
+3008;start=ee5ba92c4583452c912d0b29eb8c3dee;user=root;hostname=sysrescue;machineid=11111111111141118111111111111111;bootid=431e5c875b834c758065982427731cf5;pid=1;pidfdid=2;comm=systemd;type=boot[  OK  ] Created slice Slice /system/dirmngr.
+
+[  OK  ] Created slice Slice /system/getty.
+
+[  OK  ] Created slice Slice /system/gpg-agent.
+
+[  OK  ] Created slice Slice /system/gpg-agent-browser.
+
+[  OK  ] Created slice Slice /system/gpg-agent-extra.
+
+[  OK  ] Created slice Slice /system/gpg-agent-ssh.
+
+[  OK  ] Created slice Slice /system/keyboxd.
+
+[  OK  ] Created slice Slice /system/modprobe.
+
+[  OK  ] Created slice Slice /system/serial-getty.
+
+[  OK  ] Created slice User and Session Slice.
+
+[  OK  ] Started Dispatch Password Requests to Console Directory Watch.
+
+[  OK  ] Started Forward Password Requests to Wall Directory Watch.
+
+[  OK  ] Set up automount Arbitrary Executa…ormats File System Automount Point.
+
+         Expecting device /dev/ttyS0...
+
+[  OK  ] Reached target Image Downloads.
+
+[  OK  ] Reached target Local Integrity Protected Volumes.
+
+[  OK  ] Reached target Path Units.
+
+[  OK  ] Reached target Remote File Systems.
+
+[  OK  ] Reached target Slice Units.
+
+[  OK  ] Reached target Swaps.
+
+[  OK  ] Reached target Local Verity Protected Volumes.
+
+[  OK  ] Listening on Device-mapper event daemon FIFOs.
+
+[  OK  ] Listening on LVM2 poll daemon socket.
+
+[  OK  ] Listening on Query the User Interactively for a Password.
+
+[  OK  ] Listening on Process Core Dump Socket.
+
+[  OK  ] Listening on Credential Encryption/Decryption.
+
+[  OK  ] Listening on Factory Reset Management.
+
+[  OK  ] Listening on Hostname Service Socket.
+
+[  OK  ] Listening on Journal Socket (/dev/log).
+
+[  OK  ] Listening on Journal Sockets.
+
+[  OK  ] Listening on Console Output Muting Service Socket.
+
+[  OK  ] Listening on Disk Repartitioning Service Socket.
+
+[  OK  ] Listening on Simple Block Device Backed Storage Provider.
+
+[  OK  ] Listening on Simple File System Backed Storage Provider.
+
+[  OK  ] Listening on udev Control Socket.
+
+[  OK  ] Listening on udev Kernel Socket.
+
+[  OK  ] Listening on udev Varlink Socket.
+
+[  OK  ] Listening on User Database Manager Socket.
+
+         Mounting Huge Pages File System...
+
+         Mounting POSIX Message Queue File System...
+
+         Mounting Kernel Debug File System...
+
+         Mounting Kernel Trace File System...
+
+         Mounting Temporary Directory /tmp...
+
+         Starting Create List of Static Device Nodes...
+
+         Starting Monitoring of LVM2 mirror…ing dmeventd or progress polling...
+
+         Mounting Kernel Configuration File System...
+
+         Mounting FUSE Control File System...
+
+         Starting Journal Service...
+
+         Starting Load Kernel Modules...
+
+         Starting Remount Root and Kernel File Systems...
+
+[  OK  ] Reached target Local Encrypted Volumes.
+
+         Starting Load udev Rules from Credentials...
+
+         Starting Coldplug All udev Devices...
+
+[  OK  ] Finished Create List of Static Device Nodes.
+
+[  OK  ] Mounted Huge Pages File System.
+
+[  OK  ] Mounted POSIX Message Queue File System.
+
+[  OK  ] Mounted Kernel Debug File System.
+
+[  OK  ] Mounted Kernel Trace File System.
+
+[  OK  ] Mounted Temporary Directory /tmp.
+
+[  OK  ] Mounted Kernel Configuration File System.
+
+[  OK  ] Mounted FUSE Control File System.
+
+[  OK  ] Finished Remount Root and Kernel File Systems.
+
+[  OK  ] Finished Load udev Rules from Credentials.
+
+         Starting Load/Save OS Random Seed...
+
+         Starting Create Static Device Nodes in /dev gracefully...
+
+[  OK  ] Started Journal Service.
+
+         Starting Flush Journal to Persistent Storage...
+
+[  OK  ] Finished Load/Save OS Random Seed.
+
+[  OK  ] Finished Monitoring of LVM2 mirror…using dmeventd or progress polling.
+
+[  OK  ] Finished Flush Journal to Persistent Storage.
+
+         Starting User Database Manager...
+
+         Mounting Arbitrary Executable File Formats File System...
+
+[  OK  ] Finished Coldplug All udev Devices.
+
+[  OK  ] Mounted Arbitrary Executable File Formats File System.
+
+[  OK  ] Started User Database Manager.
+
+[  OK  ] Finished Create Static Device Nodes in /dev gracefully.
+
+         Starting Create System Users...
+
+[  OK  ] Finished Create System Users.
+
+         Starting Journal Log Access Socket...
+
+         Starting Create Static Device Nodes in /dev...
+
+[  OK  ] Listening on Journal Log Access Socket.
+
+[  OK  ] Finished Create Static Device Nodes in /dev.
+
+[  OK  ] Reached target Preparation for Local File Systems.
+
+[  OK  ] Listening on Disk Image Download Service Socket.
+
+         Mounting Bind mount /var/lib/pacma…g between snapshot/rolling repos...
+
+         Starting Rule-based Manager for Device Events and Files...
+
+[  OK  ] Mounted Bind mount /var/lib/pacman…ing between snapshot/rolling repos.
+
+[  OK  ] Reached target Local File Systems.
+
+[  OK  ] Listening on Boot Loader Control Service Socket.
+
+[  OK  ] Listening on System Extension Image Management.
+
+         Starting Create System Files and Directories...
+
+         Starting Load JSON user/group Records from Credentials...
+
+[  OK  ] Finished Load JSON user/group Records from Credentials.
+
+[  OK  ] Started Rule-based Manager for Device Events and Files.
+
+[  OK  ] Finished Create System Files and Directories.
+
+         Starting Rebuild Journal Catalog...
+
+         Starting Record System Boot/Shutdown in UTMP...
+
+[  OK  ] Finished Record System Boot/Shutdown in UTMP.
+
+[  OK  ] Finished Rebuild Journal Catalog.
+
+         Starting Update is Completed...
+
+[   23.212136] NVRM: No NVIDIA GPU found.
+[  OK  ] Finished Update is Completed.
+
+[  OK  ] Found device /dev/ttyS0.
+
+[  OK  ] Finished Load Kernel Modules.
+
+         Starting Apply Kernel Variables...
+
+[  OK  ] Finished Apply Kernel Variables.
+
+[  OK  ] Reached target System Initialization.
+
+[  OK  ] Started Update the plocate database daily.
+
+[  OK  ] Started Daily Cleanup of Temporary Directories.
+
+[  OK  ] Reached target Timer Units.
+
+[  OK  ] Listening on D-Bus System Message Bus Socket.
+
+[  OK  ] Listening on GnuPG network certifi…ent daemon for /etc/pacman.d/gnupg.
+
+[  OK  ] Listening on GnuPG cryptographic a… browsers) for /etc/pacman.d/gnupg.
+
+[  OK  ] Listening on GnuPG cryptographic a…estricted) for /etc/pacman.d/gnupg.
+
+[  OK  ] Listening on GnuPG cryptographic a…emulation) for /etc/pacman.d/gnupg.
+
+[  OK  ] Listening on GnuPG cryptographic a…rase cache for /etc/pacman.d/gnupg.
+
+[  OK  ] Listening on GnuPG public key mana…nt service for /etc/pacman.d/gnupg.
+
+[  OK  ] Listening on Authorization Manager Agent Helper.
+
+[  OK  ] Listening on OpenSSH Server Socket…temd-ssh-generator, AF_UNIX Local).
+
+[  OK  ] Listening on User Login Management Varlink Socket.
+
+[  OK  ] Listening on Virtual Machine and C…tainer Registration Service Socket.
+
+[  OK  ] Reached target Socket Units.
+
+         Starting D-Bus System Message Bus...
+
+[  OK  ] Started D-Bus System Message Bus.
+
+[  OK  ] Reached target Basic System.
+
+         Starting SSH Key Generation...
+
+         Starting SystemRescue Initialization, before networking...
+
+         Starting User Login Management...
+
+[  OK  ] Started User Login Management.
+
+         Starting Virtual Console Setup...
+
+[  OK  ] Stopped Virtual Console Setup.
+
+         Starting Virtual Console Setup...
+
+[  OK  ] Finished SSH Key Generation.
+
+[  OK  ] Stopped Virtual Console Setup.
+
+         Starting Virtual Console Setup...
+
+[  OK  ] Finished Virtual Console Setup.
+
+[   27.262210] sysrescue-initialize-prenet[473]: ====> Script /etc/systemd/scripts/sysrescue-initialize-prenet starting ...
+[   27.267537] sysrescue-initialize-prenet[473]: ====> Read the effective configuration file ...
+[   27.268420] sysrescue-initialize-prenet[473]: ====> Showing the effective global configuration (except clear passwords) ...
+[   27.269458] sysrescue-initialize-prenet[473]: config['global']['nofirewall']=False
+[   27.269894] sysrescue-initialize-prenet[473]: ====> Applying pre-network configuration ...
+[   27.270289] sysrescue-initialize-prenet[473]: ====> Script /etc/systemd/scripts/sysrescue-initialize-prenet completed with 0 errors ...
+[  OK  ] Finished SystemRescue Initialization, before networking.
+
+         Starting IPv4 Packet Filtering Framework...
+
+         Starting SystemRescue Initialization, parallel to networking...
+
+[   27.691217] sysrescue-initialize-whilenet[509]: ====> Script /etc/systemd/scripts/sysrescue-initialize-whilenet starting ...
+[   27.692082] sysrescue-initialize-whilenet[509]: ====> Read the effective configuration file ...
+[   27.692559] sysrescue-initialize-whilenet[509]: ====> Showing the effective global configuration (except clear passwords) ...
+[   27.692885] sysrescue-initialize-whilenet[509]: config['global']['setkmap']=
+[   27.693125] sysrescue-initialize-whilenet[509]: config['global']['rootshell']=
+[   27.693333] sysrescue-initialize-whilenet[509]: config['global']['noautologin']=False
+[   27.693698] sysrescue-initialize-whilenet[509]: config['global']['dostartx']=True
+[   27.694849] sysrescue-initialize-whilenet[509]: config['global']['dovnc']=False
+[   27.695136] sysrescue-initialize-whilenet[509]: config['global']['late_load_srm']=
+[   27.695333] sysrescue-initialize-whilenet[509]: config['sysconfig']['timezone']=
+[   27.695529] sysrescue-initialize-whilenet[509]: ====> Applying configuration ...
+[   27.719544] sysrescue-initialize-whilenet[509]: ====> Configuring bash_history ...
+[   27.720393] sysrescue-initialize-whilenet[509]: ====> Configuring autoterminal ...
+[   27.755214] sysrescue-initialize-whilenet[509]: setting terminal 'tty2' to '/usr/local/system_rescue/bin/system-rescue.sh'
+[  OK  ] Finished IPv4 Packet Filtering Framework.
+
+         Starting IPv6 Packet Filtering Framework...
+
+[   28.879824] sysrescue-initialize-whilenet[509]: ====> Script /etc/systemd/scripts/sysrescue-initialize-whilenet completed with 0 errors ...
+[  OK  ] Finished SystemRescue Initialization, parallel to networking.
+
+[  OK  ] Finished IPv6 Packet Filtering Framework.
+
+[  OK  ] Reached target Preparation for Network.
+
+         Starting Network Manager...
+
+         Starting Hostname Service...
+
+[  OK  ] Started Hostname Service.
+
+[  OK  ] Listening on Load/Save RF Kill Switch Status /dev/rfkill Watch.
+
+         Starting Network Manager Script Dispatcher Service...
+
+[  OK  ] Started Network Manager.
+
+[  OK  ] Reached target Network.
+
+         Starting Network Manager Wait Online...
+
+         Starting OpenSSH Daemon...
+
+         Starting Permit User Sessions...
+
+[  OK  ] Started Network Manager Script Dispatcher Service.
+
+[  OK  ] Finished Permit User Sessions.
+
+[  OK  ] Finished Network Manager Wait Online.
+
+[  OK  ] Reached target Network is Online.
+
+         Starting SystemRescue Autorun...
+
+[  OK  ] Started OpenSSH Daemon.
+
+[  OK  ] Reached target SSH Access Available.
+
+
+############################# Initializing autorun #############################
+Showing the effective autorun configuration ...
+config['ar_disable']=False
+config['ar_attempts']=1
+config['ar_source']=
+config['ar_ignorefail']=False
+config['ar_nodel']=False
+config['ar_nowait']=True
+ar_suffixes=['', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F']
+exec=[]
+Cannot find a valid ar_source, searching scripts in the default directories
+No autorun scripts found, nothing to do.
+[  OK  ] Finished SystemRescue Autorun.
+
+[  OK  ] Reached target Preparation for Logins.
+
+[  OK  ] Started SystemRescue autoterminal tty2.
+
+[  OK  ] Started Getty on tty1.
+
+[  OK  ] Started Serial Getty on ttyS0.
+
+[  OK  ] Reached target Login Prompts.
+
+[  OK  ] Reached target Multi-User System.
+
+10478104783008;start=cf97498e49574dcba57e687b6c276899;user=root;hostname=sysrescue;machineid=11111111111141118111111111111111;bootid=431e5c875b834c758065982427731cf5;pid=585;pidfdid=586;comm=(agetty);servicename=serial-getty@ttyS0.service;invocationid=0ef0668365ee4c4988fa1e37b7682d20;type=service+q6E616D65
+
+ ========= SystemRescue 13.02 (x86_64) ======== ttyS0/6 =========
+                    https://www.system-rescue.org/
+
+* Console environment :
+   Run setkmap to choose the keyboard layout (also accessible with the arrow up key)
+   Run manual to read the documentation of SystemRescue
+
+* Graphical environment :
+   Type startx to run the graphical environment
+   X.Org comes with the XFCE environment and several graphical tools:
+   - Partition manager: .. gparted
+   - Web browser: ........ firefox
+   - Text editor: ........ featherpad
+
+sysrescue login: root (automatic login)
+
+
+root
+3008;start=5daf364e9c2f468b8109bd50f2684442;user=root;hostname=sysrescue;machineid=11111111111141118111111111111111;bootid=431e5c875b834c758065982427731cf5;pid=585;pidfdid=586;comm=login;targetuser=root;sessionid=3;type=session3008;start=c7ee65fd-c7f8-4b4d-8242-4c766c7863b4;machineid=11111111111141118111111111111111;user=root;hostname=sysrescue;bootid=431e5c87-5b83-4c75-8065-982427731cf5;pid=00000000000000000618;type=shell;cwd=/root[root@sysrescue ~]# mkdir -p /mnt/project; mount -t 9p -o trans=virtio,ro project /mnt/project && bash /mnt/project/two_vm_guest.sh capture; result=$?; printf '\nSR_RUN_EXIT=%s\n' "$result"
+
+3008;start=3bfabb73-7f56-44fa-81ef-21483d39582f;machineid=11111111111141118111111111111111;user=root;hostname=sysrescue;bootid=431e5c87-5b83-4c75-8065-982427731cf5;pid=00000000000000000618;type=command;cwd=/root[system_rescue] estimating space required (probing filesystems read-only)...
+[system_rescue]   need up to ~12GiB uncompressed; destination has 23GiB free
+[system_rescue] backing up /dev/vda (, serial=SR_REHEARSAL_CAPTURE, 12884901888 bytes)
+[system_rescue] destination: /mnt/vault/unknown_SR_REHEARSAL_CAPTURE_20260919T212023Z
+[system_rescue] space preflight: estimated ~12GiB uncompressed (12883836416 bytes), destination had 23GiB free
+[system_rescue]   partition 1 (vda1, fstype=vfat, method=partclone, tool=partclone.vfat)
+[system_rescue]     holds 64MiB in ? inodes
+Partclone v0.3.48 http://partclone.org
+Starting to clone device (/dev/vda1) to image (-)
+Reading Super Block
+Calculating bitmap... Please wait... 
+
+                                                                                
+Elapsed: 00:00:01, Remaining: 00:01:39, Completed:   1.00%
+                                                                                
+Elapsed: 00:00:01, Remaining: 00:00:00, Completed: 100.00%
+Total Time: 00:00:01, 100.00% completed!
+done!
+File system:  FAT32
+Device size:  536.9 MB = 1048572 Blocks
+Space in use:  67.5 MB = 131860 Blocks
+Free Space:   469.4 MB = 916712 Blocks
+Block size:   512 Byte
+
+                                                                                
+Elapsed: 00:00:01, Remaining: 00:01:39, Completed:   1.00%,   0.00byte/min,
+
+                                                                                
+Current block:          0, Total block:    1048572, Complete:   0.00%
+
+                                                                                
+Elapsed: 00:00:02, Remaining: 00:00:00, Completed: 100.00%, Rate:   2.03GB/min,
+
+                                                                                
+Current block:    1048572, Total block:    1048572, Complete: 100.00%
+
+Total Time: 00:00:02, Ave. Rate:   2.03GB/min, 100.00% completed!
+Syncing... OK!
+Partclone successfully cloned the device (/dev/vda1) to the image (-)
+Cloned successfully.
+[system_rescue]     calculating image checksum — reading the entire compressed image; please wait...
+[system_rescue]     image checksum complete
+[system_rescue]   partition 2 (vda2, fstype=btrfs, method=partclone, tool=partclone.btrfs)
+[system_rescue]     holds 3.2GiB in ? inodes
+Partclone v0.3.48 http://partclone.org
+Starting to clone device (/dev/vda2) to image (-)
+Reading Super Block
+Calculating bitmap... Please wait... 
+done!
+File system:  BTRFS
+Device size:   12.3 GB = 753598 Blocks
+Space in use:   4.1 GB = 253092 Blocks
+Free Space:     8.2 GB = 500506 Blocks
+Block size:   16384 Byte
+
+                                                                                
+Elapsed: 00:00:01, Remaining: 00:01:39, Completed:   1.00%,   0.00byte/min,
+
+                                                                                
+Current block:          0, Total block:     753598, Complete:   0.00%
+
+                                                                                
+Elapsed: 00:00:02, Remaining: 00:00:29, Completed:   6.33%,   7.87GB/min,
+
+                                                                                
+Current block:      27968, Total block:     753598, Complete:   3.71%
+
+                                                                                
+Elapsed: 00:00:04, Remaining: 00:00:23, Completed:  14.39%,   8.95GB/min,
+
+                                                                                
+Current block:      48384, Total block:     753598, Complete:   6.42%
+
+                                                                                
+Elapsed: 00:00:06, Remaining: 00:00:20, Completed:  22.23%,   9.22GB/min,
+
+                                                                                
+Current block:      68224, Total block:     753598, Complete:   9.05%
+
+                                                                                
+Elapsed: 00:00:08, Remaining: 00:00:18, Completed:  30.30%,   9.42GB/min,
+
+                                                                                
+Current block:      91328, Total block:     753598, Complete:  12.12%
+
+                                                                                
+Elapsed: 00:00:10, Remaining: 00:00:16, Completed:  38.29%,   9.53GB/min,
+
+                                                                                
+Current block:     111552, Total block:     753598, Complete:  14.80%
+
+                                                                                
+Elapsed: 00:00:12, Remaining: 00:00:14, Completed:  45.37%,   9.41GB/min,
+
+                                                                                
+Current block:     129472, Total block:     753598, Complete:  17.18%
+
+                                                                                
+Elapsed: 00:00:14, Remaining: 00:00:12, Completed:  52.60%,   9.35GB/min,
+
+                                                                                
+Current block:     147776, Total block:     753598, Complete:  19.61%
+
+                                                                                
+Elapsed: 00:00:16, Remaining: 00:00:10, Completed:  59.99%,   9.33GB/min,
+
+                                                                                
+Current block:     166464, Total block:     753598, Complete:  22.09%
+
+                                                                                
+Elapsed: 00:00:18, Remaining: 00:00:08, Completed:  66.87%,   9.24GB/min,
+
+                                                                                
+Current block:     183872, Total block:     753598, Complete:  24.40%
+
+                                                                                
+Elapsed: 00:00:20, Remaining: 00:00:06, Completed:  74.18%,   9.23GB/min,
+
+                                                                                
+Current block:     202368, Total block:     753598, Complete:  26.85%
+
+                                                                                
+Elapsed: 00:00:22, Remaining: 00:00:04, Completed:  82.19%,   9.29GB/min,
+
+                                                                                
+Current block:     224576, Total block:     753598, Complete:  29.80%
+
+                                                                                
+Elapsed: 00:00:24, Remaining: 00:00:02, Completed:  90.15%,   9.35GB/min,
+
+                                                                                
+Current block:     244736, Total block:     753598, Complete:  32.48%
+
+                                                                                
+Elapsed: 00:00:26, Remaining: 00:00:00, Completed:  97.26%,   9.31GB/min,
+
+                                                                                
+Current block:     262720, Total block:     753598, Complete:  34.86%
+
+                                                                                
+Elapsed: 00:00:28, Remaining: 00:00:00, Completed: 100.00%, Rate:   8.89GB/min,
+
+                                                                                
+Current block:     269661, Total block:     753598, Complete: 100.00%
+
+Total Time: 00:00:28, Ave. Rate:   8.89GB/min, 100.00% completed!
+Syncing... OK!
+Partclone successfully cloned the device (/dev/vda2) to the image (-)
+Cloned successfully.
+[system_rescue]     calculating image checksum — reading the entire compressed image; please wait...
+[system_rescue]     image checksum complete
+[system_rescue] backup complete: /mnt/vault/unknown_SR_REHEARSAL_CAPTURE_20260919T212023Z
+[system_rescue] job:     /mnt/vault/unknown_SR_REHEARSAL_CAPTURE_20260919T212023Z
+[system_rescue] created: 20260919T212023Z   source serial: SR_REHEARSAL_CAPTURE   manifest v4
+[system_rescue]   ok: part1.img.zst (checksum + partclone structure)
+[system_rescue]   ok: part2.img.zst (checksum + partclone structure)
+/dev/vda: OK
+
+SR_STAGE_OK=capture
+
+SR_RUN_EXIT=0
+sync; systemctl poweroff
+3008;end=3bfabb73-7f56-44fa-81ef-21483d39582f;exit=success3008;start=c7ee65fd-c7f8-4b4d-8242-4c766c7863b4;machineid=11111111111141118111111111111111;user=root;hostname=sysrescue;bootid=431e5c87-5b83-4c75-8065-982427731cf5;pid=00000000000000000618;type=shell;cwd=/root[root@sysrescue ~]# sync; systemctl poweroff
+
+3008;start=887347e6-42cf-43cb-89dd-ea7a9a85947d;machineid=11111111111141118111111111111111;user=root;hostname=sysrescue;bootid=431e5c87-5b83-4c75-8065-982427731cf5;pid=00000000000000000618;type=command;cwd=/root3008;end=887347e6-42cf-43cb-89dd-ea7a9a85947d;exit=success3008;start=c7ee65fd-c7f8-4b4d-8242-4c766c7863b4;machineid=11111111111141118111111111111111;user=root;hostname=sysrescue;bootid=431e5c87-5b83-4c75-8065-982427731cf5;pid=00000000000000000618;type=shell;cwd=/root[root@sysrescue ~]#          Stopping Session 1 of User root...
+
+         Stopping Session 2 of User root...
+
+         Stopping Session 3 of User root...
+
+
+
+
+[  OK  ] Removed slice Slice /system/modprobe.
+
+3008;end=5daf364e9c2f468b8109bd50f2684442[  OK  ] Stopped target Multi-User System.
+
+[  OK  ] Stopped target Login Prompts.
+
+[  OK  ] Stopped target SSH Access Available.
+
+[  OK  ] Stopped target Timer Units.
+
+[  OK  ] Stopped Update the plocate database daily.
+
+[  OK  ] Stopped Daily Cleanup of Temporary Directories.
+
+[  OK  ] Closed LVM2 poll daemon socket.
+
+[  OK  ] Closed Load/Save RF Kill Switch Status /dev/rfkill Watch.
+
+         Stopping SystemRescue autoterminal tty2...
+
+         Stopping Getty on tty1...
+
+         Starting Generate shutdown-ramfs...
+
+         Stopping Authorization Manager...
+
+         Stopping Serial Getty on ttyS0...
+
+         Stopping OpenSSH Daemon...
+
+         Stopping Load/Save OS Random Seed...
+
+[  OK  ] Stopped Load udev Rules from Credentials.
+
+         Stopping Daemon for power management...
+
+[  OK  ] Stopped SystemRescue autoterminal tty2.
+
+vmmouse: unknown command 55e8000000f5
+[  OK  ] Stopped Session 2 of User root.
+
+[  OK  ] Stopped OpenSSH Daemon.
+
+[  OK  ] Stopped Authorization Manager.
+
+[  OK  ] Stopped Daemon for power management.
+
+[  OK  ] Stopped Getty on tty1.
+
+[  OK  ] Stopped Serial Getty on ttyS0.
+
+104783008;end=cf97498e49574dcba57e687b6c276899[  OK  ] Stopped Load/Save OS Random Seed.
+
+[  OK  ] Stopped Session 3 of User root.
+
+[  OK  ] Removed slice Slice /system/getty.
+
+[  OK  ] Removed slice Slice /system/serial-getty.
+
+[  OK  ] Stopped target Preparation for Logins.
+
+[  OK  ] Stopped SystemRescue Autorun.
+
+[  OK  ] Stopped target Network is Online.
+
+[  OK  ] Stopped Network Manager Wait Online.
+
+[  OK  ] Stopped SystemRescue Initialization, parallel to networking.
+
+         Stopping Permit User Sessions...
+
+[  OK  ] Stopped Permit User Sessions.
+
+[  OK  ] Stopped target Network.
+
+[  OK  ] Stopped target Remote File Systems.
+
+         Stopping Network Manager...
+
+[  OK  ] Stopped Load JSON user/group Records from Credentials.
+
+[  OK  ] Stopped Network Manager.
+
+[  OK  ] Stopped target Preparation for Network.
+
+         Stopping IPv6 Packet Filtering Framework...
+
+[  OK  ] Stopped Session 1 of User root.
+
+         Stopping User Manager for UID 0...
+
+[  OK  ] Stopped User Manager for UID 0.
+
+[  OK  ] Stopped IPv6 Packet Filtering Framework.
+
+         Stopping IPv4 Packet Filtering Framework...
+
+         Stopping User Runtime Directory /run/user/0...
+
+[  OK  ] Unmounted /run/user/0.
+
+[  OK  ] Stopped User Runtime Directory /run/user/0.
+
+[  OK  ] Removed slice User Slice of UID 0.
+
+         Stopping User Login Management...
+
+[  OK  ] Stopped IPv4 Packet Filtering Framework.
+
+[  OK  ] Stopped SystemRescue Initialization, before networking.
+
+[  OK  ] Stopped User Login Management.
+
+[  OK  ] Stopped target Basic System.
+
+[  OK  ] Stopped target Path Units.
+
+[  OK  ] Stopped target Slice Units.
+
+[  OK  ] Removed slice User and Session Slice.
+
+[  OK  ] Stopped target Socket Units.
+
+[  OK  ] Closed GnuPG network certificate m…ent daemon for /etc/pacman.d/gnupg.
+
+[  OK  ] Removed slice Slice /system/dirmngr.
+
+[  OK  ] Closed GnuPG cryptographic agent a… browsers) for /etc/pacman.d/gnupg.
+
+[  OK  ] Removed slice Slice /system/gpg-agent-browser.
+
+[  OK  ] Closed GnuPG cryptographic agent a…estricted) for /etc/pacman.d/gnupg.
+
+[  OK  ] Removed slice Slice /system/gpg-agent-extra.
+
+[  OK  ] Closed GnuPG cryptographic agent (…emulation) for /etc/pacman.d/gnupg.
+
+[  OK  ] Removed slice Slice /system/gpg-agent-ssh.
+
+[  OK  ] Closed GnuPG cryptographic agent a…rase cache for /etc/pacman.d/gnupg.
+
+[  OK  ] Removed slice Slice /system/gpg-agent.
+
+[  OK  ] Closed GnuPG public key management service for /etc/pacman.d/gnupg.
+
+[  OK  ] Removed slice Slice /system/keyboxd.
+
+[  OK  ] Closed Authorization Manager Agent Helper.
+
+[  OK  ] Closed OpenSSH Server Socket (systemd-ssh-generator, AF_UNIX Local).
+
+[  OK  ] Closed Hostname Service Socket.
+
+[  OK  ] Closed Disk Image Download Service Socket.
+
+[  OK  ] Closed User Login Management Varlink Socket.
+
+[  OK  ] Closed Virtual Machine and Container Registration Service Socket.
+
+[  OK  ] Closed Console Output Muting Service Socket.
+
+[  OK  ] Closed Disk Repartitioning Service Socket.
+
+         Stopping D-Bus System Message Bus...
+
+[  OK  ] Stopped D-Bus System Message Bus.
+
+[  OK  ] Closed D-Bus System Message Bus Socket.
+
+[  OK  ] Stopped target System Initialization.
+
+[  OK  ] Unset automount Arbitrary Executab…ormats File System Automount Point.
+
+[  OK  ] Stopped target Local Encrypted Volumes.
+
+[  OK  ] Stopped Dispatch Password Requests to Console Directory Watch.
+
+[  OK  ] Stopped Forward Password Requests to Wall Directory Watch.
+
+[  OK  ] Stopped target Image Downloads.
+
+[  OK  ] Stopped target Local Integrity Protected Volumes.
+
+[  OK  ] Stopped target Local Verity Protected Volumes.
+
+[  OK  ] Stopped Apply Kernel Variables.
+
+[  OK  ] Closed Process Core Dump Socket.
+
+[  OK  ] Stopped Load Kernel Modules.
+
+[  OK  ] Stopped Update is Completed.
+
+[  OK  ] Stopped Rebuild Journal Catalog.
+
+         Stopping Record System Boot/Shutdown in UTMP...
+
+[  OK  ] Stopped Record System Boot/Shutdown in UTMP.
+
+[  OK  ] Stopped Create System Files and Directories.
+
+[  OK  ] Stopped target Local File Systems.
+
+         Unmounting /mnt/project...
+
+         Unmounting /run/archiso/bootmnt...
+
+         Unmounting /run/archiso/cowspace...
+
+         Unmounting /run/archiso/sfs/airootfs...
+
+         Unmounting /run/archiso/sfs/srm1...
+
+         Unmounting /run/archiso/sfs/srm2...
+
+         Unmounting Temporary Directory /tmp...
+
+         Unmounting Bind mount /var/lib/pac…g between snapshot/rolling repos...
+
+[FAILED] Failed unmounting /run/archiso/bootmnt.
+
+[  OK  ] Unmounted /run/archiso/cowspace.
+
+[  OK  ] Unmounted /mnt/project.
+
+[  OK  ] Unmounted /run/archiso/sfs/airootfs.
+
+[  OK  ] Unmounted /run/archiso/sfs/srm1.
+
+[  OK  ] Unmounted /run/archiso/sfs/srm2.
+
+[  OK  ] Unmounted Temporary Directory /tmp.
+
+[  OK  ] Unmounted Bind mount /var/lib/pacm…ing between snapshot/rolling repos.
+
+[  OK  ] Stopped target Preparation for Local File Systems.
+
+[  OK  ] Stopped target Swaps.
+
+[  OK  ] Reached target Unmount All Filesystems.
+
+         Stopping Monitoring of LVM2 mirror…ing dmeventd or progress polling...
+
+[  OK  ] Stopped Create Static Device Nodes in /dev.
+
+[  OK  ] Stopped Create System Users.
+
+[  OK  ] Stopped Remount Root and Kernel File Systems.
+
+[  OK  ] Stopped Create Static Device Nodes in /dev gracefully.
+
+[  OK  ] Finished Generate shutdown-ramfs.
+
+[  OK  ] Stopped Monitoring of LVM2 mirrors…using dmeventd or progress polling.
+
+[  OK  ] Reached target System Shutdown.
+
+[  OK  ] Reached target Late Shutdown Services.
+
+[  OK  ] Finished System Power Off.
+
+[  OK  ] Reached target System Power Off.
+
+3008;end=ee5ba92c4583452c912d0b29eb8c3dee78104[  294.710538] reboot: Power down
+
+=== restore — complete serial log, terminal escapes removed ===
+:: running early hook [udev]
+Starting systemd-udevd version 261.2-1-arch
+
+:: running early hook [archiso_pxe_nbd]
+:: running hook [udev]
+:: Triggering uevents...
+:: running hook [memdisk]
+:: running hook [findroot]
+:: running hook [archiso]
+:: running hook [archiso_loop_mnt]
+:: running hook [archiso_pxe_common]
+:: running hook [archiso_pxe_nbd]
+:: running hook [archiso_pxe_http]
+:: running hook [archiso_pxe_nfs]
+:: running hook [encrypt]
+:: Mounting '/dev/disk/by-label/RESCUE1302' to '/run/archiso/bootmnt'
+:: Device '/dev/disk/by-label/RESCUE1302' mounted successfully.
+:: Creating config dir ...
+:: Execute the configuration processing script ...
+:: Define early boot options based on the configuration ...
+Entry '.global.copytoram' disabled in config: value='false'
+Entry '.global.checksum' disabled in config: value='false'
+Entry '.global.loadsrm' enabled in config: value='true'
+:: Mounting /run/archiso/cowspace (tmpfs) filesystem, size=25%...
+:: Mounting '/dev/loop0' to '/run/archiso/sfs/airootfs'
+:: Device '/dev/loop0' mounted successfully.
+:: Mounting '/dev/loop1' to '/run/archiso/sfs/srm1'
+:: Device '/dev/loop1' mounted successfully.
+:: Mounting '/dev/loop2' to '/run/archiso/sfs/srm2'
+:: Device '/dev/loop2' mounted successfully.
+:: running late hook [archiso_pxe_common]
+:: running cleanup hook [udev]
++q6E616D6578104
+Welcome to SystemRescue 13.02!
+
+
+3008;start=ccde31b1f7844f2995f9f0b4f2a8dd03;user=root;hostname=sysrescue;machineid=22222222222242228222222222222222;bootid=5d77f9650d25436d9dc1669becacf74a;pid=1;pidfdid=2;comm=systemd;type=boot[  OK  ] Created slice Slice /system/dirmngr.
+
+[  OK  ] Created slice Slice /system/getty.
+
+[  OK  ] Created slice Slice /system/gpg-agent.
+
+[  OK  ] Created slice Slice /system/gpg-agent-browser.
+
+[  OK  ] Created slice Slice /system/gpg-agent-extra.
+
+[  OK  ] Created slice Slice /system/gpg-agent-ssh.
+
+[  OK  ] Created slice Slice /system/keyboxd.
+
+[  OK  ] Created slice Slice /system/modprobe.
+
+[  OK  ] Created slice Slice /system/serial-getty.
+
+[  OK  ] Created slice User and Session Slice.
+
+[  OK  ] Started Dispatch Password Requests to Console Directory Watch.
+
+[  OK  ] Started Forward Password Requests to Wall Directory Watch.
+
+[  OK  ] Set up automount Arbitrary Executa…ormats File System Automount Point.
+
+         Expecting device /dev/ttyS0...
+
+[  OK  ] Reached target Image Downloads.
+
+[  OK  ] Reached target Local Integrity Protected Volumes.
+
+[  OK  ] Reached target Path Units.
+
+[  OK  ] Reached target Remote File Systems.
+
+[  OK  ] Reached target Slice Units.
+
+[  OK  ] Reached target Swaps.
+
+[  OK  ] Reached target Local Verity Protected Volumes.
+
+[  OK  ] Listening on Device-mapper event daemon FIFOs.
+
+[  OK  ] Listening on LVM2 poll daemon socket.
+
+[  OK  ] Listening on Query the User Interactively for a Password.
+
+[  OK  ] Listening on Process Core Dump Socket.
+
+[  OK  ] Listening on Credential Encryption/Decryption.
+
+[  OK  ] Listening on Factory Reset Management.
+
+[  OK  ] Listening on Hostname Service Socket.
+
+[  OK  ] Listening on Journal Socket (/dev/log).
+
+[  OK  ] Listening on Journal Sockets.
+
+[  OK  ] Listening on Console Output Muting Service Socket.
+
+[  OK  ] Listening on Disk Repartitioning Service Socket.
+
+[  OK  ] Listening on Simple Block Device Backed Storage Provider.
+
+[  OK  ] Listening on Simple File System Backed Storage Provider.
+
+[  OK  ] Listening on udev Control Socket.
+
+[  OK  ] Listening on udev Kernel Socket.
+
+[  OK  ] Listening on udev Varlink Socket.
+
+[  OK  ] Listening on User Database Manager Socket.
+
+         Mounting Huge Pages File System...
+
+         Mounting POSIX Message Queue File System...
+
+         Mounting Kernel Debug File System...
+
+         Mounting Kernel Trace File System...
+
+         Mounting Temporary Directory /tmp...
+
+         Starting Create List of Static Device Nodes...
+
+         Starting Monitoring of LVM2 mirror…ing dmeventd or progress polling...
+
+         Mounting Kernel Configuration File System...
+
+         Mounting FUSE Control File System...
+
+         Starting Journal Service...
+
+         Starting Load Kernel Modules...
+
+         Starting Remount Root and Kernel File Systems...
+
+[  OK  ] Reached target Local Encrypted Volumes.
+
+         Starting Load udev Rules from Credentials...
+
+         Starting Coldplug All udev Devices...
+
+[  OK  ] Finished Create List of Static Device Nodes.
+
+[  OK  ] Mounted Huge Pages File System.
+
+[  OK  ] Mounted POSIX Message Queue File System.
+
+[  OK  ] Mounted Kernel Debug File System.
+
+[  OK  ] Mounted Kernel Trace File System.
+
+[  OK  ] Mounted Temporary Directory /tmp.
+
+[  OK  ] Mounted Kernel Configuration File System.
+
+[  OK  ] Mounted FUSE Control File System.
+
+[  OK  ] Finished Remount Root and Kernel File Systems.
+
+[  OK  ] Finished Load udev Rules from Credentials.
+
+         Starting Load/Save OS Random Seed...
+
+         Starting Create Static Device Nodes in /dev gracefully...
+
+[  OK  ] Started Journal Service.
+
+         Starting Flush Journal to Persistent Storage...
+
+[  OK  ] Finished Load/Save OS Random Seed.
+
+[  OK  ] Finished Flush Journal to Persistent Storage.
+
+[  OK  ] Finished Monitoring of LVM2 mirror…using dmeventd or progress polling.
+
+         Starting User Database Manager...
+
+[  OK  ] Finished Coldplug All udev Devices.
+
+         Mounting Arbitrary Executable File Formats File System...
+
+[  OK  ] Mounted Arbitrary Executable File Formats File System.
+
+[  OK  ] Started User Database Manager.
+
+[  OK  ] Finished Create Static Device Nodes in /dev gracefully.
+
+         Starting Create System Users...
+
+[  OK  ] Finished Create System Users.
+
+         Starting Journal Log Access Socket...
+
+         Starting Create Static Device Nodes in /dev...
+
+[  OK  ] Listening on Journal Log Access Socket.
+
+[  OK  ] Finished Create Static Device Nodes in /dev.
+
+[  OK  ] Reached target Preparation for Local File Systems.
+
+         Starting Rule-based Manager for Device Events and Files...
+
+[  OK  ] Started Rule-based Manager for Device Events and Files.
+
+[  OK  ] Listening on Disk Image Download Service Socket.
+
+         Mounting Bind mount /var/lib/pacma…g between snapshot/rolling repos...
+
+[  OK  ] Mounted Bind mount /var/lib/pacman…ing between snapshot/rolling repos.
+
+[  OK  ] Reached target Local File Systems.
+
+[  OK  ] Listening on Boot Loader Control Service Socket.
+
+[  OK  ] Listening on System Extension Image Management.
+
+         Starting Create System Files and Directories...
+
+         Starting Load JSON user/group Records from Credentials...
+
+[  OK  ] Finished Load JSON user/group Records from Credentials.
+
+[  OK  ] Found device /dev/ttyS0.
+
+[  OK  ] Finished Create System Files and Directories.
+
+         Starting Rebuild Journal Catalog...
+
+         Starting Record System Boot/Shutdown in UTMP...
+
+[   24.061556] NVRM: No NVIDIA GPU found.
+[  OK  ] Finished Rebuild Journal Catalog.
+
+[  OK  ] Finished Record System Boot/Shutdown in UTMP.
+
+         Starting Update is Completed...
+
+[  OK  ] Finished Update is Completed.
+
+[  OK  ] Finished Load Kernel Modules.
+
+         Starting Apply Kernel Variables...
+
+[  OK  ] Finished Apply Kernel Variables.
+
+[  OK  ] Reached target System Initialization.
+
+[  OK  ] Started Update the plocate database daily.
+
+[  OK  ] Started Daily Cleanup of Temporary Directories.
+
+[  OK  ] Reached target Timer Units.
+
+[  OK  ] Listening on D-Bus System Message Bus Socket.
+
+[  OK  ] Listening on GnuPG network certifi…ent daemon for /etc/pacman.d/gnupg.
+
+[  OK  ] Listening on GnuPG cryptographic a… browsers) for /etc/pacman.d/gnupg.
+
+[  OK  ] Listening on GnuPG cryptographic a…estricted) for /etc/pacman.d/gnupg.
+
+[  OK  ] Listening on GnuPG cryptographic a…emulation) for /etc/pacman.d/gnupg.
+
+[  OK  ] Listening on GnuPG cryptographic a…rase cache for /etc/pacman.d/gnupg.
+
+[  OK  ] Listening on GnuPG public key mana…nt service for /etc/pacman.d/gnupg.
+
+[  OK  ] Listening on Authorization Manager Agent Helper.
+
+[  OK  ] Listening on OpenSSH Server Socket…temd-ssh-generator, AF_UNIX Local).
+
+[  OK  ] Listening on User Login Management Varlink Socket.
+
+[  OK  ] Listening on Virtual Machine and C…tainer Registration Service Socket.
+
+[  OK  ] Reached target Socket Units.
+
+         Starting D-Bus System Message Bus...
+
+         Starting Virtual Console Setup...
+
+[  OK  ] Stopped Virtual Console Setup.
+
+         Starting Virtual Console Setup...
+
+[  OK  ] Started D-Bus System Message Bus.
+
+[  OK  ] Reached target Basic System.
+
+         Starting SSH Key Generation...
+
+         Starting SystemRescue Initialization, before networking...
+
+         Starting User Login Management...
+
+[  OK  ] Finished SSH Key Generation.
+
+[  OK  ] Finished Virtual Console Setup.
+
+[  OK  ] Started User Login Management.
+
+[   28.018233] sysrescue-initialize-prenet[492]: ====> Script /etc/systemd/scripts/sysrescue-initialize-prenet starting ...
+[   28.019756] sysrescue-initialize-prenet[492]: ====> Read the effective configuration file ...
+[   28.020431] sysrescue-initialize-prenet[492]: ====> Showing the effective global configuration (except clear passwords) ...
+[   28.020779] sysrescue-initialize-prenet[492]: config['global']['nofirewall']=False
+[   28.021021] sysrescue-initialize-prenet[492]: ====> Applying pre-network configuration ...
+[   28.021219] sysrescue-initialize-prenet[492]: ====> Script /etc/systemd/scripts/sysrescue-initialize-prenet completed with 0 errors ...
+[  OK  ] Finished SystemRescue Initialization, before networking.
+
+         Starting IPv4 Packet Filtering Framework...
+
+         Starting SystemRescue Initialization, parallel to networking...
+
+[   28.419404] sysrescue-initialize-whilenet[507]: ====> Script /etc/systemd/scripts/sysrescue-initialize-whilenet starting ...
+[   28.420442] sysrescue-initialize-whilenet[507]: ====> Read the effective configuration file ...
+[   28.421087] sysrescue-initialize-whilenet[507]: ====> Showing the effective global configuration (except clear passwords) ...
+[   28.421623] sysrescue-initialize-whilenet[507]: config['global']['setkmap']=
+[   28.422094] sysrescue-initialize-whilenet[507]: config['global']['rootshell']=
+[   28.422378] sysrescue-initialize-whilenet[507]: config['global']['noautologin']=False
+[   28.422625] sysrescue-initialize-whilenet[507]: config['global']['dostartx']=True
+[   28.422969] sysrescue-initialize-whilenet[507]: config['global']['dovnc']=False
+[   28.423450] sysrescue-initialize-whilenet[507]: config['global']['late_load_srm']=
+[   28.423743] sysrescue-initialize-whilenet[507]: config['sysconfig']['timezone']=
+[   28.424007] sysrescue-initialize-whilenet[507]: ====> Applying configuration ...
+[   28.445511] sysrescue-initialize-whilenet[507]: ====> Configuring bash_history ...
+[   28.446082] sysrescue-initialize-whilenet[507]: ====> Configuring autoterminal ...
+[   28.473513] sysrescue-initialize-whilenet[507]: setting terminal 'tty2' to '/usr/local/system_rescue/bin/system-rescue.sh'
+[  OK  ] Finished IPv4 Packet Filtering Framework.
+
+         Starting IPv6 Packet Filtering Framework...
+
+[   29.485213] sysrescue-initialize-whilenet[507]: ====> Script /etc/systemd/scripts/sysrescue-initialize-whilenet completed with 0 errors ...
+[  OK  ] Finished SystemRescue Initialization, parallel to networking.
+
+[  OK  ] Finished IPv6 Packet Filtering Framework.
+
+[  OK  ] Reached target Preparation for Network.
+
+         Starting Network Manager...
+
+         Starting Hostname Service...
+
+[  OK  ] Started Hostname Service.
+
+[  OK  ] Listening on Load/Save RF Kill Switch Status /dev/rfkill Watch.
+
+         Starting Network Manager Script Dispatcher Service...
+
+[  OK  ] Started Network Manager.
+
+[  OK  ] Reached target Network.
+
+         Starting Network Manager Wait Online...
+
+         Starting OpenSSH Daemon...
+
+         Starting Permit User Sessions...
+
+[  OK  ] Started Network Manager Script Dispatcher Service.
+
+[  OK  ] Finished Permit User Sessions.
+
+[  OK  ] Finished Network Manager Wait Online.
+
+[  OK  ] Reached target Network is Online.
+
+         Starting SystemRescue Autorun...
+
+[  OK  ] Started OpenSSH Daemon.
+
+[  OK  ] Reached target SSH Access Available.
+
+
+############################# Initializing autorun #############################
+Showing the effective autorun configuration ...
+config['ar_disable']=False
+config['ar_attempts']=1
+config['ar_source']=
+config['ar_ignorefail']=False
+config['ar_nodel']=False
+config['ar_nowait']=True
+ar_suffixes=['', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F']
+exec=[]
+Cannot find a valid ar_source, searching scripts in the default directories
+No autorun scripts found, nothing to do.
+[  OK  ] Finished SystemRescue Autorun.
+
+[  OK  ] Reached target Preparation for Logins.
+
+[  OK  ] Started SystemRescue autoterminal tty2.
+
+[  OK  ] Started Getty on tty1.
+
+[  OK  ] Started Serial Getty on ttyS0.
+
+[  OK  ] Reached target Login Prompts.
+
+[  OK  ] Reached target Multi-User System.
+
+10478104783008;start=c12c6e30be9c42cf989c4e444d14bd24;user=root;hostname=sysrescue;machineid=22222222222242228222222222222222;bootid=5d77f9650d25436d9dc1669becacf74a;pid=583;pidfdid=584;comm=(agetty);servicename=serial-getty@ttyS0.service;invocationid=e11c52dd783d4597ad171c39983ec04d;type=service+q6E616D65
+
+ ========= SystemRescue 13.02 (x86_64) ======== ttyS0/6 =========
+                    https://www.system-rescue.org/
+
+* Console environment :
+   Run setkmap to choose the keyboard layout (also accessible with the arrow up key)
+   Run manual to read the documentation of SystemRescue
+
+* Graphical environment :
+   Type startx to run the graphical environment
+   X.Org comes with the XFCE environment and several graphical tools:
+   - Partition manager: .. gparted
+   - Web browser: ........ firefox
+   - Text editor: ........ featherpad
+
+sysrescue login: root (automatic login)
+
+
+root
+3008;start=6d28f2e9624541248ec9808ae9c161b9;user=root;hostname=sysrescue;machineid=22222222222242228222222222222222;bootid=5d77f9650d25436d9dc1669becacf74a;pid=583;pidfdid=584;comm=login;targetuser=root;sessionid=3;type=session3008;start=6566b05b-76c4-4dc3-b25b-b2bc05b5e529;machineid=22222222222242228222222222222222;user=root;hostname=sysrescue;bootid=5d77f965-0d25-436d-9dc1-669becacf74a;pid=00000000000000000617;type=shell;cwd=/root[root@sysrescue ~]# mkdir -p /mnt/project; mount -t 9p -o trans=virtio,ro project /mnt/project && bash /mnt/project/two_vm_guest.sh restore; result=$?; printf '\nSR_RUN_EXIT=%s\n' "$result"
+
+3008;start=adcda3d7-9959-439c-9251-2963e0ee7f45;machineid=22222222222242228222222222222222;user=root;hostname=sysrescue;bootid=5d77f965-0d25-436d-9dc1-669becacf74a;pid=00000000000000000617;type=command;cwd=/root[system_rescue] job:     /mnt/vault/unknown_SR_REHEARSAL_CAPTURE_20260919T212023Z
+[system_rescue] created: 20260919T212023Z   source serial: SR_REHEARSAL_CAPTURE   manifest v4
+[system_rescue]   ok: part1.img.zst (checksum + partclone structure)
+[system_rescue]   ok: part2.img.zst (checksum + partclone structure)
+[system_rescue] restore log: /mnt/vault/unknown_SR_REHEARSAL_CAPTURE_20260919T212023Z/restore_20260919T212426Z.log (survives the reboot)
+[system_rescue] verifying backup integrity before touching the target...
+[system_rescue]   ok: part1.img.zst (checksum + partclone structure)
+[system_rescue]   ok: part2.img.zst (checksum + partclone structure)
+[system_rescue] all pre-restore checks passed
+[system_rescue] ERASING /dev/vda and restoring from /mnt/vault/unknown_SR_REHEARSAL_CAPTURE_20260919T212023Z
+[system_rescue] restoring gpt partition table
+[system_rescue]   partition 1: restoring part1.img.zst via partclone.vfat
+Partclone v0.3.48 http://partclone.org
+Starting to restore image (-) to device (/dev/vda1)
+Calculating bitmap... Please wait...
+done!
+File system:  FAT32
+Device size:  536.9 MB = 1048572 Blocks
+Space in use:  67.5 MB = 131860 Blocks
+Free Space:   469.4 MB = 916712 Blocks
+Block size:   512 Byte
+
+                                                                                
+Elapsed: 00:00:02, Remaining: 00:00:00, Completed: 100.00%, Rate:   2.03GB/min,
+
+                                                                                
+Current block:    1048572, Total block:    1048572, Complete: 100.00%
+
+Total Time: 00:00:02, Ave. Rate:   2.03GB/min, 100.00% completed!
+Syncing... OK!
+Partclone successfully restored the image (-) to the device (/dev/vda1)
+Cloned successfully.
+[system_rescue]   partition 2: restoring part2.img.zst via partclone.btrfs
+Partclone v0.3.48 http://partclone.org
+Starting to restore image (-) to device (/dev/vda2)
+Calculating bitmap... Please wait...
+done!
+File system:  BTRFS
+Device size:   12.3 GB = 753598 Blocks
+Space in use:   4.1 GB = 253092 Blocks
+Free Space:     8.2 GB = 500506 Blocks
+Block size:   16384 Byte
+
+                                                                                
+Elapsed: 00:00:30, Remaining: 00:00:00, Completed: 100.00%, Rate:   8.29GB/min,
+
+                                                                                
+Current block:     269661, Total block:     753598, Complete: 100.00%
+
+Total Time: 00:00:30, Ave. Rate:   8.29GB/min, 100.00% completed!
+Syncing... OK!
+Partclone successfully restored the image (-) to the device (/dev/vda2)
+Cloned successfully.
+[system_rescue] comparing restored filesystem occupancy against the manifest...
+[system_rescue] Occupancy checks do not verify file contents or bootability.
+[system_rescue]   partition 1: ok — 64MiB used, matches source within 1MiB
+[system_rescue]     BYTES ONLY: vfat reports no usable inode count, so
+[system_rescue]     the number of files was NOT verified. Matching bytes is weaker
+[system_rescue]     evidence than a matching inode count.
+[system_rescue]   partition 2: ok — 3.2GiB used, matches source within 1MiB
+[system_rescue]     BYTES ONLY: btrfs reports no usable inode count, so
+[system_rescue]     the number of files was NOT verified. Matching bytes is weaker
+[system_rescue]     evidence than a matching inode count.
+[system_rescue] post-restore verification passed on 2 filesystem(s): 0 matched used bytes + inode counts, 2 by used bytes only
+[system_rescue] restore complete onto /dev/vda
+etc/rehearsal/config: OK
+home/rehearsal/data.bin: OK
+boot/EFI/BOOT/BOOTX64.EFI: OK
+boot/vmlinuz-linux: OK
+boot/initramfs-linux.img: OK
+
+SR_STAGE_OK=restore
+
+SR_RUN_EXIT=0
+sync; systemctl poweroff
+3008;end=adcda3d7-9959-439c-9251-2963e0ee7f45;exit=success3008;start=6566b05b-76c4-4dc3-b25b-b2bc05b5e529;machineid=22222222222242228222222222222222;user=root;hostname=sysrescue;bootid=5d77f965-0d25-436d-9dc1-669becacf74a;pid=00000000000000000617;type=shell;cwd=/root[root@sysrescue ~]# sync; systemctl poweroff
+
+3008;start=97055584-8ac8-4d47-b6c1-fc6aef866a73;machineid=22222222222242228222222222222222;user=root;hostname=sysrescue;bootid=5d77f965-0d25-436d-9dc1-669becacf74a;pid=00000000000000000617;type=command;cwd=/root3008;end=97055584-8ac8-4d47-b6c1-fc6aef866a73;exit=success3008;start=6566b05b-76c4-4dc3-b25b-b2bc05b5e529;machineid=22222222222242228222222222222222;user=root;hostname=sysrescue;bootid=5d77f965-0d25-436d-9dc1-669becacf74a;pid=00000000000000000617;type=shell;cwd=/root[root@sysrescue ~]#          Stopping Session 1 of User root...
+
+         Stopping Session 2 of User root...
+
+
+
+
+         Stopping Session 3 of User root...
+
+3008;end=6d28f2e9624541248ec9808ae9c161b9[  OK  ] Removed slice Slice /system/modprobe.
+
+[  OK  ] Stopped target Multi-User System.
+
+[  OK  ] Stopped target Login Prompts.
+
+[  OK  ] Stopped target SSH Access Available.
+
+[  OK  ] Stopped target Timer Units.
+
+[  OK  ] Stopped Update the plocate database daily.
+
+[  OK  ] Stopped Daily Cleanup of Temporary Directories.
+
+[  OK  ] Closed LVM2 poll daemon socket.
+
+[  OK  ] Closed Load/Save RF Kill Switch Status /dev/rfkill Watch.
+
+         Stopping SystemRescue autoterminal tty2...
+
+         Stopping Getty on tty1...
+
+         Starting Generate shutdown-ramfs...
+
+         Stopping Authorization Manager...
+
+         Stopping Serial Getty on ttyS0...
+
+         Stopping OpenSSH Daemon...
+
+         Stopping Load/Save OS Random Seed...
+
+[  OK  ] Stopped Load udev Rules from Credentials.
+
+         Stopping Daemon for power management...
+
+[  OK  ] Stopped SystemRescue autoterminal tty2.
+
+[  OK  ] Stopped Authorization Manager.
+
+vmmouse: unknown command 562f000000f5
+[  OK  ] Stopped Session 1 of User root.
+
+[  OK  ] Stopped OpenSSH Daemon.
+
+[  OK  ] Stopped Daemon for power management.
+
+[  OK  ] Stopped Getty on tty1.
+
+[  OK  ] Stopped Serial Getty on ttyS0.
+
+104783008;end=c12c6e30be9c42cf989c4e444d14bd24[  OK  ] Stopped Load/Save OS Random Seed.
+
+[  OK  ] Stopped Session 3 of User root.
+
+[  OK  ] Removed slice Slice /system/getty.
+
+[  OK  ] Removed slice Slice /system/serial-getty.
+
+[  OK  ] Stopped target Preparation for Logins.
+
+[  OK  ] Stopped SystemRescue Autorun.
+
+[  OK  ] Stopped target Network is Online.
+
+[  OK  ] Stopped Network Manager Wait Online.
+
+[  OK  ] Stopped SystemRescue Initialization, parallel to networking.
+
+         Stopping Permit User Sessions...
+
+[  OK  ] Stopped Permit User Sessions.
+
+[  OK  ] Stopped target Network.
+
+[  OK  ] Stopped target Remote File Systems.
+
+         Stopping Network Manager...
+
+[  OK  ] Stopped Load JSON user/group Records from Credentials.
+
+[  OK  ] Stopped Network Manager.
+
+[  OK  ] Stopped target Preparation for Network.
+
+         Stopping IPv6 Packet Filtering Framework...
+
+[  OK  ] Stopped Session 2 of User root.
+
+         Stopping User Manager for UID 0...
+
+[  OK  ] Stopped IPv6 Packet Filtering Framework.
+
+         Stopping IPv4 Packet Filtering Framework...
+
+[  OK  ] Stopped User Manager for UID 0.
+
+[  OK  ] Stopped IPv4 Packet Filtering Framework.
+
+[  OK  ] Stopped SystemRescue Initialization, before networking.
+
+         Stopping User Runtime Directory /run/user/0...
+
+[  OK  ] Unmounted /run/user/0.
+
+[  OK  ] Stopped User Runtime Directory /run/user/0.
+
+[  OK  ] Removed slice User Slice of UID 0.
+
+         Stopping User Login Management...
+
+[  OK  ] Finished Generate shutdown-ramfs.
+
+[  OK  ] Stopped User Login Management.
+
+[  OK  ] Stopped target Basic System.
+
+[  OK  ] Stopped target Path Units.
+
+[  OK  ] Stopped target Slice Units.
+
+[  OK  ] Removed slice User and Session Slice.
+
+[  OK  ] Stopped target Socket Units.
+
+[  OK  ] Closed GnuPG network certificate m…ent daemon for /etc/pacman.d/gnupg.
+
+[  OK  ] Removed slice Slice /system/dirmngr.
+
+[  OK  ] Closed GnuPG cryptographic agent a… browsers) for /etc/pacman.d/gnupg.
+
+[  OK  ] Removed slice Slice /system/gpg-agent-browser.
+
+[  OK  ] Closed GnuPG cryptographic agent a…estricted) for /etc/pacman.d/gnupg.
+
+[  OK  ] Removed slice Slice /system/gpg-agent-extra.
+
+[  OK  ] Closed GnuPG cryptographic agent (…emulation) for /etc/pacman.d/gnupg.
+
+[  OK  ] Removed slice Slice /system/gpg-agent-ssh.
+
+[  OK  ] Closed GnuPG cryptographic agent a…rase cache for /etc/pacman.d/gnupg.
+
+[  OK  ] Removed slice Slice /system/gpg-agent.
+
+[  OK  ] Closed GnuPG public key management service for /etc/pacman.d/gnupg.
+
+[  OK  ] Removed slice Slice /system/keyboxd.
+
+[  OK  ] Closed Authorization Manager Agent Helper.
+
+[  OK  ] Closed OpenSSH Server Socket (systemd-ssh-generator, AF_UNIX Local).
+
+[  OK  ] Closed Hostname Service Socket.
+
+[  OK  ] Closed Disk Image Download Service Socket.
+
+[  OK  ] Closed User Login Management Varlink Socket.
+
+[  OK  ] Closed Virtual Machine and Container Registration Service Socket.
+
+[  OK  ] Closed Console Output Muting Service Socket.
+
+[  OK  ] Closed Disk Repartitioning Service Socket.
+
+         Stopping D-Bus System Message Bus...
+
+[  OK  ] Stopped D-Bus System Message Bus.
+
+[  OK  ] Closed D-Bus System Message Bus Socket.
+
+[  OK  ] Stopped target System Initialization.
+
+[  OK  ] Unset automount Arbitrary Executab…ormats File System Automount Point.
+
+[  OK  ] Stopped target Local Encrypted Volumes.
+
+[  OK  ] Stopped Dispatch Password Requests to Console Directory Watch.
+
+[  OK  ] Stopped Forward Password Requests to Wall Directory Watch.
+
+[  OK  ] Stopped target Image Downloads.
+
+[  OK  ] Stopped target Local Integrity Protected Volumes.
+
+[  OK  ] Stopped target Local Verity Protected Volumes.
+
+[  OK  ] Stopped Apply Kernel Variables.
+
+[  OK  ] Closed Process Core Dump Socket.
+
+[  OK  ] Stopped Load Kernel Modules.
+
+[  OK  ] Stopped Update is Completed.
+
+[  OK  ] Stopped Rebuild Journal Catalog.
+
+         Stopping Record System Boot/Shutdown in UTMP...
+
+[  OK  ] Stopped Record System Boot/Shutdown in UTMP.
+
+[  OK  ] Stopped Create System Files and Directories.
+
+[  OK  ] Stopped target Local File Systems.
+
+         Unmounting /mnt/project...
+
+         Unmounting /run/archiso/bootmnt...
+
+         Unmounting /run/archiso/cowspace...
+
+         Unmounting /run/archiso/sfs/airootfs...
+
+         Unmounting /run/archiso/sfs/srm1...
+
+         Unmounting /run/archiso/sfs/srm2...
+
+         Unmounting Temporary Directory /tmp...
+
+         Unmounting Bind mount /var/lib/pac…g between snapshot/rolling repos...
+
+[  OK  ] Unmounted /mnt/project.
+
+[FAILED] Failed unmounting /run/archiso/bootmnt.
+
+[  OK  ] Unmounted /run/archiso/cowspace.
+
+[  OK  ] Unmounted /run/archiso/sfs/airootfs.
+
+[  OK  ] Unmounted /run/archiso/sfs/srm1.
+
+[  OK  ] Unmounted /run/archiso/sfs/srm2.
+
+[  OK  ] Unmounted Temporary Directory /tmp.
+
+[  OK  ] Unmounted Bind mount /var/lib/pacm…ing between snapshot/rolling repos.
+
+[  OK  ] Stopped target Preparation for Local File Systems.
+
+[  OK  ] Stopped target Swaps.
+
+[  OK  ] Reached target Unmount All Filesystems.
+
+         Stopping Monitoring of LVM2 mirror…ing dmeventd or progress polling...
+
+[  OK  ] Stopped Create Static Device Nodes in /dev.
+
+[  OK  ] Stopped Create System Users.
+
+[  OK  ] Stopped Remount Root and Kernel File Systems.
+
+[  OK  ] Stopped Create Static Device Nodes in /dev gracefully.
+
+[  OK  ] Stopped Monitoring of LVM2 mirrors…using dmeventd or progress polling.
+
+[  OK  ] Reached target System Shutdown.
+
+[  OK  ] Reached target Late Shutdown Services.
+
+[  OK  ] Finished System Power Off.
+
+[  OK  ] Reached target System Power Off.
+
+3008;end=ccde31b1f7844f2995f9f0b4f2a8dd0378104[  153.244137] reboot: Power down
+
+=== recovery-boot — complete serial log, terminal escapes removed ===
+BdsDxe: loading Boot0002 "UEFI Misc Device" from PciRoot(0x0)/Pci(0x2,0x0)
+BdsDxe: starting Boot0002 "UEFI Misc Device" from PciRoot(0x0)/Pci(0x2,0x0)
++q6E616D6578104Booting initrd of SystemRescue 13.02.
+
+3008;start=9e77c3835cd44dd18899790b59636884;user=root;hostname=archlinux;machineid=22222222222242228222222222222222;bootid=788167a8ec9c458e9d518adf4890691b;pid=1;pidfdid=2;comm=systemd;type=boot         Expecting device /dev/disk/by-uuid…1164-2a56-4764-997f-2d836ac4b67a...
+
+[  OK  ] Reached target Path Units.
+
+[  OK  ] Reached target Slice Units.
+
+[  OK  ] Reached target Swaps.
+
+[  OK  ] Reached target Timer Units.
+
+[  OK  ] Listening on Journal Socket (/dev/log).
+
+[  OK  ] Listening on Journal Sockets.
+
+[  OK  ] Listening on udev Control Socket.
+
+[  OK  ] Listening on udev Kernel Socket.
+
+[  OK  ] Reached target Socket Units.
+
+         Starting Create List of Static Device Nodes...
+
+         Starting Journal Service...
+
+         Starting Load Kernel Modules...
+
+         Starting Create Static Device Nodes in /dev...
+
+         Starting Coldplug All udev Devices...
+
+[  OK  ] Finished Create List of Static Device Nodes.
+
+[  OK  ] Finished Load Kernel Modules.
+
+[  OK  ] Finished Create Static Device Nodes in /dev.
+
+[  OK  ] Reached target Preparation for Local File Systems.
+
+[  OK  ] Reached target Local File Systems.
+
+         Starting Rule-based Manager for Device Events and Files...
+
+[  OK  ] Started Journal Service.
+
+         Starting Create System Files and Directories...
+
+[  OK  ] Finished Create System Files and Directories.
+
+[  OK  ] Started Rule-based Manager for Device Events and Files.
+
+[  OK  ] Finished Coldplug All udev Devices.
+
+[  OK  ] Reached target System Initialization.
+
+[  OK  ] Reached target Basic System.
+
+[  OK  ] Found device /dev/disk/by-uuid/82a91164-2a56-4764-997f-2d836ac4b67a.
+
+[  OK  ] Reached target Initrd Root Device.
+
+         Mounting /sysroot...
+
+[  OK  ] Mounted /sysroot.
+
+[  OK  ] Reached target Initrd Root File System.
+
+         Starting Mountpoints Configured in the Real Root...
+
+[  OK  ] Finished Mountpoints Configured in the Real Root.
+
+[  OK  ] Reached target Initrd File Systems.
+
+[  OK  ] Reached target Initrd Default Target.
+
+         Starting Cleaning Up and Shutting Down Daemons...
+
+[  OK  ] Stopped target Initrd Default Target.
+
+[  OK  ] Stopped target Basic System.
+
+[  OK  ] Stopped target Initrd Root Device.
+
+[  OK  ] Stopped target Path Units.
+
+[  OK  ] Stopped target Slice Units.
+
+[  OK  ] Stopped target Socket Units.
+
+[  OK  ] Stopped target System Initialization.
+
+[  OK  ] Stopped target Swaps.
+
+[  OK  ] Stopped target Timer Units.
+
+[  OK  ] Stopped Create List of Static Device Nodes.
+
+[  OK  ] Stopped Load Kernel Modules.
+
+[  OK  ] Stopped Create System Files and Directories.
+
+[  OK  ] Stopped target Local File Systems.
+
+[  OK  ] Stopped target Preparation for Local File Systems.
+
+[  OK  ] Stopped Coldplug All udev Devices.
+
+         Stopping Rule-based Manager for Device Events and Files...
+
+[  OK  ] Finished Cleaning Up and Shutting Down Daemons.
+
+[  OK  ] Stopped Rule-based Manager for Device Events and Files.
+
+[  OK  ] Closed udev Control Socket.
+
+         Starting Cleanup udev Database...
+
+[  OK  ] Stopped Create Static Device Nodes in /dev.
+
+[  OK  ] Finished Cleanup udev Database.
+
+[  OK  ] Reached target Switch Root.
+
+         Starting Switch Root...
+
++q6E616D6578104
+Welcome to SystemRescue 13.02!
+
+
+3008;start=60d3f30c3e8546a19bc6540b9efbdee1;user=root;hostname=sr-rehearsal;machineid=11111111111141118111111111111111;bootid=788167a8ec9c458e9d518adf4890691b;pid=1;pidfdid=2;comm=systemd;type=boot[  OK  ] Stopped Switch Root.
+
+[  OK  ] Created slice Slice /system/dirmngr.
+
+[  OK  ] Created slice Slice /system/getty.
+
+[  OK  ] Created slice Slice /system/gpg-agent.
+
+[  OK  ] Created slice Slice /system/gpg-agent-browser.
+
+[  OK  ] Created slice Slice /system/gpg-agent-extra.
+
+[  OK  ] Created slice Slice /system/gpg-agent-ssh.
+
+[  OK  ] Created slice Slice /system/keyboxd.
+
+[  OK  ] Created slice Slice /system/modprobe.
+
+[  OK  ] Created slice Slice /system/serial-getty.
+
+[  OK  ] Created slice Slice /system/systemd-fsck.
+
+[  OK  ] Created slice User and Session Slice.
+
+[  OK  ] Started Dispatch Password Requests to Console Directory Watch.
+
+[  OK  ] Started Forward Password Requests to Wall Directory Watch.
+
+[  OK  ] Set up automount Arbitrary Executa…ormats File System Automount Point.
+
+         Expecting device /dev/disk/by-uuid…1164-2a56-4764-997f-2d836ac4b67a...
+
+         Expecting device /dev/disk/by-uuid/BB2F-2962...
+
+         Expecting device /dev/ttyS0...
+
+[  OK  ] Reached target Image Downloads.
+
+[  OK  ] Stopped target Switch Root.
+
+[  OK  ] Stopped target Initrd File Systems.
+
+[  OK  ] Stopped target Initrd Root File System.
+
+[  OK  ] Reached target Local Integrity Protected Volumes.
+
+[  OK  ] Reached target Path Units.
+
+[  OK  ] Reached target Remote File Systems.
+
+[  OK  ] Reached target Slice Units.
+
+[  OK  ] Reached target Swaps.
+
+[  OK  ] Reached target Local Verity Protected Volumes.
+
+[  OK  ] Listening on Device-mapper event daemon FIFOs.
+
+[  OK  ] Listening on LVM2 poll daemon socket.
+
+[  OK  ] Listening on Query the User Interactively for a Password.
+
+[  OK  ] Listening on Process Core Dump Socket.
+
+[  OK  ] Listening on Credential Encryption/Decryption.
+
+[  OK  ] Listening on Factory Reset Management.
+
+[  OK  ] Listening on Hostname Service Socket.
+
+[  OK  ] Listening on Console Output Muting Service Socket.
+
+[  OK  ] Listening on Disk Repartitioning Service Socket.
+
+[  OK  ] Listening on Simple Block Device Backed Storage Provider.
+
+[  OK  ] Listening on Simple File System Backed Storage Provider.
+
+[  OK  ] Listening on udev Control Socket.
+
+[  OK  ] Listening on udev Varlink Socket.
+
+[  OK  ] Listening on User Database Manager Socket.
+
+         Mounting Huge Pages File System...
+
+         Mounting POSIX Message Queue File System...
+
+         Mounting Kernel Debug File System...
+
+         Mounting Kernel Trace File System...
+
+         Mounting Temporary Directory /tmp...
+
+         Starting Create List of Static Device Nodes...
+
+         Starting Monitoring of LVM2 mirror…ing dmeventd or progress polling...
+
+         Mounting Kernel Configuration File System...
+
+         Mounting FUSE Control File System...
+
+         Starting Journal Service...
+
+         Starting Load Kernel Modules...
+
+         Starting Remount Root and Kernel File Systems...
+
+[  OK  ] Reached target Local Encrypted Volumes.
+
+         Starting Load udev Rules from Credentials...
+
+         Starting Coldplug All udev Devices...
+
+[  OK  ] Mounted Huge Pages File System.
+
+[  OK  ] Mounted POSIX Message Queue File System.
+
+[  OK  ] Mounted Kernel Debug File System.
+
+[  OK  ] Mounted Kernel Trace File System.
+
+[  OK  ] Mounted Temporary Directory /tmp.
+
+[  OK  ] Finished Create List of Static Device Nodes.
+
+[  OK  ] Mounted Kernel Configuration File System.
+
+[  OK  ] Mounted FUSE Control File System.
+
+[  OK  ] Finished Remount Root and Kernel File Systems.
+
+[  OK  ] Finished Load Kernel Modules.
+
+[  OK  ] Finished Load udev Rules from Credentials.
+
+         Starting Load/Save OS Random Seed...
+
+         Starting Apply Kernel Variables...
+
+         Starting Create Static Device Nodes in /dev gracefully...
+
+[  OK  ] Started Journal Service.
+
+         Starting Flush Journal to Persistent Storage...
+
+[  OK  ] Finished Apply Kernel Variables.
+
+         Starting User Database Manager...
+
+[  OK  ] Finished Flush Journal to Persistent Storage.
+
+[  OK  ] Finished Coldplug All udev Devices.
+
+[  OK  ] Finished Load/Save OS Random Seed.
+
+[  OK  ] Finished Monitoring of LVM2 mirror…using dmeventd or progress polling.
+
+         Mounting Arbitrary Executable File Formats File System...
+
+[  OK  ] Mounted Arbitrary Executable File Formats File System.
+
+[  OK  ] Started User Database Manager.
+
+[  OK  ] Finished Create Static Device Nodes in /dev gracefully.
+
+         Starting Journal Log Access Socket...
+
+         Starting Create Static Device Nodes in /dev...
+
+[  OK  ] Listening on Journal Log Access Socket.
+
+[  OK  ] Finished Create Static Device Nodes in /dev.
+
+[  OK  ] Reached target Preparation for Local File Systems.
+
+[  OK  ] Listening on Disk Image Download Service Socket.
+
+         Starting Rule-based Manager for Device Events and Files...
+
+[  OK  ] Started Rule-based Manager for Device Events and Files.
+
+         Starting File System Check on /dev/disk/by-uuid/BB2F-2962...
+
+[  OK  ] Found device /dev/disk/by-uuid/82a91164-2a56-4764-997f-2d836ac4b67a.
+
+         Mounting /home...
+
+[  OK  ] Mounted /home.
+
+[  OK  ] Finished File System Check on /dev/disk/by-uuid/BB2F-2962.
+
+         Mounting /boot...
+
+[  OK  ] Mounted /boot.
+
+[  OK  ] Reached target Local File Systems.
+
+[  OK  ] Listening on Boot Loader Control Service Socket.
+
+[  OK  ] Listening on System Extension Image Management.
+
+         Starting Update Boot Loader Random Seed...
+
+         Starting Create System Files and Directories...
+
+         Starting Load JSON user/group Records from Credentials...
+
+[  OK  ] Finished Update Boot Loader Random Seed.
+
+[  OK  ] Finished Load JSON user/group Records from Credentials.
+
+         Starting Virtual Console Setup...
+
+[  OK  ] Finished Virtual Console Setup.
+
+[  OK  ] Finished Create System Files and Directories.
+
+         Starting Record System Boot/Shutdown in UTMP...
+
+[  OK  ] Finished Record System Boot/Shutdown in UTMP.
+
+[  OK  ] Reached target System Initialization.
+
+[  OK  ] Started Update the plocate database daily.
+
+[  OK  ] Started Daily Cleanup of Temporary Directories.
+
+[  OK  ] Reached target Timer Units.
+
+[  OK  ] Listening on D-Bus System Message Bus Socket.
+
+[  OK  ] Listening on GnuPG network certifi…ent daemon for /etc/pacman.d/gnupg.
+
+[  OK  ] Listening on GnuPG cryptographic a… browsers) for /etc/pacman.d/gnupg.
+
+[  OK  ] Listening on GnuPG cryptographic a…estricted) for /etc/pacman.d/gnupg.
+
+[  OK  ] Listening on GnuPG cryptographic a…emulation) for /etc/pacman.d/gnupg.
+
+[  OK  ] Listening on GnuPG cryptographic a…rase cache for /etc/pacman.d/gnupg.
+
+[  OK  ] Listening on GnuPG public key mana…nt service for /etc/pacman.d/gnupg.
+
+[  OK  ] Listening on Authorization Manager Agent Helper.
+
+[  OK  ] Listening on OpenSSH Server Socket…temd-ssh-generator, AF_UNIX Local).
+
+[  OK  ] Listening on User Login Management Varlink Socket.
+
+[  OK  ] Listening on Virtual Machine and C…tainer Registration Service Socket.
+
+[  OK  ] Reached target Socket Units.
+
+         Starting D-Bus System Message Bus...
+
+[  OK  ] Started D-Bus System Message Bus.
+
+[  OK  ] Reached target Basic System.
+
+         Starting IPv4 Packet Filtering Framework...
+
+         Starting Verify installed recovery fixture...
+
+         Starting User Login Management...
+
+[   11.734847] rehearsal-check[350]: etc/rehearsal/config: OK
+[  OK  ] Started User Login Management.
+
+[   11.819902] rehearsal-check[350]: home/rehearsal/data.bin: OK
+[   11.825439] rehearsal-check[350]: boot/EFI/BOOT/BOOTX64.EFI: OK
+[   11.955086] rehearsal-check[350]: boot/vmlinuz-linux: OK
+[  OK  ] Finished IPv4 Packet Filtering Framework.
+
+         Starting IPv6 Packet Filtering Framework...
+
+[  OK  ] Finished IPv6 Packet Filtering Framework.
+
+[  OK  ] Reached target Preparation for Network.
+
+         Starting Network Manager...
+
+[   12.332539] rehearsal-check[350]: boot/initramfs-linux.img: OK
+[   12.363751] rehearsal-check[365]: TARGET SOURCE        FSTYPE OPTIONS
+[   12.364726] rehearsal-check[365]: /      /dev/vda2[/@] btrfs  rw,relatime,discard=async,space_cache=v2,subvolid=256,subvol=/@
+[   12.371065] rehearsal-check[366]: TARGET SOURCE            FSTYPE OPTIONS
+[   12.371733] rehearsal-check[366]: /home  /dev/vda2[/@home] btrfs  rw,relatime,discard=async,space_cache=v2,subvolid=257,subvol=/@home
+[   12.378209] rehearsal-check[368]: TARGET SOURCE    FSTYPE OPTIONS
+[   12.378697] rehearsal-check[368]: /boot  /dev/vda1 vfat   rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro
+[   12.395819] rehearsal-check[370]: NAME   SERIAL               FSTYPE UUID                                 MOUNTPOINTS
+[   12.396652] rehearsal-check[370]: sr0    QM00005
+[   12.397164] rehearsal-check[370]: vda    SR_REHEARSAL_RECOVER
+[   12.397583] rehearsal-check[370]: ├─vda1                      vfat   BB2F-2962                            /boot
+[   12.398037] rehearsal-check[370]: └─vda2                      btrfs  82a91164-2a56-4764-997f-2d836ac4b67a /home
+[   12.398347] rehearsal-check[370]:                                                                         /
+[   12.399530] rehearsal-check[333]: SR_INSTALLED_BOOT_OK
+[  OK  ] Finished Verify installed recovery fixture.
+
+         Starting Hostname Service...
+
+[  OK  ] Started Hostname Service.
+
+[  OK  ] Listening on Load/Save RF Kill Switch Status /dev/rfkill Watch.
+
+         Starting Network Manager Script Dispatcher Service...
+
+[  OK  ] Started Network Manager.
+
+[  OK  ] Reached target Network.
+
+         Starting OpenSSH Daemon...
+
+         Starting Permit User Sessions...
+
+[  OK  ] Started Network Manager Script Dispatcher Service.
+
+[  OK  ] Finished Permit User Sessions.
+
+[  OK  ] Started Getty on tty1.
+
+[  OK  ] Started Serial Getty on ttyS0.
+
+[  OK  ] Reached target Login Prompts.
+
+[  OK  ] Started OpenSSH Daemon.
+
+[  OK  ] Reached target Multi-User System.
+
+[  OK  ] Reached target SSH Access Available.
+
+10478104783008;start=4a12c5db6b8a464fa1b964d6b273c055;user=root;hostname=sr-rehearsal;machineid=11111111111141118111111111111111;bootid=788167a8ec9c458e9d518adf4890691b;pid=385;pidfdid=386;comm=(agetty);servicename=serial-getty@ttyS0.service;invocationid=3e60744168de4b9aa095db1e03b1b6b1;type=service+q6E616D65
+
+ ========= SystemRescue 13.02 (x86_64) ======== ttyS0/6 =========
+                    https://www.system-rescue.org/
+
+* Console environment :
+   Run setkmap to choose the keyboard layout (also accessible with the arrow up key)
+   Run manual to read the documentation of SystemRescue
+
+* Graphical environment :
+   Type startx to run the graphical environment
+   X.Org comes with the XFCE environment and several graphical tools:
+   - Partition manager: .. gparted
+   - Web browser: ........ firefox
+   - Text editor: ........ featherpad
+
+sr-rehearsal login: root (automatic login)
+
+
+3008;start=25bda7aac3224c0f9ec7d389069c9b65;user=root;hostname=sr-rehearsal;machineid=11111111111141118111111111111111;bootid=788167a8ec9c458e9d518adf4890691b;pid=385;pidfdid=386;comm=login;targetuser=root;sessionid=3;type=session3008;start=17cb429e-c604-44de-bf42-c9b32b0a1da9;machineid=11111111111141118111111111111111;user=root;hostname=sr-rehearsal;bootid=788167a8-ec9c-458e-9d51-8adf4890691b;pid=00000000000000000409;type=shell;cwd=/root[root@sr-rehearsal ~]# systemctl status rehearsal-check.service --no-pager; lsblk -o NAME,TYPE,SERIAL,FSTYPE,MOUNTPOINTS; findmnt /; findmnt /home; bash -x /usr/local/bin/rehearsal-check; result=$?; printf '\nSR_BOOT_CHECK_EXIT=%s\n' "$result"
+
+3008;start=c96eba2b-b13f-4110-b9c6-a4a7e96e394f;machineid=11111111111141118111111111111111;user=root;hostname=sr-rehearsal;bootid=788167a8-ec9c-458e-9d51-8adf4890691b;pid=00000000000000000409;type=command;cwd=/root○ rehearsal-check.service - Verify installed recovery fixture
+     Loaded: loaded (8;;file://sr-rehearsal/etc/systemd/system/rehearsal-check.service/etc/systemd/system/rehearsal-check.service8;;; enabled; preset: disabled)
+     Active: inactive (dead) since Sat 2026-09-19 21:25:59 UTC; 2s ago
+ Invocation: 0faf7b7941fd40859591de723d66410c
+    Process: 333 ExecStart=/usr/local/bin/rehearsal-check (code=exited, status=0/SUCCESS)
+   Main PID: 333 (code=exited, status=0/SUCCESS)
+   Mem peak: 76.5M
+        CPU: 782ms
+
+Sep 19 21:25:59 sr-rehearsal rehearsal-check[370]: NAME   SERIAL            …NTS
+Sep 19 21:25:59 sr-rehearsal rehearsal-check[370]: sr0    QM00005
+Sep 19 21:25:59 sr-rehearsal rehearsal-check[370]: vda    SR_REHEARSAL_RECOVER
+Sep 19 21:25:59 sr-rehearsal rehearsal-check[370]: ├─vda1                   …oot
+Sep 19 21:25:59 sr-rehearsal rehearsal-check[370]: └─vda2                   …ome
+Sep 19 21:25:59 sr-rehearsal rehearsal-check[370]:                          …  /
+Sep 19 21:25:59 sr-rehearsal rehearsal-check[333]: SR_INSTALLED_BOOT_OK
+Sep 19 21:25:59 sr-rehearsal systemd[1]: rehearsal-check.service: Deactivat…lly.
+Sep 19 21:25:59 sr-rehearsal systemd[1]: Finished Verify installed recovery…ure.
+Sep 19 21:25:59 sr-rehearsal systemd[1]: rehearsal-check.service: Consumed …eak.
+Hint: Some lines were ellipsized, use -l to show in full.
+NAME   TYPE SERIAL               FSTYPE MOUNTPOINTS
+sr0    rom  QM00005                     
+vda    disk SR_REHEARSAL_RECOVER        
+├─vda1 part                      vfat   /boot
+└─vda2 part                      btrfs  /home
+                                        /
+TARGET SOURCE      FSTYPE OPTIONS
+/      /dev/vda2[/@]
+                   btrfs  rw,relatime,discard=async,space_cache=v2,subvolid=256,
+TARGET SOURCE        FSTYPE OPTIONS
+/home  /dev/vda2[/@home]
+                     btrfs  rw,relatime,discard=async,space_cache=v2,subvolid=25
++ set -euo pipefail
++ [[ -d /sys/firmware/efi ]]
+++ findmnt -n -o FSTYPE /
++ [[ btrfs == btrfs ]]
+++ findmnt -n -o FSROOT /
++ [[ /@ == /@ ]]
+++ findmnt -n -o FSROOT /home
++ [[ /@home == /@home ]]
+++ lsblk -dn -o TYPE /dev/vda
++ [[ disk == disk ]]
+++ lsblk -dn -o NAME,TYPE
+++ awk '$2 == "disk" {print $1}'
++ [[ vda == vda ]]
++ cd /
++ sha256sum -c /etc/rehearsal.sha256
+etc/rehearsal/config: OK
+home/rehearsal/data.bin: OK
+boot/EFI/BOOT/BOOTX64.EFI: OK
+boot/vmlinuz-linux: OK
+boot/initramfs-linux.img: OK
+++ stat -c %i /home/rehearsal/data.bin
+++ stat -c %i /home/rehearsal/hardlink.bin
++ [[ 258 == 258 ]]
+++ readlink /home/rehearsal/symlink.bin
++ [[ data.bin == data.bin ]]
++ findmnt /
+TARGET SOURCE      FSTYPE OPTIONS
+/      /dev/vda2[/@]
+                   btrfs  rw,relatime,discard=async,space_cache=v2,subvolid=256,
++ findmnt /home
+TARGET SOURCE        FSTYPE OPTIONS
+/home  /dev/vda2[/@home]
+                     btrfs  rw,relatime,discard=async,space_cache=v2,subvolid=25
++ findmnt /boot
+TARGET SOURCE FSTYPE OPTIONS
+/boot  /dev/vda1
+              vfat   rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=as
++ lsblk -o NAME,SERIAL,FSTYPE,UUID,MOUNTPOINTS
+NAME   SERIAL            FSTYPE UUID                                 MOUNTPOINTS
+sr0    QM00005                                                       
+vda    SR_REHEARSAL_RECO                                             
+├─vda1                   vfat   BB2F-2962                            /boot
+└─vda2                   btrfs  82a91164-2a56-4764-997f-2d836ac4b67a /home
+                                                                     /
++ printf '\nSR_INSTALLED_BOOT_OK\n'
+
+SR_INSTALLED_BOOT_OK
+root
+sync; systemctl poweroff
+
+SR_BOOT_CHECK_EXIT=0
+3008;end=c96eba2b-b13f-4110-b9c6-a4a7e96e394f;exit=success3008;start=17cb429e-c604-44de-bf42-c9b32b0a1da9;machineid=11111111111141118111111111111111;user=root;hostname=sr-rehearsal;bootid=788167a8-ec9c-458e-9d51-8adf4890691b;pid=00000000000000000409;type=shell;cwd=/root[root@sr-rehearsal ~]# root
+
+3008;start=dc2a8ade-fda5-48b0-a8d7-23fda0606e9b;machineid=11111111111141118111111111111111;user=root;hostname=sr-rehearsal;bootid=788167a8-ec9c-458e-9d51-8adf4890691b;pid=00000000000000000409;type=command;cwd=/root-bash: root: command not found
+3008;end=dc2a8ade-fda5-48b0-a8d7-23fda0606e9b;exit=failure;status=1273008;start=17cb429e-c604-44de-bf42-c9b32b0a1da9;machineid=11111111111141118111111111111111;user=root;hostname=sr-rehearsal;bootid=788167a8-ec9c-458e-9d51-8adf4890691b;pid=00000000000000000409;type=shell;cwd=/root[root@sr-rehearsal ~]# sync; systemctl poweroff
+
+3008;start=5cdcd472-7b4a-4c81-a622-b7ee8b534b51;machineid=11111111111141118111111111111111;user=root;hostname=sr-rehearsal;bootid=788167a8-ec9c-458e-9d51-8adf4890691b;pid=00000000000000000409;type=command;cwd=/root3008;end=5cdcd472-7b4a-4c81-a622-b7ee8b534b51;exit=success3008;start=17cb429e-c604-44de-bf42-c9b32b0a1da9;machineid=11111111111141118111111111111111;user=root;hostname=sr-rehearsal;bootid=788167a8-ec9c-458e-9d51-8adf4890691b;pid=00000000000000000409;type=shell;cwd=/root[root@sr-rehearsal ~]#          Stopping Session 1 of User root...
+
+
+
+
+         Stopping Session 3 of User root...
+
+[  OK  ] Removed slice Slice /system/modprobe.
+
+[  OK  ] Stopped target Multi-User System.
+
+[  OK  ] Stopped target Login Prompts.
+
+[  OK  ] Stopped target SSH Access Available.
+
+[  OK  ] Stopped target Timer Units.
+
+[  OK  ] Stopped Update the plocate database daily.
+
+[  OK  ] Stopped Daily Cleanup of Temporary Directories.
+
+[  OK  ] Closed LVM2 poll daemon socket.
+
+[  OK  ] Closed Load/Save RF Kill Switch Status /dev/rfkill Watch.
+
+         Stopping Network Manager Script Dispatcher Service...
+
+         Stopping Getty on tty1...
+
+         Starting Generate shutdown-ramfs...
+
+         Stopping Serial Getty on ttyS0...
+
+         Stopping OpenSSH Daemon...
+
+         Stopping Hostname Service...
+
+[  OK  ] Stopped Load udev Rules from Credentials.
+
+[  OK  ] Stopped Hostname Service.
+
+[  OK  ] Stopped Network Manager Script Dispatcher Service.
+
+[  OK  ] Stopped OpenSSH Daemon.
+
+[  OK  ] Stopped Getty on tty1.
+
+[  OK  ] Stopped Serial Getty on ttyS0.
+
+104783008;end=4a12c5db6b8a464fa1b964d6b273c055[  OK  ] Stopped Session 1 of User root.
+
+[  OK  ] Stopped Session 3 of User root.
+
+[  OK  ] Removed slice Slice /system/getty.
+
+[  OK  ] Removed slice Slice /system/serial-getty.
+
+         Stopping Permit User Sessions...
+
+         Stopping User Manager for UID 0...
+
+[  OK  ] Stopped Permit User Sessions.
+
+[  OK  ] Stopped target Network.
+
+[  OK  ] Stopped target Remote File Systems.
+
+         Stopping Network Manager...
+
+[  OK  ] Stopped Load JSON user/group Records from Credentials.
+
+[  OK  ] Stopped User Manager for UID 0.
+
+[  OK  ] Stopped Network Manager.
+
+[  OK  ] Stopped target Preparation for Network.
+
+         Stopping IPv6 Packet Filtering Framework...
+
+         Stopping User Runtime Directory /run/user/0...
+
+[  OK  ] Unmounted /run/user/0.
+
+[  OK  ] Stopped User Runtime Directory /run/user/0.
+
+[  OK  ] Removed slice User Slice of UID 0.
+
+         Stopping User Login Management...
+
+[  OK  ] Finished Generate shutdown-ramfs.
+
+[  OK  ] Stopped IPv6 Packet Filtering Framework.
+
+[  OK  ] Stopped User Login Management.
+
+         Stopping IPv4 Packet Filtering Framework...
+
+[  OK  ] Stopped IPv4 Packet Filtering Framework.
+
+[  OK  ] Stopped target Basic System.
+
+[  OK  ] Stopped target Path Units.
+
+[  OK  ] Stopped target Slice Units.
+
+[  OK  ] Removed slice User and Session Slice.
+
+[  OK  ] Stopped target Socket Units.
+
+[  OK  ] Closed GnuPG network certificate m…ent daemon for /etc/pacman.d/gnupg.
+
+[  OK  ] Removed slice Slice /system/dirmngr.
+
+[  OK  ] Closed GnuPG cryptographic agent a… browsers) for /etc/pacman.d/gnupg.
+
+[  OK  ] Removed slice Slice /system/gpg-agent-browser.
+
+[  OK  ] Closed GnuPG cryptographic agent a…estricted) for /etc/pacman.d/gnupg.
+
+[  OK  ] Removed slice Slice /system/gpg-agent-extra.
+
+[  OK  ] Closed GnuPG cryptographic agent (…emulation) for /etc/pacman.d/gnupg.
+
+[  OK  ] Removed slice Slice /system/gpg-agent-ssh.
+
+[  OK  ] Closed GnuPG cryptographic agent a…rase cache for /etc/pacman.d/gnupg.
+
+[  OK  ] Removed slice Slice /system/gpg-agent.
+
+[  OK  ] Closed GnuPG public key management service for /etc/pacman.d/gnupg.
+
+[  OK  ] Removed slice Slice /system/keyboxd.
+
+[  OK  ] Closed Authorization Manager Agent Helper.
+
+[  OK  ] Closed OpenSSH Server Socket (systemd-ssh-generator, AF_UNIX Local).
+
+[  OK  ] Closed Hostname Service Socket.
+
+[  OK  ] Closed Disk Image Download Service Socket.
+
+[  OK  ] Closed User Login Management Varlink Socket.
+
+[  OK  ] Closed Virtual Machine and Container Registration Service Socket.
+
+[  OK  ] Closed Console Output Muting Service Socket.
+
+[  OK  ] Closed Disk Repartitioning Service Socket.
+
+         Stopping D-Bus System Message Bus...
+
+[  OK  ] Stopped D-Bus System Message Bus.
+
+[  OK  ] Closed D-Bus System Message Bus Socket.
+
+[  OK  ] Stopped target System Initialization.
+
+[  OK  ] Unset automount Arbitrary Executab…ormats File System Automount Point.
+
+[  OK  ] Stopped target Local Encrypted Volumes.
+
+[  OK  ] Stopped Dispatch Password Requests to Console Directory Watch.
+
+[  OK  ] Stopped Forward Password Requests to Wall Directory Watch.
+
+[  OK  ] Stopped target Image Downloads.
+
+[  OK  ] Stopped target Local Integrity Protected Volumes.
+
+[  OK  ] Stopped target Local Verity Protected Volumes.
+
+[  OK  ] Stopped Update Boot Loader Random Seed.
+
+         Stopping Load/Save OS Random Seed...
+
+[  OK  ] Stopped Apply Kernel Variables.
+
+[  OK  ] Closed Process Core Dump Socket.
+
+[  OK  ] Stopped Load Kernel Modules.
+
+         Stopping Record System Boot/Shutdown in UTMP...
+
+[  OK  ] Stopped Record System Boot/Shutdown in UTMP.
+
+[  OK  ] Stopped Create System Files and Directories.
+
+[  OK  ] Stopped target Local File Systems.
+
+         Unmounting /boot...
+
+         Unmounting /home...
+
+         Unmounting Temporary Directory /tmp...
+
+[  OK  ] Stopped Load/Save OS Random Seed.
+
+[  OK  ] Unmounted Temporary Directory /tmp.
+
+[  OK  ] Unmounted /home.
+
+[  OK  ] Stopped target Swaps.
+
+[  OK  ] Unmounted /boot.
+
+[  OK  ] Reached target Unmount All Filesystems.
+
+[  OK  ] Stopped File System Check on /dev/disk/by-uuid/BB2F-2962.
+
+[  OK  ] Removed slice Slice /system/systemd-fsck.
+
+[  OK  ] Stopped target Preparation for Local File Systems.
+
+         Stopping Monitoring of LVM2 mirror…ing dmeventd or progress polling...
+
+[  OK  ] Stopped Remount Root and Kernel File Systems.
+
+[  OK  ] Stopped Create Static Device Nodes in /dev.
+
+[  OK  ] Stopped Create Static Device Nodes in /dev gracefully.
+
+[  OK  ] Stopped Monitoring of LVM2 mirrors…using dmeventd or progress polling.
+
+[  OK  ] Reached target System Shutdown.
+
+[  OK  ] Reached target Late Shutdown Services.
+
+[  OK  ] Finished System Power Off.
+
+[  OK  ] Reached target System Power Off.
+
+3008;end=60d3f30c3e8546a19bc6540b9efbdee178104[   18.215355] reboot: Power down

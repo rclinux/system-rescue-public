@@ -13,15 +13,18 @@ that ISO, using the same isolated disks. The kernel/initramfs are loaded directl
 from the preserved runtime for reliable serial automation; this is separate
 from a firmware boot test of the ISO.
 
-**Harness inputs (as of 2026-09-19):** `tests/run_vm.py` and
-`tests/two_vm_recovery.py` load the kernel and initramfs from
-`baseline/usb-files/sysresccd/boot/x86_64/`, extracted from the original USB
-capture. That directory is not present (`baseline/` holds only
-`last-known-good.iso`), so those two harnesses cannot run until it is
-repopulated, for example by extracting the kernel and initramfs from an ISO.
-`tests/two_vm_recovery.py` also requires `dist/system-rescue-0.1.0-candidate2.iso`,
-as does `packaging/build_nvidia.py` (as its base); `dist/` currently holds only
-candidate 5. `tests/boot_iso.py` needs neither.
+**Harness inputs:** `tests/run_vm.py` and `tests/two_vm_recovery.py` load the
+kernel and initramfs from `baseline/usb-files/sysresccd/boot/x86_64/`. The
+original USB capture that supplied them is gone, so regenerate them from any
+candidate ISO with `packaging/extract_boot_runtime.sh [ISO]` (default
+`baseline/last-known-good.iso`; it never overwrites). Both harnesses take an
+optional ISO path, default to `baseline/last-known-good.iso`, and need a
+`<iso>.sha256` sidecar. They need `qemu-system-x86_64` and OVMF (`edk2-ovmf`)
+and run under QEMU software emulation. `packaging/build_nvidia.py` still needs
+the missing candidate-2 ISO and cannot be rerun; it was the candidate-3 build
+step. `tests/boot_iso.py` needs only OVMF and an ISO. All three harness runs
+passed against candidate 5 on 2026-09-19 (see the
+[checkpoint](build-checkpoint.md)).
 
 The guest exercises:
 
@@ -69,9 +72,9 @@ Extended/logical DOS tables, hybrid GPT/MBR and multi-device Btrfs are rejected.
 
 Real-hardware round trips have since been run (in place on 2026-09-10 and
 2026-09-19, and against an isolated spare on 2026-09-14 without saved logs), but
-a fully documented isolated-spare rehearsal is still open. Before a final
-release, a spare disk must be designated for a destructive
-recovery rehearsal. Record its freshly observed by-id path, model, serial,
+the maintainer accepted these as sufficient on 2026-09-19 instead of a further
+isolated-spare rehearsal. Should one be run, a spare disk must be designated for
+a destructive recovery rehearsal. Record its freshly observed by-id path, model, serial,
 capacity and sector size, and obtain explicit authorization for that disk.
 The original SystemRescue USB is excluded. Rehearse backup/restore and boot with
 only the intended restored system visible, avoiding duplicate filesystem UUIDs.

@@ -1,0 +1,27 @@
+{
+  "iso": "last-known-good.iso",
+  "iso_sha256": "42a666f55cc7075456e5366373283a14e7dba8592dee6c2ad13270a08cb3d5eb",
+  "source_origin": "Disk installation from preserved SystemRescue Linux root filesystem",
+  "stages": [
+    {
+      "stage": "setup",
+      "result": "PASS"
+    },
+    {
+      "stage": "source-boot",
+      "result": "PASS"
+    },
+    {
+      "stage": "capture",
+      "result": "PASS"
+    },
+    {
+      "stage": "restore",
+      "result": "PASS"
+    },
+    {
+      "stage": "recovery-boot",
+      "result": "PASS"
+    }
+  ]
+}

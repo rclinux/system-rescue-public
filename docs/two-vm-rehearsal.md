@@ -26,11 +26,15 @@ passed both as a startup service and when repeated from the serial console.
 
 ## Reproduce
 
-Run `python3 tests/two_vm_recovery.py` from the repository. (As of 2026-09-19
-it cannot run: it needs `dist/system-rescue-0.1.0-candidate2.iso` and the
-kernel/initramfs under `baseline/usb-files/`, neither of which is present; see
-[recovery testing](recovery-testing.md).) The runner verifies
-candidate 2's ISO checksum and creates a new `packaging/build/two-vm-*/` evidence
+Run `python3 tests/two_vm_recovery.py` from the repository. It takes an optional
+ISO path (default `baseline/last-known-good.iso`, which needs a `.sha256`
+sidecar) and loads the kernel/initramfs from `baseline/usb-files/`, regenerated
+with `packaging/extract_boot_runtime.sh` (see [recovery testing](recovery-testing.md)).
+The 2026-09-10 pass above used candidate 2, whose ISO no longer exists; the
+rehearsal was repeated for candidate 5 on 2026-09-19 and all five stages passed
+([results](evidence/candidate5-two-vm-results.json),
+[log](evidence/candidate5-two-vm.log)). The runner verifies
+the ISO's checksum against its sidecar and creates a new `packaging/build/two-vm-*/` evidence
 directory. No real disks or networking are attached. The source and recovery VMs
 have distinct machine UUIDs; each firmware boot starts with fresh OVMF variables.
 

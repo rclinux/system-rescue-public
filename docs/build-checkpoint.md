@@ -1,5 +1,44 @@
 # Recovery checkpoint
 
+## Candidate 5 — VM harnesses restored and rerun (2026-09-19)
+
+The QEMU harnesses had stopped working. They loaded a kernel and initramfs from
+`baseline/usb-files/` (supplied by the original USB capture, now missing) and
+two of them required the candidate-2 ISO, which no longer exists anywhere
+checked: this machine, `dist/`, or the offline backup drive's build-input and
+repository backups. Restored on 2026-09-19:
+
+- Installed `qemu-system-x86` 11.1.1 and `edk2-ovmf`; neither was present.
+- Added `packaging/extract_boot_runtime.sh`, which extracts `vmlinuz` and
+  `sysresccd.img` from a candidate ISO into `baseline/usb-files/sysresccd/boot/x86_64/`.
+  They were taken from candidate 5 (SHA-256 `1cfaf167…` and `825b7cd1…`), not the
+  original capture. Candidates built with `sysrescue-customize` carry the base
+  kernel and initramfs unchanged, but the extracted files were not hash-compared
+  against the original USB's.
+- `tests/run_vm.py` and `tests/two_vm_recovery.py` now take any ISO that has a
+  `.sha256` sidecar (default `baseline/last-known-good.iso`, which is candidate 5).
+
+Results against candidate 5 (SHA-256 `42a666f5…`), under QEMU software emulation
+with no host disks or network. All three runs exited 0:
+
+- **Backup/restore round trip** (`run_vm.py`): GPT/EFI/Btrfs with subvolumes,
+  snapshot, swapfile, swap UUID and raw partition, plus DOS/ext4; source
+  preservation, busy-source rejection, corrupt-image rejection with the target
+  unchanged, and no manifest from a terminated capture. [Log](evidence/candidate5-roundtrip.log).
+- **NVIDIA guest checks** (`run_vm.py … nvidia_guest.sh`): packaging, ABI metadata
+  and shared-library dependencies, then the same round trips.
+  [Log](evidence/candidate5-nvidia-guest.log). `modprobe nvidia` reports
+  "No such device" there because QEMU has no NVIDIA GPU.
+- **Two-VM installed-system rehearsal** (`two_vm_recovery.py`): setup, source
+  boot, capture, restore and recovery boot all PASS.
+  [Results](evidence/candidate5-two-vm-results.json), [log](evidence/candidate5-two-vm.log).
+
+This is the first time the two-VM rehearsal has run on a build other than
+candidate 2. It is VM-level evidence only and says nothing about physical
+hardware. `packaging/build_nvidia.py` still needs the missing candidate-2 ISO
+and cannot be rerun; it was the candidate-3 build step, and new builds use
+`bin/build-iso.sh`.
+
 ## Real-hardware round trip — ext4 Linux Mint NVMe (2026-09-19)
 
 I ran a full backup → restore of a 4 TB NVMe holding a Linux Mint install (GPT:
@@ -27,10 +66,18 @@ This is not the isolated-spare rehearsal: with one disk as both source and
 target there was no untouched original to isolate or compare against, and
 duplicate-UUID handling was not exercised. It also cannot supply the identity
 of the 2026-09-14 spare disk. What it adds is a complete, logged real-hardware
-round trip on a non-Btrfs (ext4) installed OS. Not recorded: which rescue USB
-was booted (presumably candidate 5, the only current build), the backup
-storage's identity, and whether the separate Verify workflow ran before the
-restore (the restore's own pre-verification did).
+round trip on a non-Btrfs (ext4) installed OS.
+
+Recorded later the same day, on my word: the rescue USB was **candidate 5**,
+the backup storage was a 12 TB external hard drive, and I ran the separate
+Verify workflow on the backup before restoring. No separate verify log was
+saved, though the restore's own pre-restore verification also passed.
+
+**Decision (2026-09-19):** I accepted the in-place round trips (2026-09-10 and
+2026-09-19) as sufficient in place of an isolated-spare rehearsal. That is a
+decision about the release gate, not new evidence: duplicate-UUID isolation,
+file-content comparison after a hardware restore, BIOS bootstrap recovery, 4Kn
+drives and every Btrfs feature combination remain not established.
 
 ## Candidate 5 — restore-label fix, hardware verification (2026-09-14)
 
@@ -280,6 +327,10 @@ Source and target were the same disk, so it does not change item 2/3.
    recovery, 4Kn hardware and every Btrfs feature combination are not established.
 4. Only after recovery rehearsal, produce a final tagged release and release
    notes, then flash a separately identified new USB when explicitly requested.
+
+Update 2026-09-19: the in-place round trips were accepted as sufficient for
+item 2/3, so the remaining gate before a release is item 4, the final tagged
+release and release notes, which has not been produced.
 
 Original source USB and `baseline/` remain untouched. On September 10,
 candidate 2 was flashed to a KANGURU SS3 USB drive. Direct readback of all

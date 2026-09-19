@@ -57,6 +57,8 @@ NVIDIA module metadata and shared-library dependencies in the live guest,
 then runs the isolated backup/restore fixture tests. A separate UEFI boot
 checks the actual boot menu and graphical desktop. QEMU has no NVIDIA GPU;
 these checks cannot establish physical GPU acceleration or display output.
+They passed against candidate 5 on 2026-09-19
+([log](evidence/candidate5-nvidia-guest.log)).
 
 On the workstation, boot normally and check `nvidia-smi`, the desktop,
 launcher, keyboard, storage inventory and tty2 fallback. Record failures and

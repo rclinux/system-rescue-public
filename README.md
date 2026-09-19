@@ -81,10 +81,12 @@ exercised directly:
   and inode counts after it; the restored partition and filesystem UUIDs match
   the manifest. The successful boot is a user report, not a logged check.
 
-Still not established: a fully documented isolated-spare rehearsal,
+The maintainer accepted the in-place round trips as sufficient in place of a
+further isolated-spare rehearsal (2026-09-19). Still not established:
 duplicate-UUID isolation on real hardware, file-content comparison after a
 hardware restore, BIOS bootstrap recovery, 4Kn drives, and every Btrfs feature
-combination. Full details, dates, and exactly what each checkpoint does and
+combination. The remaining step before a release is the final tagged release
+and release notes. Full details, dates, and exactly what each checkpoint does and
 doesn't establish are in [`docs/build-checkpoint.md`](docs/build-checkpoint.md).
 
 ## Non-negotiable media boundary
@@ -108,8 +110,8 @@ separately identified, freshly verified USB.
 7. Store the release offline and flash a new USB. Read back and verify the
    flashed image. Retain the original USB unchanged.
 
-Steps 1–4 are done. Step 5 is partly done (see Status). Steps 6–7 wait on a
-final release, although development candidates have been flashed to
+Steps 1–5 are done (step 5 through the in-place round trips, accepted as
+sufficient; see Status). Steps 6–7 wait on a final release, although development candidates have been flashed to
 separately identified USB drives for hardware testing.
 
 `bash bin/build-iso.sh <new-candidate-name.iso>` builds and verifies a
@@ -127,9 +129,10 @@ python3 -m unittest discover -s tests -v
 
 Runs all regression tests without touching real devices (25 currently pass).
 Needs `bash`, `jq`, and `zstd`. The QEMU harnesses (`tests/run_vm.py`,
-`tests/two_vm_recovery.py`) can't currently run: they need a kernel/initramfs
-and a candidate-2 ISO that are no longer present (see
-[`docs/recovery-testing.md`](docs/recovery-testing.md)).
+`tests/two_vm_recovery.py`) also need `qemu-system-x86_64`, OVMF and a
+kernel/initramfs extracted with `packaging/extract_boot_runtime.sh`; see
+[`docs/recovery-testing.md`](docs/recovery-testing.md). They passed against
+candidate 5 on 2026-09-19.
 
 ```sh
 python3 tests/verify_preservation.py

@@ -15,7 +15,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def run():
-    iso = Path(sys.argv[1]).resolve() if len(sys.argv) > 1 else ROOT / 'dist/system-rescue-0.1.0-candidate1.iso'
+    iso = Path(sys.argv[1]).resolve() if len(sys.argv) > 1 else ROOT / 'baseline/last-known-good.iso'
     app_root = '/usr/local/system_rescue' if len(sys.argv) > 1 else '/mnt/project'
     work = Path(tempfile.mkdtemp(prefix='roundtrip-', dir=ROOT / 'packaging/build'))
     share = work / 'share'; share.mkdir()
