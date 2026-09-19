@@ -1,0 +1,22 @@
+{
+  "iso": "dist/system-rescue-0.1.0-candidate5-restore-label-fix.iso",
+  "built_from": {
+    "method": "sysrescue-customize --auto against an already-verified prior candidate ISO, not the pristine baseline (baseline/ archive not present on this machine)",
+    "source_iso": "system-rescue-0.1.0-candidate4-nvidia-progress.iso",
+    "source_sha256": "52522b5b8d5f657d5e6019d303efc15e36fdb4e3167d6af0a659435e168dd651"
+  },
+  "change": "lib/job_select.sh: restore/verify picker now leads with the job directory's own name (the user's rename) instead of source_disk.model, since the same physical disk gets reformatted and re-backed-up under different names",
+  "target": "/dev/disk/by-id/usb-PNY_USB_3.0_FD_REDACTED",
+  "identity": {
+    "vendor": "PNY",
+    "model": "USB 3.0 FD",
+    "serial": "REDACTED",
+    "capacity_bytes": 63999836160
+  },
+  "bytes_verified": 1770061824,
+  "sha256": "42a666f55cc7075456e5366373283a14e7dba8592dee6c2ad13270a08cb3d5eb",
+  "method": "dd bs=4M conv=fsync to the by-id path, blockdev --flushbufs, exact-length readback SHA-256 comparison",
+  "completed_utc": "2026-09-14T12:47:00+00:00",
+  "note": "Overwrote a pre-existing ISO9660 volume (COS_202608) on this drive with the user's explicit go-ahead. Hardware boot test pending (user to run).",
+  "hardware_boot": "Pending user reboot test"
+}

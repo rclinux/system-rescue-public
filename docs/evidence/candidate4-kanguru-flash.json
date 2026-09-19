@@ -1,0 +1,17 @@
+{
+  "iso": "dist/system-rescue-0.1.0-candidate4-nvidia-progress.iso",
+  "target": "/dev/disk/by-id/usb-KANGURU_SS3_REDACTED",
+  "identity": {
+    "path": "/dev/sda",
+    "type": "disk",
+    "tran": "usb",
+    "size": 15846080512,
+    "model": "SS3",
+    "serial": "REDACTED",
+    "mountpoints": []
+  },
+  "bytes_verified": 1768292352,
+  "sha256": "52522b5b8d5f657d5e6019d303efc15e36fdb4e3167d6af0a659435e168dd651",
+  "readback": "direct I/O, complete ISO length matched",
+  "completed_utc": "2026-09-10T16:23:19.845437+00:00"
+}

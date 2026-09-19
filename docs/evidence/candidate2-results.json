@@ -1,0 +1,13 @@
+{
+  "candidate": "system-rescue-0.1.0-candidate2.iso",
+  "sha256": "ac9a63432b290eee910f3160bd17f7e185d19694820b7a2c62586b4a20b77cff",
+  "source_revision": "5fae2b0b21ed13d7c268b4bc5b52c20ca9df46ea",
+  "guest_exit": 0,
+  "gpt_btrfs_roundtrip": "passed",
+  "dos_ext4_roundtrip": "passed",
+  "uefi_desktop": "passed",
+  "desktop_launcher_activation": "passed via gio launch",
+  "tty2_fallback": "passed",
+  "hardware_recovery": "not tested",
+  "guest_log_sha256": "b367d54fbd96a54bb30b0f75c6301a9954385eec34ce8748fdd2b52719d0cc69"
+}

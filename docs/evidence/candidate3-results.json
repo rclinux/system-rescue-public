@@ -1,0 +1,29 @@
+{
+  "file": "system-rescue-0.1.0-candidate3-nvidia.iso",
+  "sha256": "370eddd462eb57e4f12aa28a382fa532e665368b31d62871b7538a39241bb3a3",
+  "bytes": 1770061824,
+  "base_sha256": "ac9a63432b290eee910f3160bd17f7e185d19694820b7a2c62586b4a20b77cff",
+  "kernel": "6.18.41-1-lts",
+  "nvidia": "610.57.04",
+  "packages": {
+    "nvidia-utils-610.57.04-1-x86_64.pkg.tar.zst": "2ea5a57afc5104edd40dc4f4b1160f067f09ff1dad7e1bc588408087d1f7c0d0",
+    "egl-gbm-1.1.3-1-x86_64.pkg.tar.zst": "61605a3de38cb9cc3971ad4b17f15683e177984404ae4a3784dc6225dbd4d17e",
+    "egl-wayland-4:1.1.21-1-x86_64.pkg.tar.zst": "8aba38b29af86b4b525708767b482d9100e48264d237d929ef6c91ab9216c37c",
+    "egl-wayland2-1.0.1-1-x86_64.pkg.tar.zst": "62d84c66673678347048be4289827015fb112d9a908b470155354081946e3bba",
+    "egl-x11-1.0.5-1-x86_64.pkg.tar.zst": "d23c2955e03405ad923f12a189640ec4938a295f054ce7c19c6b177b54b26056",
+    "nvidia-open-dkms-610.57.04-1-x86_64.pkg.tar.zst": "afc35c9418847b7e7f118da9e2ebba61a478410c13597d590236744284bc50a9",
+    "linux-lts-headers-6.18.41-1-x86_64.pkg.tar.zst": "308b7339ead506974f0c22b0d33c48cca3c2a65b127aa46398c9433930f01ce0"
+  },
+  "srm_sha256": "1337f0edbca80501b77f1c84f9b34cddc19e7ef93e844f6a68d62ae4538dcae2",
+  "compiler": "gcc (GCC) 16.2.1 20260810",
+  "regression_tests": 25,
+  "nvidia_guest_dependencies": "PASS",
+  "gpt_btrfs_and_dos_ext4_roundtrips": "PASS; guest exit 0",
+  "uefi_desktop": "PASS",
+  "desktop_launcher": "PASS; gio launch",
+  "tty2_fallback": "PASS",
+  "physical_nvidia_boot": "PENDING",
+  "test_vms": "stopped",
+  "guest_log": "candidate3-roundtrip.log",
+  "note": "Initial dependency test used a nonexistent EGL filename; corrected harness passed without changing the ISO. Candidate-2 installed-OS two-VM rehearsal was not repeated for candidate 3."
+}

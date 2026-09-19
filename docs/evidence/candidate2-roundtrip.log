@@ -1,0 +1,768 @@
+:: running early hook [udev]
+Starting systemd-udevd version 261.2-1-arch
+
+:: running early hook [archiso_pxe_nbd]
+:: running hook [udev]
+:: Triggering uevents...
+:: running hook [memdisk]
+:: running hook [findroot]
+:: running hook [archiso]
+:: running hook [archiso_loop_mnt]
+:: running hook [archiso_pxe_common]
+:: running hook [archiso_pxe_nbd]
+:: running hook [archiso_pxe_http]
+:: running hook [archiso_pxe_nfs]
+:: running hook [encrypt]
+:: Mounting '/dev/disk/by-label/RESCUE1302' to '/run/archiso/bootmnt'
+:: Device '/dev/disk/by-label/RESCUE1302' mounted successfully.
+:: Creating config dir ...
+:: Execute the configuration processing script ...
+:: Define early boot options based on the configuration ...
+Entry '.global.copytoram' disabled in config: value='false'
+Entry '.global.checksum' disabled in config: value='false'
+Entry '.global.loadsrm' enabled in config: value='true'
+:: Mounting /run/archiso/cowspace (tmpfs) filesystem, size=25%...
+:: Mounting '/dev/loop0' to '/run/archiso/sfs/airootfs'
+:: Device '/dev/loop0' mounted successfully.
+:: Mounting '/dev/loop1' to '/run/archiso/sfs/srm1'
+:: Device '/dev/loop1' mounted successfully.
+:: running late hook [archiso_pxe_common]
+:: running cleanup hook [udev]
+P+q6E616D65\78
+Welcome to SystemRescue 13.02!
+
+
+[  OK  ] Created slice Slice /system/dirmngr.
+
+[  OK  ] Created slice Slice /system/getty.
+
+[  OK  ] Created slice Slice /system/gpg-agent.
+
+[  OK  ] Created slice Slice /system/gpg-agent-browser.
+
+[  OK  ] Created slice Slice /system/gpg-agent-extra.
+
+[  OK  ] Created slice Slice /system/gpg-agent-ssh.
+
+[  OK  ] Created slice Slice /system/keyboxd.
+
+[  OK  ] Created slice Slice /system/modprobe.
+
+[  OK  ] Created slice Slice /system/serial-getty.
+
+[  OK  ] Created slice User and Session Slice.
+
+[  OK  ] Started Dispatch Password Requests to Console Directory Watch.
+
+[  OK  ] Started Forward Password Requests to Wall Directory Watch.
+
+[  OK  ] Set up automount Arbitrary Executa…ormats File System Automount Point.
+
+         Expecting device /dev/ttyS0...
+
+[  OK  ] Reached target Image Downloads.
+
+[  OK  ] Reached target Local Integrity Protected Volumes.
+
+[  OK  ] Reached target Path Units.
+
+[  OK  ] Reached target Remote File Systems.
+
+[  OK  ] Reached target Slice Units.
+
+[  OK  ] Reached target Swaps.
+
+[  OK  ] Reached target Local Verity Protected Volumes.
+
+[  OK  ] Listening on Device-mapper event daemon FIFOs.
+
+[  OK  ] Listening on LVM2 poll daemon socket.
+
+[  OK  ] Listening on Query the User Interactively for a Password.
+
+[  OK  ] Listening on Process Core Dump Socket.
+
+[  OK  ] Listening on Credential Encryption/Decryption.
+
+[  OK  ] Listening on Factory Reset Management.
+
+[  OK  ] Listening on Hostname Service Socket.
+
+[  OK  ] Listening on Journal Socket (/dev/log).
+
+[  OK  ] Listening on Journal Sockets.
+
+[  OK  ] Listening on Console Output Muting Service Socket.
+
+[  OK  ] Listening on Disk Repartitioning Service Socket.
+
+[  OK  ] Listening on Simple Block Device Backed Storage Provider.
+
+[  OK  ] Listening on Simple File System Backed Storage Provider.
+
+[  OK  ] Listening on udev Control Socket.
+
+[  OK  ] Listening on udev Kernel Socket.
+
+[  OK  ] Listening on udev Varlink Socket.
+
+[  OK  ] Listening on User Database Manager Socket.
+
+         Mounting Huge Pages File System...
+
+         Mounting POSIX Message Queue File System...
+
+         Mounting Kernel Debug File System...
+
+         Mounting Kernel Trace File System...
+
+         Mounting Temporary Directory /tmp...
+
+         Starting Create List of Static Device Nodes...
+
+         Starting Monitoring of LVM2 mirror…ing dmeventd or progress polling...
+
+         Mounting Kernel Configuration File System...
+
+         Mounting FUSE Control File System...
+
+         Starting Journal Service...
+
+         Starting Load Kernel Modules...
+
+         Starting Remount Root and Kernel File Systems...
+
+[  OK  ] Reached target Local Encrypted Volumes.
+
+         Starting Load udev Rules from Credentials...
+
+         Starting Coldplug All udev Devices...
+
+[  OK  ] Mounted Huge Pages File System.
+
+[  OK  ] Mounted POSIX Message Queue File System.
+
+[  OK  ] Mounted Kernel Debug File System.
+
+[  OK  ] Mounted Kernel Trace File System.
+
+[  OK  ] Mounted Temporary Directory /tmp.
+
+[  OK  ] Finished Create List of Static Device Nodes.
+
+[  OK  ] Mounted Kernel Configuration File System.
+
+[  OK  ] Mounted FUSE Control File System.
+
+[  OK  ] Finished Remount Root and Kernel File Systems.
+
+[  OK  ] Finished Load udev Rules from Credentials.
+
+         Starting Load/Save OS Random Seed...
+
+         Starting Create Static Device Nodes in /dev gracefully...
+
+[  OK  ] Finished Load Kernel Modules.
+
+         Starting Apply Kernel Variables...
+
+[  OK  ] Finished Monitoring of LVM2 mirror…using dmeventd or progress polling.
+
+[  OK  ] Started Journal Service.
+
+         Starting Flush Journal to Persistent Storage...
+
+[  OK  ] Finished Load/Save OS Random Seed.
+
+[  OK  ] Finished Apply Kernel Variables.
+
+[  OK  ] Finished Flush Journal to Persistent Storage.
+
+         Starting User Database Manager...
+
+         Mounting Arbitrary Executable File Formats File System...
+
+[  OK  ] Mounted Arbitrary Executable File Formats File System.
+
+[  OK  ] Finished Coldplug All udev Devices.
+
+[  OK  ] Started User Database Manager.
+
+[  OK  ] Finished Create Static Device Nodes in /dev gracefully.
+
+         Starting Create System Users...
+
+[  OK  ] Finished Create System Users.
+
+         Starting Journal Log Access Socket...
+
+         Starting Create Static Device Nodes in /dev...
+
+[  OK  ] Listening on Journal Log Access Socket.
+
+[  OK  ] Finished Create Static Device Nodes in /dev.
+
+[  OK  ] Reached target Preparation for Local File Systems.
+
+         Starting Rule-based Manager for Device Events and Files...
+
+[  OK  ] Started Rule-based Manager for Device Events and Files.
+
+[  OK  ] Listening on Disk Image Download Service Socket.
+
+         Mounting Bind mount /var/lib/pacma…g between snapshot/rolling repos...
+
+[  OK  ] Mounted Bind mount /var/lib/pacman…ing between snapshot/rolling repos.
+
+[  OK  ] Reached target Local File Systems.
+
+[  OK  ] Listening on Boot Loader Control Service Socket.
+
+[  OK  ] Listening on System Extension Image Management.
+
+         Starting Create System Files and Directories...
+
+         Starting Load JSON user/group Records from Credentials...
+
+[  OK  ] Finished Load JSON user/group Records from Credentials.
+
+[  OK  ] Found device /dev/ttyS0.
+
+[  OK  ] Finished Create System Files and Directories.
+
+         Starting Rebuild Journal Catalog...
+
+         Starting Record System Boot/Shutdown in UTMP...
+
+[  OK  ] Finished Record System Boot/Shutdown in UTMP.
+
+[  OK  ] Finished Rebuild Journal Catalog.
+
+         Starting Update is Completed...
+
+[  OK  ] Finished Update is Completed.
+
+[  OK  ] Reached target System Initialization.
+
+[  OK  ] Started Update the plocate database daily.
+
+[  OK  ] Started Daily Cleanup of Temporary Directories.
+
+[  OK  ] Reached target Timer Units.
+
+[  OK  ] Listening on D-Bus System Message Bus Socket.
+
+[  OK  ] Listening on GnuPG network certifi…ent daemon for /etc/pacman.d/gnupg.
+
+[  OK  ] Listening on GnuPG cryptographic a… browsers) for /etc/pacman.d/gnupg.
+
+[  OK  ] Listening on GnuPG cryptographic a…estricted) for /etc/pacman.d/gnupg.
+
+[  OK  ] Listening on GnuPG cryptographic a…emulation) for /etc/pacman.d/gnupg.
+
+[  OK  ] Listening on GnuPG cryptographic a…rase cache for /etc/pacman.d/gnupg.
+
+[  OK  ] Listening on GnuPG public key mana…nt service for /etc/pacman.d/gnupg.
+
+[  OK  ] Listening on Authorization Manager Agent Helper.
+
+[  OK  ] Listening on OpenSSH Server Socket…temd-ssh-generator, AF_UNIX Local).
+
+[  OK  ] Listening on User Login Management Varlink Socket.
+
+[  OK  ] Listening on Virtual Machine and C…tainer Registration Service Socket.
+
+[  OK  ] Reached target Socket Units.
+
+         Starting D-Bus System Message Bus...
+
+[  OK  ] Started D-Bus System Message Bus.
+
+[  OK  ] Reached target Basic System.
+
+         Starting SSH Key Generation...
+
+         Starting SystemRescue Initialization, before networking...
+
+         Starting User Login Management...
+
+[  OK  ] Started User Login Management.
+
+[  OK  ] Finished SSH Key Generation.
+
+         Starting Virtual Console Setup...
+
+[  OK  ] Stopped Virtual Console Setup.
+
+         Starting Virtual Console Setup...
+
+[  OK  ] Finished Virtual Console Setup.
+
+[   29.866154] sysrescue-initialize-prenet[427]: ====> Script /etc/systemd/scripts/sysrescue-initialize-prenet starting ...
+[   29.868393] sysrescue-initialize-prenet[427]: ====> Read the effective configuration file ...
+[   29.869217] sysrescue-initialize-prenet[427]: ====> Showing the effective global configuration (except clear passwords) ...
+[   29.869693] sysrescue-initialize-prenet[427]: config['global']['nofirewall']=False
+[   29.870089] sysrescue-initialize-prenet[427]: ====> Applying pre-network configuration ...
+[   29.870525] sysrescue-initialize-prenet[427]: ====> Script /etc/systemd/scripts/sysrescue-initialize-prenet completed with 0 errors ...
+[  OK  ] Finished SystemRescue Initialization, before networking.
+
+         Starting IPv4 Packet Filtering Framework...
+
+         Starting SystemRescue Initialization, parallel to networking...
+
+[   30.331600] sysrescue-initialize-whilenet[461]: ====> Script /etc/systemd/scripts/sysrescue-initialize-whilenet starting ...
+[   30.337530] sysrescue-initialize-whilenet[461]: ====> Read the effective configuration file ...
+[   30.338100] sysrescue-initialize-whilenet[461]: ====> Showing the effective global configuration (except clear passwords) ...
+[   30.338407] sysrescue-initialize-whilenet[461]: config['global']['setkmap']=
+[   30.338667] sysrescue-initialize-whilenet[461]: config['global']['rootshell']=
+[   30.338891] sysrescue-initialize-whilenet[461]: config['global']['noautologin']=False
+[   30.339195] sysrescue-initialize-whilenet[461]: config['global']['dostartx']=True
+[   30.339424] sysrescue-initialize-whilenet[461]: config['global']['dovnc']=False
+[   30.339619] sysrescue-initialize-whilenet[461]: config['global']['late_load_srm']=
+[   30.339822] sysrescue-initialize-whilenet[461]: config['sysconfig']['timezone']=
+[   30.343147] sysrescue-initialize-whilenet[461]: ====> Applying configuration ...
+[   30.377358] sysrescue-initialize-whilenet[461]: ====> Configuring bash_history ...
+[   30.378931] sysrescue-initialize-whilenet[461]: ====> Configuring autoterminal ...
+[   30.415588] sysrescue-initialize-whilenet[461]: setting terminal 'tty2' to '/usr/local/system_rescue/bin/system-rescue.sh'
+[  OK  ] Finished IPv4 Packet Filtering Framework.
+
+         Starting IPv6 Packet Filtering Framework...
+
+[   31.684967] sysrescue-initialize-whilenet[461]: ====> Script /etc/systemd/scripts/sysrescue-initialize-whilenet completed with 0 errors ...
+[  OK  ] Finished SystemRescue Initialization, parallel to networking.
+
+[  OK  ] Finished IPv6 Packet Filtering Framework.
+
+[  OK  ] Reached target Preparation for Network.
+
+         Starting Network Manager...
+
+         Starting Hostname Service...
+
+[  OK  ] Started Hostname Service.
+
+[  OK  ] Listening on Load/Save RF Kill Switch Status /dev/rfkill Watch.
+
+         Starting Network Manager Script Dispatcher Service...
+
+[  OK  ] Started Network Manager.
+
+[  OK  ] Reached target Network.
+
+         Starting Network Manager Wait Online...
+
+         Starting OpenSSH Daemon...
+
+         Starting Permit User Sessions...
+
+[  OK  ] Started Network Manager Script Dispatcher Service.
+
+[  OK  ] Finished Permit User Sessions.
+
+[  OK  ] Finished Network Manager Wait Online.
+
+[  OK  ] Reached target Network is Online.
+
+         Starting SystemRescue Autorun...
+
+[  OK  ] Started OpenSSH Daemon.
+
+[  OK  ] Reached target SSH Access Available.
+
+
+############################# Initializing autorun #############################
+Showing the effective autorun configuration ...
+config['ar_disable']=False
+config['ar_attempts']=1
+config['ar_source']=
+config['ar_ignorefail']=False
+config['ar_nodel']=False
+config['ar_nowait']=True
+ar_suffixes=['', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F']
+exec=[]
+Cannot find a valid ar_source, searching scripts in the default directories
+No autorun scripts found, nothing to do.
+[  OK  ] Finished SystemRescue Autorun.
+
+[  OK  ] Reached target Preparation for Logins.
+
+[  OK  ] Started SystemRescue autoterminal tty2.
+
+[  OK  ] Started Getty on tty1.
+
+[  OK  ] Started Serial Getty on ttyS0.
+
+[  OK  ] Reached target Login Prompts.
+
+[  OK  ] Reached target Multi-User System.
+
+7878P+q6E616D65\
+
+ ========= SystemRescue 13.02 (x86_64) ======== ttyS0/6 =========
+                    https://www.system-rescue.org/
+
+* Console environment :
+   Run setkmap to choose the keyboard layout (also accessible with the arrow up key)
+   Run manual to read the documentation of SystemRescue
+
+* Graphical environment :
+   Type startx to run the graphical environment
+   X.Org comes with the XFCE environment and several graphical tools:
+   - Partition manager: .. gparted
+   - Web browser: ........ firefox
+   - Text editor: ........ featherpad
+
+sysrescue login: root (automatic login)
+
+
+[root@sysrescue ~]# export SR_APP_ROOT=/usr/local/system_rescue; mkdir -p /mnt/project; mount -t 9p -o trans=virtio,ro project /mnt/project; bash /mnt/project/vm_roundtrip.sh; result=$?; printf '\nSR_VM_EXIT=%s\n' "$result"
+
+Creating new GPT entries in memory.
+The operation has completed successfully.
+mkfs.fat 4.2 (2021-01-31)
+btrfs-progs v6.17.1
+See https://btrfs.readthedocs.io for more information.
+
+Performing full device TRIM /dev/vda2 (1.00GiB) ...
+Label:              (null)
+UUID:               d03cc4f6-7541-41a8-b3b0-dd9e8e57675d
+Node size:          16384
+Sector size:        4096	(CPU page size: 4096)
+Filesystem size:    1.00GiB
+Block group profiles:
+  Data:             single            8.00MiB
+  Metadata:         DUP              51.19MiB
+  System:           DUP               8.00MiB
+SSD detected:       no
+Zoned device:       no
+Features:           extref, skinny-metadata, no-holes, free-space-tree
+Checksum:           crc32c
+Number of devices:  1
+Devices:
+   ID        SIZE  PATH     
+    1     1.00GiB  /dev/vda2
+
+Setting up swapspace version 1, size = 64 MiB (67104768 bytes)
+no label, UUID=11111111-2222-3333-4444-555555555555
+1+0 records in
+1+0 records out
+1048576 bytes (1.0 MB, 1.0 MiB) copied, 0.00577379 s, 182 MB/s
+Create subvolume '/mnt/fixture/@'
+Create subvolume '/mnt/fixture/@home'
+Create readonly snapshot of '/mnt/fixture/@' in '/mnt/fixture/snapshot'
+Create subvolume '/mnt/fixture/@swap'
+create swapfile /mnt/fixture/@swap/swapfile size 128.00MiB (134217728)
+[system_rescue] ERROR: source /dev/vda is not eligible (mounted, active swap, boot media, or unsupported device)
+[system_rescue] ERROR: source /dev/vda is not eligible (mounted, active swap, boot media, or unsupported device)
+[system_rescue] estimating space required (probing filesystems read-only)...
+[system_rescue]   need up to ~1.2GiB uncompressed; destination has 3.7GiB free
+[system_rescue] backing up /dev/vda (, serial=SR_TEST_SOURCE, 2147483648 bytes)
+[system_rescue] destination: /mnt/vault/interrupted/unknown_SR_TEST_SOURCE_20260909T185313Z
+[system_rescue] space preflight: estimated ~1.2GiB uncompressed (1224736768 bytes), destination had 3.7GiB free
+[system_rescue]   partition 1 (vda1, fstype=vfat, method=partclone, tool=partclone.vfat)
+[system_rescue]     holds 2.0KiB in ? inodes
+Partclone v0.3.48 http://partclone.org
+Starting to clone device (/dev/vda1) to image (-)
+Reading Super Block
+[system_rescue] ERROR: imaging partition 1 failed — aborting backup (see /mnt/vault/interrupted/unknown_SR_TEST_SOURCE_20260909T185313Z/partclone_part1.log)
+PASS: terminated Partclone capture did not publish a manifest
+[system_rescue] estimating space required (probing filesystems read-only)...
+[system_rescue]   need up to ~1.2GiB uncompressed; destination has 3.7GiB free
+[system_rescue] backing up /dev/vda (, serial=SR_TEST_SOURCE, 2147483648 bytes)
+[system_rescue] destination: /mnt/vault/unknown_SR_TEST_SOURCE_20260909T185314Z
+[system_rescue] space preflight: estimated ~1.2GiB uncompressed (1224736768 bytes), destination had 3.7GiB free
+[system_rescue]   partition 1 (vda1, fstype=vfat, method=partclone, tool=partclone.vfat)
+[system_rescue]     holds 2.0KiB in ? inodes
+Partclone v0.3.48 http://partclone.org
+Starting to clone device (/dev/vda1) to image (-)
+Reading Super Block
+Calculating bitmap... Please wait... 
+
+                                                                                
+Elapsed: 00:00:01, Remaining: 00:01:39, Completed:   1.00%
+                                                                                
+Elapsed: 00:00:01, Remaining: 00:00:00, Completed: 100.00%
+Total Time: 00:00:01, 100.00% completed!
+done!
+File system:  FAT32
+Device size:  134.2 MB = 262143 Blocks
+Space in use:   2.1 MB = 4070 Blocks
+Free Space:   132.1 MB = 258073 Blocks
+Block size:   512 Byte
+
+                                                                                
+Elapsed: 00:00:02, Remaining: 00:00:00, Completed: 100.00%, Rate:  62.52MB/min,
+
+                                                                                
+Current block:       4070, Total block:     262143, Complete: 100.00%
+
+Total Time: 00:00:02, Ave. Rate:  62.52MB/min, 100.00% completed!
+Syncing... OK!
+Partclone successfully cloned the device (/dev/vda1) to the image (-)
+Cloned successfully.
+[system_rescue]   partition 2 (vda2, fstype=btrfs, method=partclone, tool=partclone.btrfs)
+[system_rescue]     holds 142MiB in ? inodes
+Partclone v0.3.48 http://partclone.org
+Starting to clone device (/dev/vda2) to image (-)
+Reading Super Block
+Calculating bitmap... Please wait... 
+done!
+File system:  BTRFS
+Device size:    1.1 GB = 65536 Blocks
+Space in use: 255.5 MB = 15595 Blocks
+Free Space:   818.2 MB = 49941 Blocks
+Block size:   16384 Byte
+
+                                                                                
+Elapsed: 00:00:02, Remaining: 00:00:00, Completed: 100.00%, Rate:   7.67GB/min,
+
+                                                                                
+Current block:      20184, Total block:      65536, Complete: 100.00%
+
+Total Time: 00:00:02, Ave. Rate:   7.67GB/min, 100.00% completed!
+Syncing... OK!
+Partclone successfully cloned the device (/dev/vda2) to the image (-)
+Cloned successfully.
+[system_rescue]   partition 3 (vda3, swap) — skipping data, will recreate via mkswap -U
+[system_rescue]   partition 4 (vda4, fstype=none, method=rawdd, tool=dd)
+[system_rescue] backup complete: /mnt/vault/unknown_SR_TEST_SOURCE_20260909T185314Z
+[system_rescue] job:     /mnt/vault/unknown_SR_TEST_SOURCE_20260909T185314Z
+[system_rescue] created: 20260909T185314Z   source serial: SR_TEST_SOURCE   manifest v4
+[system_rescue]   ok: part1.img.zst (checksum + partclone structure)
+[system_rescue]   ok: part2.img.zst (checksum + partclone structure)
+[system_rescue]   ok: part4.img.zst (checksum + zstd stream + exact raw size)
+/dev/vda: OK
+[system_rescue] restore log: /mnt/vault/unknown_SR_TEST_SOURCE_20260909T185314Z/restore_20260909T185354Z.log (survives the reboot)
+[system_rescue] verifying backup integrity before touching the target...
+[system_rescue]   ok: part1.img.zst (checksum + partclone structure)
+[system_rescue]   ok: part2.img.zst (checksum + partclone structure)
+[system_rescue] ERROR: checksum mismatch on part4.img.zst (backup is corrupt)
+[system_rescue] ERROR: validation failed — nothing was written to /dev/vdb
+[system_rescue] restore log: /mnt/vault/unknown_SR_TEST_SOURCE_20260909T185314Z/restore_20260909T185413Z.log (survives the reboot)
+[system_rescue] verifying backup integrity before touching the target...
+[system_rescue]   ok: part1.img.zst (checksum + partclone structure)
+[system_rescue]   ok: part2.img.zst (checksum + partclone structure)
+[system_rescue]   ok: part4.img.zst (checksum + zstd stream + exact raw size)
+[system_rescue] NOTE: this restore will duplicate filesystem UUIDs already on this machine:
+[system_rescue]   partition 1  uuid=B013-3704
+[system_rescue]       same UUID already present on: /dev/vda1
+[system_rescue]   partition 2  uuid=d03cc4f6-7541-41a8-b3b0-dd9e8e57675d
+[system_rescue]       same UUID already present on: /dev/vda2
+[system_rescue]   partition 3  uuid=11111111-2222-3333-4444-555555555555
+[system_rescue]       same UUID already present on: /dev/vda3
+[system_rescue]   That is correct behaviour for a restore, but see the warning
+[system_rescue]   printed at the end before rebooting this machine.
+[system_rescue] all pre-restore checks passed
+[system_rescue] ERASING /dev/vdb and restoring from /mnt/vault/unknown_SR_TEST_SOURCE_20260909T185314Z
+[system_rescue] restoring gpt partition table
+[system_rescue]   partition 1: restoring part1.img.zst via partclone.vfat
+Partclone v0.3.48 http://partclone.org
+Starting to restore image (-) to device (/dev/vdb1)
+Calculating bitmap... Please wait...
+done!
+File system:  FAT32
+Device size:  134.2 MB = 262143 Blocks
+Space in use:   2.1 MB = 4070 Blocks
+Free Space:   132.1 MB = 258073 Blocks
+Block size:   512 Byte
+
+                                                                                
+Elapsed: 00:00:02, Remaining: 00:00:00, Completed: 100.00%, Rate:  62.52MB/min,
+
+                                                                                
+Current block:       4070, Total block:     262143, Complete: 100.00%
+
+Total Time: 00:00:02, Ave. Rate:  62.52MB/min, 100.00% completed!
+Syncing... OK!
+Partclone successfully restored the image (-) to the device (/dev/vdb1)
+Cloned successfully.
+[system_rescue]   partition 2: restoring part2.img.zst via partclone.btrfs
+Partclone v0.3.48 http://partclone.org
+Starting to restore image (-) to device (/dev/vdb2)
+Calculating bitmap... Please wait...
+done!
+File system:  BTRFS
+Device size:    1.1 GB = 65536 Blocks
+Space in use: 255.5 MB = 15595 Blocks
+Free Space:   818.2 MB = 49941 Blocks
+Block size:   16384 Byte
+
+                                                                                
+Elapsed: 00:00:02, Remaining: 00:00:00, Completed: 100.00%, Rate:   7.67GB/min,
+
+                                                                                
+Current block:      20184, Total block:      65536, Complete: 100.00%
+
+Total Time: 00:00:02, Ave. Rate:   7.67GB/min, 100.00% completed!
+Syncing... OK!
+Partclone successfully restored the image (-) to the device (/dev/vdb2)
+Cloned successfully.
+[system_rescue]   partition 3: recreating swap (uuid=11111111-2222-3333-4444-555555555555)
+[system_rescue]   partition 4: restoring part4.img.zst raw via dd
+[system_rescue] comparing restored filesystem occupancy against the manifest...
+[system_rescue] Occupancy checks do not verify file contents or bootability.
+[system_rescue]   partition 1: ok — 2.0KiB used, matches source within 1MiB
+[system_rescue]     BYTES ONLY: vfat reports no usable inode count, so
+[system_rescue]     the number of files was NOT verified. Matching bytes is weaker
+[system_rescue]     evidence than a matching inode count.
+[system_rescue]   partition 2: occupancy check skipped while duplicate UUIDs exist; isolate the restored disk first
+[system_rescue] post-restore verification passed on 1 filesystem(s): 0 matched used bytes + inode counts, 1 by used bytes only
+[system_rescue] restore complete onto /dev/vdb
+[system_rescue] ==================================================================
+[system_rescue] ACTION REQUIRED BEFORE YOU REBOOT
+[system_rescue] ==================================================================
+[system_rescue]   partition 1  uuid=B013-3704
+[system_rescue]       same UUID already present on: /dev/vda1
+[system_rescue]   partition 2  uuid=d03cc4f6-7541-41a8-b3b0-dd9e8e57675d
+[system_rescue]       same UUID already present on: /dev/vda2
+[system_rescue]   partition 3  uuid=11111111-2222-3333-4444-555555555555
+[system_rescue]       same UUID already present on: /dev/vda3
+[system_rescue] 
+[system_rescue]   /dev/vdb now holds filesystems whose UUIDs are IDENTICAL to ones
+[system_rescue]   already in this machine. /etc/fstab and /etc/crypttab find
+[system_rescue]   filesystems BY UUID, so the next boot may pick the WRONG copy.
+[system_rescue]   Device enumeration order is not stable, so it may work once and
+[system_rescue]   fail later. This can leave the system unable to reach a login.
+[system_rescue] 
+[system_rescue]   Do ONE of these before rebooting into the installed system:
+[system_rescue]     * physically remove or power off /dev/vdb, OR
+[system_rescue]     * disconnect the original disk and boot only the restored copy.
+[system_rescue] 
+[system_rescue]   This does NOT apply if you are restoring the machine's own system
+[system_rescue]   disk -- in that case the old copy is gone and there is no clash.
+[system_rescue] ==================================================================
+/dev/vda2: 8 bytes were erased at offset 0x00010040 (btrfs): 5f 42 48 52 66 53 5f 4d
+./@/etc/fixture: OK
+./@/etc/hardlink: OK
+./@home/random.bin: OK
+./snapshot/etc/fixture: OK
+./snapshot/etc/hardlink: OK
+Physical start:    146145280
+Resume offset:         35680
+EFI/BOOT/fixture.txt: OK
+PASS: GPT EFI/Btrfs/subvolumes/snapshot/swapfile/swap/raw roundtrip, source preservation, busy-source and corrupt-image rejection
+GPT data structures destroyed! You may now partition the disk using fdisk or
+other utilities.
+GPT data structures destroyed! You may now partition the disk using fdisk or
+other utilities.
+Checking that no-one is using this disk right now ... OK
+
+Disk /dev/vda: 2 GiB, 2147483648 bytes, 4194304 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+>>> Script header accepted.
+>>> Created a new DOS (MBR) disklabel with disk identifier 0x5c6f4cf3.
+/dev/vda1: Created a new partition 1 of type 'Linux' and of size 256 MiB.
+Partition #1 contains a vfat signature.
+/dev/vda2: Done.
+
+New situation:
+Disklabel type: dos
+Disk identifier: 0x5c6f4cf3
+
+Device     Boot Start    End Sectors  Size Id Type
+/dev/vda1  *     2048 526335  524288  256M 83 Linux
+
+The partition table has been altered.
+Calling ioctl() to re-read partition table.
+Syncing disks.
+/dev/vda1 contains a vfat file system
+[system_rescue] estimating space required (probing filesystems read-only)...
+[system_rescue]   need up to ~27MiB uncompressed; destination has 3.7GiB free
+[system_rescue] backing up /dev/vda (, serial=SR_TEST_SOURCE, 2147483648 bytes)
+[system_rescue] destination: /mnt/vault/unknown_SR_TEST_SOURCE_20260909T185431Z
+[system_rescue] space preflight: estimated ~27MiB uncompressed (27369472 bytes), destination had 3.7GiB free
+[system_rescue]   partition 1 (vda1, fstype=ext4, method=partclone, tool=partclone.ext4)
+[system_rescue]     holds 15KiB in 12 inodes
+Partclone v0.3.48 http://partclone.org
+Starting to clone device (/dev/vda1) to image (-)
+Reading Super Block
+Calculating bitmap... Please wait... 
+
+                                                                                
+Elapsed: 00:00:01, Remaining: 00:00:00, Completed: 100.00%
+Total Time: 00:00:01, 100.00% completed!
+done!
+File system:  EXTFS
+Device size:  268.4 MB = 262144 Blocks
+Space in use:  27.4 MB = 26728 Blocks
+Free Space:   241.1 MB = 235416 Blocks
+Block size:   1024 Byte
+
+                                                                                
+Elapsed: 00:00:02, Remaining: 00:00:00, Completed: 100.00%, Rate: 821.08MB/min,
+
+                                                                                
+Current block:     221444, Total block:     262144, Complete: 100.00%
+
+Total Time: 00:00:02, Ave. Rate: 821.08MB/min, 100.00% completed!
+Syncing... OK!
+Partclone successfully cloned the device (/dev/vda1) to the image (-)
+Cloned successfully.
+[system_rescue] backup complete: /mnt/vault/unknown_SR_TEST_SOURCE_20260909T185431Z
+[system_rescue] job:     /mnt/vault/unknown_SR_TEST_SOURCE_20260909T185431Z
+[system_rescue] created: 20260909T185431Z   source serial: SR_TEST_SOURCE   manifest v4
+[system_rescue]   ok: part1.img.zst (checksum + partclone structure)
+[system_rescue] restore log: /mnt/vault/unknown_SR_TEST_SOURCE_20260909T185431Z/restore_20260909T185436Z.log (survives the reboot)
+[system_rescue] verifying backup integrity before touching the target...
+[system_rescue]   ok: part1.img.zst (checksum + partclone structure)
+[system_rescue] NOTE: this restore will duplicate filesystem UUIDs already on this machine:
+[system_rescue]   partition 1  uuid=f4d413d5-215f-4bc1-9209-454395dfa3ff
+[system_rescue]       same UUID already present on: /dev/vda1
+[system_rescue]   That is correct behaviour for a restore, but see the warning
+[system_rescue]   printed at the end before rebooting this machine.
+[system_rescue] all pre-restore checks passed
+[system_rescue] ERASING /dev/vdb and restoring from /mnt/vault/unknown_SR_TEST_SOURCE_20260909T185431Z
+[system_rescue] restoring dos partition table
+Partition #1 contains a vfat signature.
+[system_rescue]   partition 1: restoring part1.img.zst via partclone.ext4
+Partclone v0.3.48 http://partclone.org
+Starting to restore image (-) to device (/dev/vdb1)
+Calculating bitmap... Please wait...
+done!
+File system:  EXTFS
+Device size:  268.4 MB = 262144 Blocks
+Space in use:  27.4 MB = 26728 Blocks
+Free Space:   241.1 MB = 235416 Blocks
+Block size:   1024 Byte
+
+                                                                                
+Elapsed: 00:00:02, Remaining: 00:00:00, Completed: 100.00%, Rate: 821.08MB/min,
+
+                                                                                
+Current block:     221444, Total block:     262144, Complete: 100.00%
+
+Total Time: 00:00:02, Ave. Rate: 821.08MB/min, 100.00% completed!
+Syncing... OK!
+Partclone successfully restored the image (-) to the device (/dev/vdb1)
+Cloned successfully.
+[system_rescue] comparing restored filesystem occupancy against the manifest...
+[system_rescue] Occupancy checks do not verify file contents or bootability.
+[system_rescue]   partition 1: ok — 15KiB / 12 inodes (used bytes and inode count both match source)
+[system_rescue] post-restore verification passed on 1 filesystem(s)
+[system_rescue] restore complete onto /dev/vdb
+[system_rescue] ==================================================================
+[system_rescue] ACTION REQUIRED BEFORE YOU REBOOT
+[system_rescue] ==================================================================
+[system_rescue]   partition 1  uuid=f4d413d5-215f-4bc1-9209-454395dfa3ff
+[system_rescue]       same UUID already present on: /dev/vda1
+[system_rescue] 
+[system_rescue]   /dev/vdb now holds filesystems whose UUIDs are IDENTICAL to ones
+[system_rescue]   already in this machine. /etc/fstab and /etc/crypttab find
+[system_rescue]   filesystems BY UUID, so the next boot may pick the WRONG copy.
+[system_rescue]   Device enumeration order is not stable, so it may work once and
+[system_rescue]   fail later. This can leave the system unable to reach a login.
+[system_rescue] 
+[system_rescue]   Do ONE of these before rebooting into the installed system:
+[system_rescue]     * physically remove or power off /dev/vdb, OR
+[system_rescue]     * disconnect the original disk and boot only the restored copy.
+[system_rescue] 
+[system_rescue]   This does NOT apply if you are restoring the machine's own system
+[system_rescue]   disk -- in that case the old copy is gone and there is no clash.
+[system_rescue] ==================================================================
+fixture: OK
+PASS: DOS primary table/ext4 roundtrip (file contents, not BIOS boot)
+
+SR_VM_EXIT=0

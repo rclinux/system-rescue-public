@@ -1,0 +1,92 @@
+[
+  {
+    "path": "bin/backup-disk.sh",
+    "bytes": 860,
+    "sha256": "c6e2346e83daa6f3fd5b4d9f3f3783c79280c1a9f498c1389bfc02b9ec8080e8"
+  },
+  {
+    "path": "bin/build-iso.sh",
+    "bytes": 2513,
+    "sha256": "4a458e8a1fbd4ad455b0b006a72170a0bfa0ef9ec6334eb0d1db615ce1ff86d3"
+  },
+  {
+    "path": "bin/gui-probe.py",
+    "bytes": 4627,
+    "sha256": "45fcf83c79d81434c82ae813d639f3f90050af1e4a221e283a2e5b960c935989"
+  },
+  {
+    "path": "bin/list-disks.sh",
+    "bytes": 1003,
+    "sha256": "d9e1d720090374b567beb8a4c29eb11324b25c241d051efbffbf9c169af115d6"
+  },
+  {
+    "path": "bin/restore-disk.sh",
+    "bytes": 2114,
+    "sha256": "dce15050305fa72bc7906c01fcd87e3cf37adc6336ad6dc70102b9bbba754cc8"
+  },
+  {
+    "path": "bin/system-rescue.sh",
+    "bytes": 17043,
+    "sha256": "640f0aa6b183dfc0b9742173e36207dd8f018b670897678c3161084538453bd8"
+  },
+  {
+    "path": "bin/verify-backup.sh",
+    "bytes": 3635,
+    "sha256": "c50d208231bdd382ce1e2601832f6c0079be3f85fcdfe6d39bb8aa8d6a9d2406"
+  },
+  {
+    "path": "bin/verify-iso.sh",
+    "bytes": 3181,
+    "sha256": "678f563e2bd534bb3a299d3bf648fefe9e0af174b15dd6618016ba80046748f3"
+  },
+  {
+    "path": "lib/backup_engine.sh",
+    "bytes": 20326,
+    "sha256": "157186b680aad25465b521e93a72be16fc8ba5d6608802f05833b9143641521a"
+  },
+  {
+    "path": "lib/common.sh",
+    "bytes": 6849,
+    "sha256": "38d6dbe9c986943e918445afb2b3fd880453f32316620acc42c9b21a905a3af7"
+  },
+  {
+    "path": "lib/disk_detect.sh",
+    "bytes": 7105,
+    "sha256": "803fa9fefa626e0936153aba42bdc1e19e12b290ac8b504cf667d5e36b5d671d"
+  },
+  {
+    "path": "lib/job_select.sh",
+    "bytes": 5260,
+    "sha256": "3fa5b6b31631e008698b702b5d42cc078734a3b1862e48b91046df02ae1375e3"
+  },
+  {
+    "path": "lib/mount_helpers.sh",
+    "bytes": 2472,
+    "sha256": "c630b8e901adc16415446bc887e34a76cea3964dd6c19679465243ee5430a8ae"
+  },
+  {
+    "path": "lib/partition_table.sh",
+    "bytes": 1943,
+    "sha256": "25e4377f6c53911b7f68e5694db6cf88e6fc45b82487eeec28465272fb3dc794"
+  },
+  {
+    "path": "lib/restore_engine.sh",
+    "bytes": 23293,
+    "sha256": "f47f693968eff8c1664701ee5f9dd2c0c390f973f475646555eb6d4c320f8c04"
+  },
+  {
+    "path": "lib/ui.sh",
+    "bytes": 3001,
+    "sha256": "e09aac1f284d61363ca19aabfd232536412ece8c1c1437cc5101a3edfb6767f8"
+  },
+  {
+    "path": "lib/verify_engine.sh",
+    "bytes": 7516,
+    "sha256": "072fc8efc259ee1ad390d51f95135f44ca3544f9575cf0166de2e70b2e8dc280"
+  },
+  {
+    "path": "vendor/gum",
+    "bytes": 13738168,
+    "sha256": "a3bee34940d5dd86d51c154e024abdc5a21bf176dfdf93797f34581085d1922c"
+  }
+]

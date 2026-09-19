@@ -1,0 +1,21 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=System Rescue — Backup & Restore
+Comment=Back up, restore, or verify a whole disk
+Icon=drive-harddisk
+Categories=System;
+# Terminal=false plus an explicit xfce4-terminal is deliberate. Letting
+# the desktop pick a terminal via Terminal=true goes through whatever
+# xdg-terminal/exo happens to prefer, which is one more thing to be
+# wrong on a machine we only get to test by rebooting it.
+#
+#   --maximize  the disk pickers and the space estimate are wide; an
+#               80x24 window wraps them into soup
+#   --hold      keep the window after the menu exits. Screen text is the
+#               record until the log lands on the destination disk, and
+#               a window that vanishes takes it with it.
+#   SR_DESKTOP_LAUNCH=1  tells the menu it is NOT the respawning tty2
+#               copy, so "Exit to shell" can actually exit.
+Terminal=false
+Exec=xfce4-terminal --maximize --hold --title="System Rescue" --command="env SR_DESKTOP_LAUNCH=1 /usr/local/system_rescue/bin/system-rescue.sh"

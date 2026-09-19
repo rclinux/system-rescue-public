@@ -1,0 +1,15 @@
+{
+  "date": "2026-09-10T15:47:30.905168+00:00",
+  "result": "PASS",
+  "iso": "system-rescue-0.1.0-candidate3-nvidia.iso",
+  "vendor": "KANGURU",
+  "model": "SS3",
+  "serial": "REDACTED",
+  "by_id": "/dev/disk/by-id/usb-KANGURU_SS3_REDACTED",
+  "device_at_flash": "/dev/sdb",
+  "capacity_bytes": 15846080512,
+  "bytes_verified": 1770061824,
+  "sha256": "370eddd462eb57e4f12aa28a382fa532e665368b31d62871b7538a39241bb3a3",
+  "method": "Exclusive block-device open, complete ISO write and fsync, exact-length O_DIRECT readback SHA-256",
+  "hardware_boot": "Pending physical NVIDIA boot test"
+}

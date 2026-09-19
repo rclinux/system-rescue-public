@@ -1,0 +1,11 @@
+{
+  "captured_on": "2026-09-08",
+  "source_model": "SanDisk Ultra",
+  "source_label": "RESCUE1302",
+  "archive": "system-rescue-original-full-disk.img.zst",
+  "archive_bytes": 6062991580,
+  "archive_sha256": "54591e554d35bc494385eb82fa95a8d1cf03f57806eeb77741e2d42c12704693",
+  "raw_bytes": 30752636928,
+  "raw_sha256": "8d214251384865e719b9f7b8a56edf6eee62ea122fc3116d7a3c7617dfcb1759",
+  "method": "Read-only full-device dd capture, SHA-256 of source stream before zstd compression. Verification compares full decompressed archive with that stream. No second device read or boot test."
+}

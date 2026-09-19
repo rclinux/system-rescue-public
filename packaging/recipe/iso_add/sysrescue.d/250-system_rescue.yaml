@@ -1,0 +1,10 @@
+# dostartx boots into the graphical environment. It works by running
+# startx from the ROOT LOGIN ON TTY1 -- so an autoterminal on tty1 would
+# replace that login and silently prevent X from ever starting. Verified
+# both ways on 2026-08-28. The TUI therefore lives on tty2, which also
+# makes it the escape hatch: if X does not come up, or comes up blank on
+# this machine's display, Ctrl+Alt+F2 is a working text menu.
+global:
+    dostartx: true
+autoterminal:
+    tty2: "/usr/local/system_rescue/bin/system-rescue.sh"

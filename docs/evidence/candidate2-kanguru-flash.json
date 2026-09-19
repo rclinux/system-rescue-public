@@ -1,0 +1,15 @@
+{
+  "date": "2026-09-10",
+  "result": "PASS",
+  "iso": "system-rescue-0.1.0-candidate2.iso",
+  "vendor": "KANGURU",
+  "model": "SS3",
+  "serial": "REDACTED",
+  "device_at_flash": "/dev/sdb",
+  "capacity_bytes": 15846080512,
+  "bytes_verified": 1386020864,
+  "sha256": "ac9a63432b290eee910f3160bd17f7e185d19694820b7a2c62586b4a20b77cff",
+  "method": "Whole-device dd with direct writes and fsync, blockdev flush, exact ISO-length direct readback and SHA-256 comparison",
+  "note": "Initial attempt omitted child partition from mount enumeration. Corrected to lsblk --tree, unmounted old partition, confirmed unmounted, repeated complete flash and verification successfully. New ISO auto-mounted read-only afterward.",
+  "hardware_boot": "Pending user reboot test"
+}

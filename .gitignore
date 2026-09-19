@@ -1,0 +1,6 @@
+/baseline/
+/dist/
+/packaging/build/
+/packaging/recipe/build_into_srm/
+__pycache__/
+*.pyc
