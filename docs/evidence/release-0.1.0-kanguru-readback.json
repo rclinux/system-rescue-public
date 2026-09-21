@@ -1,0 +1,27 @@
+{
+  "iso": "dist/system-rescue-0.1.0.iso",
+  "target": "/dev/disk/by-id/usb-KANGURU_SS3_REDACTED",
+  "identity": {
+    "type": "disk",
+    "tran": "usb",
+    "size": 15846080512,
+    "model": "SS3",
+    "serial": "REDACTED",
+    "hardware_write_protect": true,
+    "mountpoints_at_check": [
+      "partition 1, read-only"
+    ]
+  },
+  "bytes_verified": 1770061824,
+  "sha256": "42a666f55cc7075456e5366373283a14e7dba8592dee6c2ad13270a08cb3d5eb",
+  "readback": "read-only readback of the first 1,770,061,824 bytes of the whole device (as root via pkexec, device write-protected, blockdev --getro = 1); SHA-256 equals the release ISO",
+  "flashed_by": "maintainer, before 2026-09-21; the flash itself was not observed when this record was made",
+  "not_checked": "bytes after the ISO length; that this stick is new (the KANGURU SS3 previously held candidates 2-4)",
+  "verified_utc": "2026-09-21",
+  "boot_and_use": {
+    "reported_by": "maintainer",
+    "reported_utc": "2026-09-21",
+    "statement": "booted the stick and used it; marked good",
+    "detail": "what was run (backup, verify, restore) was not stated and no logs were saved"
+  }
+}

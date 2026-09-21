@@ -51,7 +51,8 @@ The NVIDIA packages themselves are never committed to this repo — see
   prebuilt binary (Charm's `gum`), not built here.
 - `packaging/` — build/verification tooling, the pinned SystemRescue
   customizer, launch YAML and desktop overlay.
-- `docs/` — review findings, build checkpoints, and test/hardware evidence.
+- `docs/` — release notes and user guide (`docs/release/`), review findings,
+  build checkpoints, and test/hardware evidence.
 - `tests/` — regression tests against fixtures and simulated devices, plus
   QEMU round-trip and firmware-boot harnesses. No real block devices are
   touched.
@@ -62,8 +63,15 @@ The NVIDIA packages themselves are never committed to this repo — see
 
 ## Status
 
-The latest build is candidate 5. No final release has been produced yet, and
-ISOs are not distributed from this repo.
+Release **0.1.0** (tag `v0.1.0`, 2026-09-21) is candidate 5 promoted unchanged:
+the release ISO is byte-identical to the candidate-5 ISO (SHA-256
+`42a666f5…d5eb`), and its payload was verified against the source in this
+repo. ISOs are not distributed from this repo. See the
+[release notes](docs/release/release-notes.md) and the
+[backup, verify and restore guide](docs/release/backup-and-recovery-guide.md).
+The release was read back from a USB stick and matched, and the maintainer
+booted and used that stick and marked it good (a report only: which functions
+were run was not stated and no logs were saved).
 
 Regression tests, VM round-trips (GPT/Btrfs and DOS/ext4, backup → verify →
 restore, with corruption/interruption handling), and a two-VM rehearsal of an
@@ -85,8 +93,7 @@ The maintainer accepted the in-place round trips as sufficient in place of a
 further isolated-spare rehearsal (2026-09-19). Still not established:
 duplicate-UUID isolation on real hardware, file-content comparison after a
 hardware restore, BIOS bootstrap recovery, 4Kn drives, and every Btrfs feature
-combination. The remaining step before a release is the final tagged release
-and release notes. Full details, dates, and exactly what each checkpoint does and
+combination. That release has now been made (0.1.0, above). Full details, dates, and exactly what each checkpoint does and
 doesn't establish are in [`docs/build-checkpoint.md`](docs/build-checkpoint.md).
 
 ## Non-negotiable media boundary
@@ -105,14 +112,14 @@ separately identified, freshly verified USB.
    subvolumes, EFI, corruption, and failure handling.
 5. Rehearse recovery on an explicitly designated spare disk, isolating
    duplicate filesystem UUIDs before booting the restored copy.
-6. Produce a versioned `.iso`, checksum, and release notes. Verify the built
-   payload against the reviewed source.
+6. Produce a versioned `.iso`, checksum, release notes and user instructions.
+   Verify the built payload against the reviewed source.
 7. Store the release offline and flash a new USB. Read back and verify the
    flashed image. Retain the original USB unchanged.
 
-Steps 1–5 are done (step 5 through the in-place round trips, accepted as
-sufficient; see Status). Steps 6–7 wait on a final release, although development candidates have been flashed to
-separately identified USB drives for hardware testing.
+Steps 1–7 are done for release 0.1.0 (step 5 through the in-place round
+trips, accepted as sufficient; see Status). The release ISO was written to a
+USB stick and read back byte for byte.
 
 `bash bin/build-iso.sh <new-candidate-name.iso>` builds and verifies a
 candidate in `dist/`. It refuses to overwrite an existing filename. With no

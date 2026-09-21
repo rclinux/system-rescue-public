@@ -95,7 +95,7 @@ swapon --show
 | Source isolation and restored EFI/root identity | Pending |
 | Restored-system boot and any repairs | Pending |
 | Independent file hashes, subvolumes and swap checks | Pending |
-| Final release decision | Pending |
+| Final release decision | Not gated on this template: 0.1.0 released 2026-09-21 on the in-place round trips, per the 2026-09-19 decision |
 
 The exclusions in [recovery testing](recovery-testing.md) still apply. This
 rehearsal validates the recorded hardware and filesystem layout only.

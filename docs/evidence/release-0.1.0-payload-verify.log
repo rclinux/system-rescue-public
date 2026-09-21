@@ -1,0 +1,2 @@
+# verify-iso.sh on dist/system-rescue-0.1.0.iso, 2026-09-21T13:57:18Z, source tree at release 0.1.0 (bin lib vendor packaging clean)
+PASS: 21 payload files, permissions, root ownership, launcher YAML and module activation

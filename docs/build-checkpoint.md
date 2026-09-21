@@ -1,5 +1,34 @@
 # Recovery checkpoint
 
+## Release 0.1.0 (2026-09-21)
+
+Release 0.1.0 is candidate 5 promoted without rebuilding. Reason: every VM and
+hardware result in this document was obtained on candidate 5's exact bytes; a
+rebuild would have produced a different ISO that none of it applies to.
+
+- `dist/system-rescue-0.1.0.iso`: 1,770,061,824 bytes, SHA-256
+  `42a666f55cc7075456e5366373283a14e7dba8592dee6c2ad13270a08cb3d5eb`, checked
+  byte-identical to the candidate-5 ISO with `cmp`.
+- Payload check: `bin/verify-iso.sh` PASS against the release source tree
+  (bin, lib, vendor, packaging clean): 21 payload files, permissions, root
+  ownership, launcher YAML and module activation. Log:
+  [release-0.1.0-payload-verify.log](evidence/release-0.1.0-payload-verify.log).
+- Regression tests: 25 pass, re-run the same day.
+- The candidate-5 build receipt's `source_dirty: true` and "hardware recovery
+  not yet verified" text are historical: the one-file fix was committed right
+  after the build. The release receipt states the current position.
+- Release notes and guide: [docs/release/](release/). The "not established"
+  list there is unchanged from the 2026-09-19 decision.
+- USB: I flashed the release to a KANGURU SS3 (the same drive that held
+  candidates 2-4, so not a new stick). On 2026-09-21 the drive, hardware
+  write-protected, was read back as root: the first 1,770,061,824 bytes hash to
+  the release SHA-256. Receipt:
+  [release-0.1.0-kanguru-readback.json](evidence/release-0.1.0-kanguru-readback.json)
+  (serial redacted). Not checked: bytes after the ISO length.
+- Boot and use, 2026-09-21: I booted this stick, used it, and marked the
+  release good. That is my report only: which functions I ran was not recorded
+  and no logs were saved.
+
 ## Candidate 5 — VM harnesses restored and rerun (2026-09-19)
 
 The QEMU harnesses had stopped working. They loaded a kernel and initramfs from
@@ -329,8 +358,9 @@ Source and target were the same disk, so it does not change item 2/3.
    notes, then flash a separately identified new USB when explicitly requested.
 
 Update 2026-09-19: the in-place round trips were accepted as sufficient for
-item 2/3, so the remaining gate before a release is item 4, the final tagged
-release and release notes, which has not been produced.
+item 2/3, so the remaining gate before a release was item 4, the final tagged
+release and release notes. Produced 2026-09-21: see
+[Release 0.1.0](#release-010-2026-09-21).
 
 Original source USB and `baseline/` remain untouched. On September 10,
 candidate 2 was flashed to a KANGURU SS3 USB drive. Direct readback of all
